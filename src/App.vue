@@ -9,21 +9,18 @@
 </template>
 
 <style lang="scss">
+@import "~vue-material/dist/theme/engine";
+
+@include md-register-theme("default", (
+  primary: md-get-palette-color(teal, A400),
+  secondary: md-get-palette-color(purple, 100),
+  accent: md-get-palette-color(red, A200),
+  theme: light,
+));
+@import "~vue-material/dist/theme/all";
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
