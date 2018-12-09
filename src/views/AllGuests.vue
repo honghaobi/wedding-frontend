@@ -27,8 +27,8 @@
 </template>
 
 <script>
-  import GuestsAPI from '../services/api/Guests';
   import EditGuestDialog from '../components/EditGuestDialog';
+  import store from '../store';
 
   const toLower = text => text.toString()
     .toLowerCase();
@@ -40,27 +40,17 @@
     name: 'allGuests',
     components: { EditGuestDialog },
     data: () => ({
-      search: '',
+      search: null,
       searched: [],
-      guests: [],
+      guests: store.getters.getAllGuests,
     }),
-    component: {
-      EditGuestDialog,
-    },
     methods: {
       searchOnTable() {
         this.searched = searchByName(this.guests, this.search);
       },
     },
     mounted() {
-      GuestsAPI.getAllGuests()
-        .then((guests) => {
-          this.guests = guests.map((guest) => {
-            guest.id = parseInt(guest.id);
-            guest.full_name = `${guest.first_name} ${guest.last_name}`;
-            return guest;
-          });
-        });
+      this.search = ' ';
     },
   };
 </script>
