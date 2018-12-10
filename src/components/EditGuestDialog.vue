@@ -10,9 +10,9 @@
         <label>Email</label>
         <md-input v-model=guest.email></md-input>
       </md-field>
-      <md-checkbox v-model=guest.attending value="true">Attending</md-checkbox>
-      <md-checkbox v-model=guest.resort_booked value="true">Resort Booked</md-checkbox>
-      <md-checkbox v-model=guest.flight_booked value="true">Flight Booked</md-checkbox>
+      <md-checkbox v-model=guest.attending>Attending</md-checkbox>
+      <md-checkbox v-model=guest.resort_booked>Resort Booked</md-checkbox>
+      <md-checkbox v-model=guest.flight_booked>Flight Booked</md-checkbox>
       <md-datepicker v-model="guest.resort_arrival_date">
         <label>Arrival Date</label>
       </md-datepicker>
@@ -21,7 +21,7 @@
       </md-datepicker>
       <md-field>
         <label>Allergies</label>
-        <md-input v-model=guest.allergies></md-input>
+        <md-input v-model=guest.food_allergies></md-input>
       </md-field>
       <md-field>
         <label>Events</label>
@@ -29,8 +29,8 @@
       </md-field>
 
       <md-dialog-actions>
-        <md-button class="md-accent" @click="showDialog = false">Close</md-button>
-        <md-button class="md-primary" @click="showDialog = false">Save</md-button>
+        <md-button class="md-accent" @click="handleClose">Close</md-button>
+        <md-button class="md-primary" @click="handleSave">Save</md-button>
       </md-dialog-actions>
     </md-dialog>
     <md-button class="md-primary" @click="showDialog = true">Edit</md-button>
@@ -38,14 +38,34 @@
 </template>
 
 <script>
+  import store from './../store';
+
   export default {
     name: 'EditGuestDialog',
     props: {
       guest: {},
     },
     data: () => ({
-      showDialog: false
-    })
+      showDialog: false,
+      oldGuest: {},
+    }),
+    methods: {
+      handleClose: function (event) {
+        // console.log("GUEST", this.guest);
+        // console.log("OLDGUEST", this.oldGuest);
+        // this.propsData.guest = this.oldGuest;
+
+
+        this.showDialog = false;
+      },
+      handleSave: function (event) {
+        store.dispatch('UPDATE_GUEST_BY_ID', this.guest)
+        this.showDialog = false;
+      },
+    },
+    mounted() {
+      this.oldGuest = this.guest;
+    },
   };
 </script>
 

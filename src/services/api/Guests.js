@@ -5,6 +5,11 @@ const serverURL = {
   production: 'https://hk-wedding-backend.herokuapp.com',
   development: 'http://localhost:8085',
 };
+const optionsConfig = {
+  headers: {
+    'content-type': 'application/x-www-form-urlencoded',
+  }
+};
 
 axios.defaults.baseURL = serverURL[environment];
 
@@ -14,7 +19,11 @@ export default {
       .then(response => response.data);
   },
   getGuestById(anId) {
-    return axios.get(`/guest/ ${anId}`)
+    return axios.get(`/guest/${anId}`)
       .then(response => response.data);
+  },
+  updateGuestById(anId, guestData) {
+    return axios.post(`/guest/${anId}`, guestData)
+      .then((response) =>  response.data);
   },
 };
