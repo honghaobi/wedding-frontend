@@ -47,24 +47,16 @@
     },
     data: () => ({
       showDialog: false,
-      oldGuest: {},
     }),
     methods: {
       handleClose: function (event) {
-        // console.log("GUEST", this.guest);
-        // console.log("OLDGUEST", this.oldGuest);
-        // this.propsData.guest = this.oldGuest;
-
-
+        //TODO: revert back to initial guest data;
         this.showDialog = false;
       },
       handleSave: function (event) {
         store.dispatch('UPDATE_GUEST_BY_ID', this.guest)
         this.showDialog = false;
       },
-    },
-    mounted() {
-      this.oldGuest = this.guest;
     },
   };
 </script>
