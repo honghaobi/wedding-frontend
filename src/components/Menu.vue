@@ -1,8 +1,8 @@
 <template>
   <div class="contenedor">
     <form>
-      <input type="radio" name="slider" title="Lets Party" autofocus="autofocus" checked="checked"/>
-      <input type="radio" name="slider" title="RSVP"/>
+      <input type="radio" name="slider" title="Lets Party"/>
+      <input type="radio" name="slider" title="RSVP" autofocus="autofocus" checked="checked"/>
       <input type="radio" name="slider" title="Resort"/>
       <input type="radio" name="slider" title="Travel"/>
       <input type="radio" name="slider" title="About H & K"/>
@@ -16,7 +16,7 @@
           </div>
         </label>
         <label class="Slide" for="Slide2" id="Slide2">
-          <h1><strong>RSVP</strong></h1>
+          <RSVP/>
         </label>
         <label class="Slide" for="Slide3" id="Slide3">
           <h1><strong>Resort Info</strong></h1>
@@ -28,10 +28,7 @@
           <h1><strong>Henry & Kelli</strong></h1>
         </label>
         <label for="Slide6" id="Slide6">
-          <h1><strong>The Proposal</strong></h1>
-          <video autoplay loop id="video-background" muted plays-inline>
-            <source src="https://youtu.be/0gVaAjEFMl0" type="video/mp4">
-          </video>
+          <Proposal/>
         </label>
         <label for="Slide7" id="Slide7">
           <h1><strong>Wedding Party</strong></h1>
@@ -45,25 +42,22 @@
 </template>
 
 <script>
-
+  import RSVP from '../components/RSVP';
+  import Proposal from '../components/Proposal';
+  export default {
+    name: 'Menu',
+    components: {
+      RSVP,
+      Proposal
+    },
+  };
+  //TODO: USE https://www.npmjs.com/package/vue2-touch-events for swiping on phone.
 </script>
 
 <style lang="scss" scoped>
   $npages: 8;
   $bg-odd: #F25652;
   $bg: #3E4E59;
-
-  #video-background {
-    /*  making the video fullscreen  */
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-  }
 
   .contenedor {
     width: 100vw;
