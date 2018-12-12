@@ -8,7 +8,7 @@
 
         <md-card-content>
           <md-steppers :md-active-step.sync="active" md-vertical md-linear>
-            <md-step id="first" md-label="Who?" :md-editable="false" :md-done.sync="first">
+            <md-step id="first" md-label="We Hope You Can Come Fiesta With Us!" :md-editable="false" :md-done.sync="first">
               <div class="md-layout">
                 <div class="md-layout-item md-medium-size-66">
                   <md-autocomplete v-model="searchedGuest" :md-options="getSanitizedGuests" :md-open-on-focus="false"
@@ -19,24 +19,24 @@
                     </template>
                   </md-autocomplete>
                 </div>
-                <div class="md-layout-item md-medium-size-33">
+                <div class="md-layout-item md-large-size-33">
                   <md-button class="md-raised md-primary meBtn" v-if="searchedGuest" @click="setGuest()" :disabled="!!selectedGuest">That's me
                   </md-button>
                 </div>
-                <div class="md-layout-item md-medium-size-66 partner" v-if="selectedGuestPartner">
+                <div class="md-layout-item md-large-size-66 partner" v-if="selectedGuestPartner">
                   Would you like to RSVP for <span class="partnerName">{{ selectedGuestPartner.full_name}}</span>
                 </div>
-                <div class="md-layout-item md-medium-size-33" v-if="selectedGuestPartner">
+                <div class="md-layout-item md-large-size-33" v-if="selectedGuestPartner">
                   <md-switch v-model="selectedGuestPartnerIncluded" class="md-primary partnerSwitch" v-if="selectedGuestPartner"
                              @change="checkGuestPartnerStatus()"></md-switch>
                 </div>
-                <div class="md-layout-item md-medium-size-66 partner" v-if="selectedGuest">
+                <div class="md-layout-item md-large-size-66 partner" v-if="selectedGuest">
                   <md-checkbox v-model="selectedGuestAttending" v-if="selectedGuest"><b>{{ selectedGuest.full_name}}</b></md-checkbox>
                   <md-checkbox v-model="selectedGuestPartnerAttending" v-if="selectedGuestPartnerIncluded"><b>{{ selectedGuestPartner.full_name}}</b>
                   </md-checkbox>
                 </div>
 
-                <div class="md-layout-item md-medium-size-33" v-if="selectedGuest">
+                <div class="md-layout-item md-large-size-33" v-if="selectedGuest">
                   <md-button class="md-raised md-primary rsvpBtn" @click="rsvp()">
                     <span v-if="!selectedGuestAttending && !selectedGuestPartnerAttending"> Not </span>
                     Attending

@@ -9,8 +9,8 @@
 
   @include md-register-theme("default", (
     primary: #F25652,
-    accent: #3E4E59,
-    theme: light,
+    accent: #3073A5,
+    theme: dark,
   ));
   @import "~vue-material/dist/theme/all";
 

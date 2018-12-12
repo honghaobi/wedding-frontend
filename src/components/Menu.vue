@@ -11,9 +11,7 @@
       <input type="radio" name="slider" title="#henrysdreamwedding"/>
       <div class="labels">
         <label class="Slide" for="Slide1" id="Slide1">
-          <div class="content">
-            <h1><strong>Lets Party</strong></h1>
-          </div>
+          <LetsParty/>
         </label>
         <label class="Slide" for="Slide2" id="Slide2">
           <RSVP/>
@@ -42,11 +40,14 @@
 </template>
 
 <script>
+  import LetsParty from '../components/LetsParty';
   import RSVP from '../components/RSVP';
   import Proposal from '../components/Proposal';
+
   export default {
     name: 'Menu',
     components: {
+      LetsParty,
       RSVP,
       Proposal
     },
@@ -57,7 +58,7 @@
 <style lang="scss" scoped>
   $npages: 8;
   $bg-odd: #F25652;
-  $bg: #3E4E59;
+  $bg: #3073A5;
 
   .contenedor {
     width: 100vw;
@@ -70,16 +71,16 @@
     form {
       box-sizing: border-box;
       text-align: center;
-      padding: 22px;
+      padding: 10px;
       display: inline-flex;
-      flex-direction: column;
+      /*flex-direction: column;*/
       position: fixed;
       height: 100vh;
       justify-content: center;
 
       input {
         height: 0;
-        margin: 12px 0;
+        margin: 0px 15px;
         z-index: 1;
 
         &:checked {
@@ -105,14 +106,14 @@
 
         &:after {
           content: "" attr(title) "";
-          position: relative;
-          left: 30px;
+          position: absolute;
+          bottom: 5px;
           opacity: 0;
           color: white;
-          font-size: 9px;
-          display: block;
+          font-size: 20px;
+          display: inline;
           min-width: 80px;
-          transition: all 0.25s linear;
+          transition: all 0.5s linear;
         }
 
         &:checked:after {
