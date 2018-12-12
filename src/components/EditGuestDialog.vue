@@ -54,7 +54,7 @@
         this.showDialog = false;
       },
       handleSave: function (event) {
-        store.dispatch('UPDATE_GUEST_BY_ID', this.guest)
+        store.dispatch('UPDATE_GUEST_BY_ID', this.guest);
         this.showDialog = false;
       },
     },

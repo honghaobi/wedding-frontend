@@ -6,10 +6,11 @@
 
 <style lang="scss">
   @import "~vue-material/dist/theme/engine";
+  @import "./css/main.scss";
 
   @include md-register-theme("default", (
-    primary: #F25652,
-    accent: #3073A5,
+    primary: $primary-color,
+    accent: $accent-color,
     theme: dark,
   ));
   @import "~vue-material/dist/theme/all";

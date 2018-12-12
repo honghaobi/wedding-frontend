@@ -19,10 +19,6 @@ function guestUpdateCleanUp( data ) {
   return cleanUpdata;
 }
 
-function findGuestByArrayIndex(guests, guest) {
-  return undefined;
-}
-
 export default new Vuex.Store({
   state: {
     guests: [],

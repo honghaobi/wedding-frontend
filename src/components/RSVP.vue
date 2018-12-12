@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="block md-layout">
-      <md-card class="md-layout-item">
+      <md-card class="md-layout-item rsvp">
         <md-card-header>
           <h1><strong>RSVP</strong></h1>
         </md-card-header>
@@ -31,23 +31,21 @@
                              @change="checkGuestPartnerStatus()"></md-switch>
                 </div>
                 <div class="md-layout-item md-large-size-66 partner" v-if="selectedGuest">
-                  <md-checkbox v-model="selectedGuestAttending" v-if="selectedGuest"><b>{{ selectedGuest.full_name}}</b></md-checkbox>
-                  <md-checkbox v-model="selectedGuestPartnerAttending" v-if="selectedGuestPartnerIncluded"><b>{{ selectedGuestPartner.full_name}}</b>
+                  <md-checkbox class="md-primary" v-model="selectedGuestAttending" v-if="selectedGuest"><b>{{ selectedGuest.full_name}}</b>
+                  </md-checkbox>
+                  <md-checkbox class="md-primary" v-model="selectedGuestPartnerAttending" v-if="selectedGuestPartnerIncluded"><b>{{selectedGuestPartner.full_name}}</b>
                   </md-checkbox>
                 </div>
-
                 <div class="md-layout-item md-large-size-33" v-if="selectedGuest">
-                  <md-button class="md-raised md-primary rsvpBtn" @click="rsvp()">
+                  <md-button class="md-raised md-primary rsvpBtn" @click="rsvp()" :disabled="guestsAttending">
                     <span v-if="!selectedGuestAttending && !selectedGuestPartnerAttending"> Not </span>
                     Attending
                   </md-button>
+                  <md-button class="md-raised md-accent" v-if="guestsAttending" @click="setDone('first', 'second')">Continue</md-button>
                 </div>
               </div>
-
-              <!--<md-button class="md-raised md-primary" @click="setDone('first', 'second')">Continue</md-button>-->
-
+              <Confetti v-if="guestsAttending"/>
             </md-step>
-
 
             <md-step id="second" md-label="Second Step" :md-error="secondStepError" :md-editable="false" :md-done.sync="second">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloribus eveniet quaerat modi cumque quos sed, temporibus nemo
@@ -74,9 +72,12 @@
 
 <script>
   import store from '../store';
+  import VanillaTilt from '../js/vanilla-tilt';
+  import Confetti from './Confetti';
 
   export default {
     name: 'RSVP',
+    components: { Confetti },
     data: () => ({
       searchedGuest: null,
       selectedGuest: null,
@@ -84,6 +85,7 @@
       selectedGuestPartner: null,
       selectedGuestPartnerIncluded: null,
       selectedGuestPartnerAttending: false,
+      guestsAttending: false,
       active: 'first',
       first: false,
       second: false,
@@ -100,6 +102,15 @@
         }));
       }
     },
+    mounted() {
+      VanillaTilt.init(document.querySelector('.rsvp'), {
+        max: 25,
+        speed: 2000,
+        scale: 1.02,
+      });
+
+      //TODO: Implement DropDown Perspective.
+    },
     methods: {
       setGuest() {
         this.selectedGuest = store.getters.getGuestById(this.searchedGuest.id);
@@ -114,6 +125,7 @@
           this.selectedGuestPartner = null;
           this.selectedGuestPartnerIncluded = null;
           this.selectedGuestPartnerAttending = false;
+          this.guestsAttending = false;
         }
       },
       checkGuestPartnerStatus() {
@@ -122,7 +134,17 @@
         }
       },
       rsvp() {
-        alert('WE ARE COMING!!');
+        this.guestsAttending = true;
+        store.dispatch('UPDATE_GUEST_BY_ID', {
+          id: this.selectedGuest.id,
+          attending: this.selectedGuestAttending,
+        });
+        if ( this.selectedGuestPartnerIncluded ) {
+          store.dispatch('UPDATE_GUEST_BY_ID', {
+            id: this.selectedGuestPartner.id,
+            attending: this.selectedGuestPartnerAttending,
+          });
+        }
       },
       setDone(id, index) {
         this[id] = true;
@@ -138,9 +160,12 @@
       }
     },
   };
+
 </script>
 
 <style lang="scss" scoped>
+  @import "../css/main.scss";
+
   .md-card {
     max-width: 600px;
     min-width: 400px;
@@ -156,7 +181,9 @@
     }
 
     .partnerName {
-
+      font-weight: bold;
+      font-size: 16px;
+      color: $primary-color;
     }
 
     .partnerSwitch {

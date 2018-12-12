@@ -56,14 +56,16 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../css/main.scss";
+
   $npages: 8;
-  $bg-odd: #F25652;
-  $bg: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+  $bg-odd: $primary-color;
+  $bg: linear-gradient(45deg, $accent-color 10%, #85d8ce 90%);
 
   .contenedor {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
+    background: linear-gradient(45deg, $accent-color 10%, #85d8ce 90%);
     position: relative;
     display: flex;
     align-items: center;
