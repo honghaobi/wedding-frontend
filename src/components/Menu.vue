@@ -58,12 +58,12 @@
 <style lang="scss" scoped>
   $npages: 8;
   $bg-odd: #F25652;
-  $bg: #3073A5;
+  $bg: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
 
   .contenedor {
     width: 100vw;
     height: 100vh;
-    background: deeppink;
+    background: linear-gradient(45deg, #085078 10%, #85d8ce 90%);
     position: relative;
     display: flex;
     align-items: center;
