@@ -110,10 +110,11 @@
           bottom: 5px;
           opacity: 0;
           color: white;
-          font-size: 20px;
+          font-size: 40px;
           display: inline;
           min-width: 80px;
           transition: all 0.5s linear;
+          text-transform: uppercase;
         }
 
         &:checked:after {

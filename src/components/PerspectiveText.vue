@@ -44,10 +44,9 @@
   ** Leave these unless you want
   ** to open a whole can of worms
   */
-  $left-offset: 29px;
-  $clip-height: 50px;
-  $line-height: $clip-height - 5px;
-
+  $left-offset: 45px;
+  $clip-height: 90px;
+  $line-height: $clip-height - 10px;
 
   /*
   ** Apply styles to the parent element
@@ -55,7 +54,7 @@
   .Words {
     margin: 0 auto;
     padding: 80px 0;
-    font-size: 55px;
+    font-size: 100px;
     font-weight: 900;
     letter-spacing: -2px;
     text-transform: uppercase;
