@@ -42,8 +42,12 @@
     data: () => ({
       search: null,
       searched: [],
-      guests: store.getters.getAllGuests,
     }),
+    computed: {
+      guests: () => {
+        return store.getters.getAllGuests;
+      }
+    },
     methods: {
       searchOnTable() {
         this.searched = searchByName(this.guests, this.search);

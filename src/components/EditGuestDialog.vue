@@ -29,8 +29,8 @@
       </md-field>
 
       <md-dialog-actions>
-        <md-button class="md-accent" @click="handleClose">Close</md-button>
-        <md-button class="md-primary" @click="handleSave">Save</md-button>
+        <md-button class="md-primary" @click="handleClose">Close</md-button>
+        <md-button class="md-accent" @click="handleSave">Save</md-button>
       </md-dialog-actions>
     </md-dialog>
     <md-button class="md-primary" @click="showDialog = true">Edit</md-button>

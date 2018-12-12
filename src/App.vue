@@ -8,9 +8,8 @@
   @import "~vue-material/dist/theme/engine";
 
   @include md-register-theme("default", (
-    primary: md-get-palette-color(teal, A400),
-    secondary: md-get-palette-color(purple, 100),
-    accent: md-get-palette-color(red, A200),
+    primary: #F25652,
+    accent: #3E4E59,
     theme: light,
   ));
   @import "~vue-material/dist/theme/all";

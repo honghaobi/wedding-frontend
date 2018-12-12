@@ -47,5 +47,8 @@ export default new Vuex.Store({
   },
   getters: {
     getAllGuests: state => state.guests,
+    getGuestById: (state) => (id) => {
+      return state.guests.find(guest => guest.id == id);
+    }
   },
 });
