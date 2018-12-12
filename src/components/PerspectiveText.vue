@@ -34,17 +34,11 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../css/compass_reset.css";
-
   /*
  ** Change this if you need to modify
  ** the amount of lines displayed
  */
   $total-lines: 5;
-
-  body {
-    display: flex;
-  }
 
   /*
   ** Leave these unless you want
@@ -59,10 +53,9 @@
   ** Apply styles to the parent element
   */
   .Words {
-    margin: 0 0;
+    margin: 0 auto;
     padding: 80px 0;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 900;
     letter-spacing: -2px;
     text-transform: uppercase;
