@@ -9,7 +9,10 @@ function guestTableCleanUp( data ) {
     guest.id = parseInt(guest.id);
     guest.full_name = `${guest.first_name} ${guest.last_name}`;
     if ( guest.events ) {
-      guest.events = JSON.parse(guest.events);
+      const parsedEvents = JSON.parse(guest.events);
+      if ( typeof(parsedEvents) === "string" ) {
+        guest.events = [ parsedEvents ];
+      }
     }
     return guest;
   });
