@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="block md-layout">
+  <div class="rsvpContainer">
+    <div class="md-layout">
       <md-card class="md-layout-item rsvp">
         <md-card-header>
           <h1><strong>RSVP</strong></h1>
@@ -64,7 +64,6 @@
                   </div>
                 </transition>
               </div>
-              <Confetti v-if="guestsAttending"/>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar1" md-persistent>
                 Better start hitting the gym and get dat beach bod ready ;)
               </md-snackbar>
@@ -139,6 +138,8 @@
                   </md-field>
                   <div class="checkBoxContainer">
                     <span class="checkBoxTitle"> Events That Tickle Your Fancy:</span>
+                  </div>
+                  <div class="checkBoxContainer">
                     <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="boatCruise">Boat Cruise</md-checkbox>
                     <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="nightClubs">Night Clubs</md-checkbox>
                     <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="fishing">Fishing</md-checkbox>
@@ -162,6 +163,8 @@
                   </md-field>
                   <div class="checkBoxContainer">
                     <span class="checkBoxTitle"> Events That Tickle Your Fancy:</span>
+                  </div>
+                  <div class="checkBoxContainer">
                     <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="boatCruise">Boat Cruise</md-checkbox>
                     <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="nightClubs">Night Clubs</md-checkbox>
                     <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="fishing">Fishing</md-checkbox>
@@ -185,6 +188,7 @@
         </md-card-actions>
       </md-card>
     </div>
+  <Confetti v-if="guestsAttending"/>
   </div>
 </template>
 
@@ -249,6 +253,8 @@
     },
     methods: {
       setGuest() {
+        //TODO: check if the guest already has been rsvped?
+
         this.selectedGuest = store.getters.getGuestById(this.searchedGuest.id);
         if ( this.selectedGuest.relation ) {
           this.selectedGuestPartner = store.getters.getGuestById(this.selectedGuest.relation);
@@ -369,77 +375,91 @@
   @import "../css/main.scss";
   @import "../css/animation.scss";
 
-  .md-card {
-    max-width: 700px;
-    min-width: 300px;
+  .rsvpContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333333;
 
-    .meBtn {
-      margin-top: 15px;
-    }
+    .md-card {
+      max-width: 700px;
+      min-width: 300px;
+      max-height: 90%;
+      overflow: auto;
+      z-index: 0;
 
-    .partner {
-      text-align: left;
-      align-self: flex-start;
-      font-size: 16px;
-    }
-
-    .guestName {
-      font-weight: bold;
-      font-size: 16px;
-      color: $primary-color;
-    }
-
-    .partnerSwitch {
-      margin-top: 0px;
-    }
-
-    .rsvpBtn {
-      margin-top: 5px;
-    }
-
-    .md-snackbar {
-      background-color: $accent-color;
-    }
-
-    .question1 {
-      margin-top: 5px;
-      text-align: left;
-    }
-
-    .question2 {
-      margin-top: 0px;
-      text-align: left;
-    }
-
-    .questionSwitch1 {
-      margin-top: 5px;
-    }
-
-    .questionSwitch2 {
-      margin-top: 0px;
-    }
-
-    .updateInfo {
-      text-align: left;
-    }
-
-    .personalInfo {
-      margin: 0;
-    }
-
-    .checkBoxContainer {
-
-      .checkBoxTitle {
-        font-weight: bold;
+      .meBtn {
+        margin-top: 15px;
       }
 
-      margin: 15px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      .partner {
+        text-align: left;
+        align-self: flex-start;
+        font-size: 16px;
+      }
 
-      .eventCheckBox {
-        margin: 10px 30px 0 0;
+      .guestName {
+        font-weight: bold;
+        font-size: 16px;
+        color: $primary-color;
+      }
+
+      .partnerSwitch {
+        margin-top: 0px;
+      }
+
+      .rsvpBtn {
+        margin-top: 5px;
+      }
+
+      .md-snackbar {
+        background-color: $accent-color;
+      }
+
+      .question1 {
+        margin-top: 5px;
+        text-align: left;
+      }
+
+      .question2 {
+        margin-top: 0px;
+        text-align: left;
+      }
+
+      .questionSwitch1 {
+        margin-top: 5px;
+      }
+
+      .questionSwitch2 {
+        margin-top: 0px;
+      }
+
+      .updateInfo {
+        text-align: left;
+      }
+
+      .personalInfo {
+        margin: 0;
+      }
+
+      .checkBoxContainer {
+
+        .checkBoxTitle {
+          font-weight: bold;
+        }
+
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .eventCheckBox {
+          margin: 10px 30px 0 0;
+        }
       }
     }
   }

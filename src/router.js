@@ -1,27 +1,41 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
 
 Vue.use(Router);
 
-export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/all-guests',
-      name: 'all-guests',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component() {
-        return import(/* webpackChunkName: "allGuests" */ './views/AllGuests.vue');
+export default new Router(
+  {
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes: [
+      {
+        path: '/',
+        name: 'lets-party',
+        component() {
+          return import('./components/LetsParty.vue');
+        },
       },
-    },
-  ],
-});
+      {
+        path: '/all-guests',
+        name: 'all-guests',
+        component() {
+          return import('./views/AllGuests.vue');
+        },
+      },
+      {
+        path: '/rsvp',
+        name: 'rsvp',
+        component() {
+          return import('./components/RSVP.vue');
+        },
+      },
+      {
+        path: '/proposal',
+        name: 'proposal',
+        component() {
+          return import('./components/Proposal.vue');
+        },
+      },
+    ],
+  }
+);

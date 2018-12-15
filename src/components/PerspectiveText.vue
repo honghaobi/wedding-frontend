@@ -1,30 +1,30 @@
 <template>
-  <ul class="Words">
-    <li class="Words-line">
-      <p>&nbsp;</p>
-      <p>You Are Invited</p>
-    </li>
-    <li class="Words-line">
-      <p>You Are Invited</p>
-      <p>To Come Party</p>
-    </li>
-    <li class="Words-line">
-      <p>To Come Party</p>
-      <p>With Us</p>
-    </li>
-    <li class="Words-line">
-      <p>With Us</p>
-      <p>In Cabo</p>
-    </li>
-    <li class="Words-line">
-      <p>In Cabo</p>
-      <p>Mexico</p>
-    </li>
-    <li class="Words-line">
-      <p>Mexico</p>
-      <p>&nbsp;</p>
-    </li>
-  </ul>
+  <!--<ul class="Words">-->
+    <!--<li class="Words-line">-->
+      <!--<p>&nbsp;</p>-->
+      <!--<p>You Are Invited</p>-->
+    <!--</li>-->
+    <!--<li class="Words-line">-->
+      <!--<p>You Are Invited</p>-->
+      <!--<p>To Come Party</p>-->
+    <!--</li>-->
+    <!--<li class="Words-line">-->
+      <!--<p>To Come Party</p>-->
+      <!--<p>With Us</p>-->
+    <!--</li>-->
+    <!--<li class="Words-line">-->
+      <!--<p>With Us</p>-->
+      <!--<p>In Cabo</p>-->
+    <!--</li>-->
+    <!--<li class="Words-line">-->
+      <!--<p>In Cabo</p>-->
+      <!--<p>Mexico</p>-->
+    <!--</li>-->
+    <!--<li class="Words-line">-->
+      <!--<p>Mexico</p>-->
+      <!--<p>&nbsp;</p>-->
+    <!--</li>-->
+  <!--</ul>-->
 </template>
 
 <script>
@@ -90,7 +90,6 @@
     }
   }
 
-
   /*
   ** Fine-grained text styles
   */
@@ -103,7 +102,6 @@
     vertical-align: top;
     white-space: nowrap;
   }
-
 
   /*
   ** The hover interaction
