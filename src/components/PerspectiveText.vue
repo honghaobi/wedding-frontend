@@ -1,30 +1,38 @@
 <template>
-  <!--<ul class="Words">-->
-    <!--<li class="Words-line">-->
-      <!--<p>&nbsp;</p>-->
-      <!--<p>You Are Invited</p>-->
-    <!--</li>-->
-    <!--<li class="Words-line">-->
-      <!--<p>You Are Invited</p>-->
-      <!--<p>To Come Party</p>-->
-    <!--</li>-->
-    <!--<li class="Words-line">-->
-      <!--<p>To Come Party</p>-->
-      <!--<p>With Us</p>-->
-    <!--</li>-->
-    <!--<li class="Words-line">-->
-      <!--<p>With Us</p>-->
-      <!--<p>In Cabo</p>-->
-    <!--</li>-->
-    <!--<li class="Words-line">-->
-      <!--<p>In Cabo</p>-->
-      <!--<p>Mexico</p>-->
-    <!--</li>-->
-    <!--<li class="Words-line">-->
-      <!--<p>Mexico</p>-->
-      <!--<p>&nbsp;</p>-->
-    <!--</li>-->
-  <!--</ul>-->
+  <ul class="Words">
+    <li class="Words-line">
+      <p>&nbsp;</p>
+      <p>You Are</p>
+    </li>
+    <li class="Words-line">
+      <p>You Are</p>
+      <p>Invited</p>
+    </li>
+    <li class="Words-line">
+      <p>Invited</p>
+      <p>To Come</p>
+    </li>
+    <li class="Words-line">
+      <p>To Come</p>
+      <p>Party</p>
+    </li>
+    <li class="Words-line">
+      <p>Party</p>
+      <p>With Us</p>
+    </li>
+    <li class="Words-line">
+      <p>With Us</p>
+      <p>In Cabo</p>
+    </li>
+    <li class="Words-line">
+      <p>In Cabo</p>
+      <p>Mexico</p>
+    </li>
+    <li class="Words-line">
+      <p>Mexico</p>
+      <p>&nbsp;</p>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -34,29 +42,35 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../css/main.scss";
+
   /*
  ** Change this if you need to modify
  ** the amount of lines displayed
  */
-  $total-lines: 5;
+  $total-lines: 7;
+
 
   /*
   ** Leave these unless you want
   ** to open a whole can of worms
   */
-  $left-offset: 45px;
-  $clip-height: 90px;
-  $line-height: $clip-height - 10px;
+  $left-offset: 29px;
+  $clip-height: 59px;
+  $line-height: $clip-height - 5px;
 
   /*
   ** Apply styles to the parent element
   */
   .Words {
-    margin: 0 auto;
-    padding: 80px 0;
-    font-size: 100px;
+    background-color: $accent-color;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 68px;
     font-weight: 900;
-    letter-spacing: -2px;
     text-transform: uppercase;
     // Sort out nasty text fuzz
     transform: translate3d(0, 0, 0);
@@ -64,6 +78,7 @@
     -webkit-font-kerning: normal;
     -webkit-text-size-adjust: 100%;
   }
+
 
   /*
   ** Apply common styles to each line of text
@@ -77,7 +92,6 @@
     &:nth-child(odd) {
       transform: skew(60deg, -30deg) scaleY(.66667);
     }
-
     &:nth-child(even) {
       transform: skew(0deg, -30deg) scaleY(1.33333);
     }
@@ -101,6 +115,7 @@
     transform: translate3d(0, 0, 0);
     vertical-align: top;
     white-space: nowrap;
+    color: $primary-color;
   }
 
   /*
