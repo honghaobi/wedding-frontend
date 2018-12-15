@@ -152,24 +152,6 @@
   $background_color_3: #fff;
   $border_color_1: #333;
 
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    &:after {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    &::before {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-  }
-
   body {
     background: #1abc9c;
   }
@@ -197,6 +179,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      pointer-events: none;
 
       &:first-of-type {
         top: 75px;
@@ -208,6 +191,7 @@
           line-height: 50px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);
+          pointer-events:auto;
 
           a {
             padding: 0 20px;
