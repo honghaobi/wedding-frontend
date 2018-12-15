@@ -12,6 +12,8 @@ function guestTableCleanUp( data ) {
       const parsedEvents = JSON.parse(guest.events);
       if ( typeof(parsedEvents) === "string" ) {
         guest.events = [ parsedEvents ];
+      } else {
+        guest.events = parsedEvents;
       }
     }
     return guest;
