@@ -8,6 +8,9 @@ function guestTableCleanUp( data ) {
   return data.map((guest) => {
     guest.id = parseInt(guest.id);
     guest.full_name = `${guest.first_name} ${guest.last_name}`;
+    if ( guest.events ) {
+      guest.events = JSON.parse(guest.events);
+    }
     return guest;
   });
 }
@@ -15,7 +18,9 @@ function guestTableCleanUp( data ) {
 function guestUpdateCleanUp( data ) {
   let cleanUpdata = data
   delete data.full_name;
-  cleanUpdata['id'] = cleanUpdata['id'].toString();
+  if ( cleanUpdata['id'] ){
+    cleanUpdata['id'] = cleanUpdata['id'].toString();
+  }
   return cleanUpdata;
 }
 
