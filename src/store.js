@@ -15,6 +15,8 @@ function guestTableCleanUp( data ) {
       } else {
         guest.events = parsedEvents;
       }
+    } else {
+      guest.events = [];
     }
     return guest;
   });

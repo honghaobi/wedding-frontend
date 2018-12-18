@@ -146,15 +146,12 @@
 
   $color_1: #fff;
   $color_2: transparent;
-  $color_3: #1abc9c;
+  $color_3: $primary-color;
   $background_color_1: rgba(0, 0, 0, 0);
   $background_color_2: rgba(0, 0, 0, 0.3);
   $background_color_3: #fff;
   $border_color_1: #333;
 
-  body {
-    background: #1abc9c;
-  }
 
   .container {
     padding: 0px;

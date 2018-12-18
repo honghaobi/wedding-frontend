@@ -3,7 +3,7 @@
     <div class="md-layout">
       <md-card class="md-layout-item rsvp">
         <md-card-header>
-          <h1><strong>RSVP</strong></h1>
+          <h1><strong class="pageTitle">RSVP</strong></h1>
         </md-card-header>
 
         <md-card-content>
@@ -97,7 +97,7 @@
                   </div>
                 </div>
                 <div class="md-layout-item md-xlarge-size-50">
-                  <md-datepicker v-model="selectedGuest.resort_arrival_date"
+                  <md-datepicker v-model="selectedGuest.resort_arrival_date || new Date('2018/03/26')"
                                  v-if="selectedGuest">
                     <label>Arrival Date</label>
                   </md-datepicker>
@@ -174,7 +174,7 @@
                 </div>
                 <div class="md-layout-item md-large-size-100">
                   <md-button class="md-raised md-primary" @click="saveOtherInfo()">Save</md-button>
-                  <md-button class="md-raised md-accent" @click="setDone('third')">Reset</md-button>
+                  <md-button class="md-raised md-accent" @click="setDone('third', 'first')">Reset</md-button>
                 </div>
               </div>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar3" md-persistent>
@@ -188,7 +188,7 @@
         </md-card-actions>
       </md-card>
     </div>
-  <Confetti v-if="guestsAttending"/>
+    <Confetti v-if="guestsAttending"/>
   </div>
 </template>
 
@@ -261,6 +261,8 @@
         }
       },
       checkSearchedGuest() {
+
+
         if ( !this.searchedGuest ) {
           this.selectedGuest = null;
           this.selectedGuestAttending = true;
@@ -280,7 +282,7 @@
           this.snackBar1 = true;
           this.guestsAttending = true;
         } else {
-          //TODO: create Dialog or message to people who are not attending
+          //TODO: create Dialog or message to people who are not attending / animation
         }
 
         store.dispatch('UPDATE_GUEST_BY_ID', {
@@ -333,13 +335,16 @@
             phone: this.selectedGuestPartner.phone,
             email: this.selectedGuestPartner.email,
             food_allergies: this.selectedGuestPartner.food_allergies,
-            events: JSON.stringify(this.selectedGuestPartner.events),
+            events: this.selectedGuestPartner.events ? JSON.stringify(this.selectedGuestPartner.events) : '',
           });
         }
         this.snackBar2 = true;
       },
       setDone(id, index) {
         this[id] = true;
+        if ( index === 'first' ) {
+          Object.assign(this.$data, this.$options.data());
+        }
         if ( index === 'second' ) {
           if ( !this.selectedGuestAttending && this.selectedGuestPartnerAttending ) {
             this.selectedGuest = this.selectedGuestPartner;
@@ -350,14 +355,10 @@
             this.selectedGuestPartner = {};
           }
         }
-
-        if ( index === 'third' ) {
-
-        }
-
         if ( index ) {
           this.active = index;
         }
+
       },
       handleResize() {
         this.window.width = window.innerWidth;
