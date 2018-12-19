@@ -81,7 +81,8 @@
                 </div>
                 <div class="md-layout-item md-large-size-50">
                   <div>
-                    <md-switch v-model="selectedGuest.resort_booked" class="md-primary questionSwitch1" v-if="selectedGuest">
+                    <md-switch v-model="selectedGuest.resort_booked" class="md-primary questionSwitch1" v-if="selectedGuest"
+                               @change="toggleResortStatus" :disabled="travelInfoSaved">
                       <span v-if="!selectedGuest.resort_booked">Not Yet</span> <span v-if="selectedGuest.resort_booked">Sure Did!</span>
                     </md-switch>
                   </div>
@@ -91,13 +92,14 @@
                 </div>
                 <div class="md-layout-item md-large-size-50">
                   <div>
-                    <md-switch v-model="selectedGuest.flight_booked" class="md-primary questionSwitch2" v-if="selectedGuest">
+                    <md-switch v-model="selectedGuest.flight_booked" class="md-primary questionSwitch2" v-if="selectedGuest"
+                               @change="toggleFlightStatus" :disabled="travelInfoSaved">
                       <span v-if="!selectedGuest.flight_booked">Not Yet</span> <span v-if="selectedGuest.flight_booked">Heck Yah!</span>
                     </md-switch>
                   </div>
                 </div>
                 <div class="md-layout-item md-xlarge-size-50">
-                  <md-datepicker v-model="selectedGuest.resort_arrival_date || new Date('2018/03/26')"
+                  <md-datepicker v-model="selectedGuest.resort_arrival_date"
                                  v-if="selectedGuest">
                     <label>Arrival Date</label>
                   </md-datepicker>
@@ -188,6 +190,10 @@
         </md-card-actions>
       </md-card>
     </div>
+    <transition name="slide-fade-top">
+      <Wave v-if="guestResortBooked"/>
+    </transition>
+    <PaperPlane v-if="guestFlightBooked"/>
     <Confetti v-if="guestsAttending"/>
   </div>
 </template>
@@ -196,10 +202,16 @@
   import store from '../store';
   import VanillaTilt from '../js/vanilla-tilt';
   import Confetti from './Confetti';
+  import PaperPlane from './PaperPlane';
+  import Wave from './Wave';
 
   export default {
     name: 'RSVP',
-    components: { Confetti },
+    components: {
+      Confetti,
+      PaperPlane,
+      Wave
+    },
     data: () => ({
       searchedGuest: null,
       selectedGuest: null,
@@ -208,6 +220,8 @@
       selectedGuestPartnerIncluded: null,
       selectedGuestPartnerAttending: false,
       guestsAttending: false,
+      guestFlightBooked: false,
+      guestResortBooked: false,
       travelInfoSaved: false,
       snackBarDuration: 5000,
       snackBar1: false,
@@ -261,8 +275,6 @@
         }
       },
       checkSearchedGuest() {
-
-
         if ( !this.searchedGuest ) {
           this.selectedGuest = null;
           this.selectedGuestAttending = true;
@@ -296,9 +308,18 @@
           });
         }
       },
+      toggleFlightStatus() {
+        this.guestFlightBooked = this.selectedGuest.flight_booked;
+      },
+      toggleResortStatus() {
+        this.guestResortBooked = this.selectedGuest.resort_booked;
+      },
       saveTravelInfo() {
         this.travelInfoSaved = true;
         this.snackBar2 = true;
+        setTimeout(() => {
+          this.guestFlightBooked = false;
+        }, 3000);
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuest.id,
@@ -344,8 +365,7 @@
         this[id] = true;
         if ( index === 'first' ) {
           Object.assign(this.$data, this.$options.data());
-        }
-        if ( index === 'second' ) {
+        } else if ( index === 'second' ) {
           if ( !this.selectedGuestAttending && this.selectedGuestPartnerAttending ) {
             this.selectedGuest = this.selectedGuestPartner;
             this.selectedGuestPartner = {};
@@ -354,6 +374,9 @@
           } else if ( this.selectedGuestAttending && !this.selectedGuestPartnerAttending ) {
             this.selectedGuestPartner = {};
           }
+        } else if ( index === 'third' ) {
+          this.guestFlightBooked = false;
+          this.guestResortBooked = false;
         }
         if ( index ) {
           this.active = index;
@@ -384,7 +407,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #333;
 
     .md-card {
       max-width: 700px;

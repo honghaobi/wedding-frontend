@@ -92,24 +92,20 @@
       }
 
       function init() {
-
-        const menu = document.getElementById('bt-menu'),
-          trigger = menu.querySelector('a.bt-menu-trigger'),
-          linksNodeArray = menu.querySelectorAll('a.route'),
-          resetMenu = function () {
-            classie.remove(menu, 'bt-menu-open');
-            classie.add(menu, 'bt-menu-close');
-          },
-          closeClickFn = function (ev) {
-            resetMenu();
-            overlay.removeEventListener('click', closeClickFn);
-          };
-
         const overlay = document.createElement('div');
         overlay.className = 'bt-overlay';
-        menu.appendChild(overlay);
 
-        trigger.addEventListener('click', function (ev) {
+        const menu = document.getElementById('bt-menu');
+        const resetMenu = function () {
+          classie.remove(menu, 'bt-menu-open');
+          classie.add(menu, 'bt-menu-close');
+        };
+        const closeClickFn = function (ev) {
+          resetMenu();
+          overlay.removeEventListener('click', closeClickFn);
+        };
+
+        menu.addEventListener('click', function (ev) {
           ev.stopPropagation();
           ev.preventDefault();
           if ( classie.has(menu, 'bt-menu-open') ) {
@@ -120,20 +116,7 @@
             overlay.addEventListener('click', closeClickFn);
           }
         });
-
-        linksNodeArray.forEach(linkNode => {
-          linkNode.addEventListener('click', function (ev) {
-            ev.stopPropagation();
-            ev.preventDefault();
-            if ( classie.has(menu, 'bt-menu-open') ) {
-              resetMenu();
-            } else {
-              classie.remove(menu, 'bt-menu-close');
-              classie.add(menu, 'bt-menu-open');
-              overlay.addEventListener('click', closeClickFn);
-            }
-          });
-        });
+        menu.appendChild(overlay);
       }
 
       init();
@@ -188,7 +171,7 @@
           line-height: 50px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);
-          pointer-events:auto;
+          pointer-events: auto;
 
           a {
             padding: 0 20px;
