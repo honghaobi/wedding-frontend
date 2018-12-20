@@ -106,19 +106,19 @@
 
   .footer-water .box .water_wave_front1 .image-container
   {
-    background-image: url('./../assets/wave1.png');
+    background-image: url('../assets/images/wave1.png');
     animation: wave-1 10s infinite linear;
   }
 
   .footer-water .box .water_wave_front2 .image-container
   {
-    background-image: url('./../assets/wave2.png');
+    background-image: url('../assets/images/wave2.png');
     animation: wave-2 8s infinite linear;
   }
 
   .footer-water .box .water_wave_front3 .image-container
   {
-    background-image: url('./../assets/wave3.png');
+    background-image: url('../assets/images/wave3.png');
     animation: wave-1 6s infinite linear;
   }
 

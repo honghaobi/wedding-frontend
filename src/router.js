@@ -10,9 +10,9 @@ export default new Router(
     routes: [
       {
         path: '/',
-        name: 'lets-party',
+        name: 'henry+kelli',
         component() {
-          return import('./components/LetsParty.vue');
+          return import('./components/HK.vue');
         },
       },
       {
@@ -27,6 +27,13 @@ export default new Router(
         name: 'rsvp',
         component() {
           return import('./components/RSVP.vue');
+        },
+      },
+      {
+        path: '/party',
+        name: 'party',
+        component() {
+          return import('./components/LetsParty.vue');
         },
       },
       {

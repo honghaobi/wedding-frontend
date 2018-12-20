@@ -21,7 +21,7 @@
                 </div>
                 <div class="md-layout-item md-large-size-33">
                   <transition name="slide-fade-left">
-                    <md-button class="md-raised md-primary meBtn" v-if="searchedGuest" @click="setGuest()" :disabled="!!selectedGuest">That's me
+                    <md-button class="md-raised md-primary" id="meBtn" v-if="searchedGuest" @click="setGuest()" :disabled="!!selectedGuest">That's me
                     </md-button>
                   </transition>
                 </div>
@@ -54,18 +54,19 @@
                 </transition>
                 <transition name="slide-fade-left">
                   <div class="md-layout-item md-large-size-33" v-if="selectedGuest">
-                    <md-button class="md-raised md-primary rsvpBtn" @click="rsvp()" :disabled="guestsAttending">
+                    <md-button class="md-raised md-primary" id="rsvpBtn" @click="rsvp()" :disabled="guestsAttending">
                       <span v-if="!selectedGuestAttending && !selectedGuestPartnerAttending"> Not </span>
                       Attending
                     </md-button>
                     <transition name="slide-fade-left">
-                      <md-button class="md-raised md-accent" v-if="guestsAttending" @click="setDone('first', 'second')">Continue</md-button>
+                      <md-button class="md-raised md-accent" id="continueBtn" v-if="guestsAttending" @click="setDone('first', 'second')">Continue
+                      </md-button>
                     </transition>
                   </div>
                 </transition>
               </div>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar1" md-persistent>
-                Better start hitting the gym and get dat beach bod ready ;)
+                HOORAY!! WE KNEW YOU'D MAKE IT!!!
               </md-snackbar>
             </md-step>
 
@@ -112,7 +113,7 @@
                   </md-datepicker>
                 </div>
                 <div class="md-layout-item md-large-size-100">
-                  <md-button class="md-raised md-primary" @click="saveTravelInfo()" :disabled="travelInfoSaved">Save</md-button>
+                  <md-button class="md-raised md-primary" id="saveBtn" @click="saveTravelInfo()" :disabled="travelInfoSaved">Save</md-button>
                   <transition name="slide-fade-left">
                     <md-button v-if="travelInfoSaved" class="md-raised md-accent" @click="setDone('second', 'third')">Continue</md-button>
                   </transition>
@@ -175,7 +176,7 @@
                   </div>
                 </div>
                 <div class="md-layout-item md-large-size-100">
-                  <md-button class="md-raised md-primary" @click="saveOtherInfo()">Save</md-button>
+                  <md-button class="md-raised md-primary" id="saveBtn" @click="saveOtherInfo()">Save</md-button>
                   <md-button class="md-raised md-accent" @click="setDone('third', 'first')">Reset</md-button>
                 </div>
               </div>
@@ -190,7 +191,7 @@
         </md-card-actions>
       </md-card>
     </div>
-    <transition name="slide-fade-top">
+    <transition name="slide-top">
       <Wave v-if="guestResortBooked"/>
     </transition>
     <PaperPlane v-if="guestFlightBooked"/>
@@ -407,7 +408,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #333;
+    background-color: $off-white;
 
     .md-card {
       max-width: 700px;
@@ -415,10 +416,6 @@
       max-height: 90%;
       overflow: auto;
       z-index: 0;
-
-      .meBtn {
-        margin-top: 15px;
-      }
 
       .partner {
         text-align: left;
@@ -436,8 +433,23 @@
         margin-top: 0px;
       }
 
-      .rsvpBtn {
+      #meBtn {
+        color: $white;
+        margin-top: 15px;
+      }
+
+      #rsvpBtn {
         margin-top: 5px;
+        color: $white;
+      }
+
+      #saveBtn {
+        color: $white;
+      }
+
+      #continueBtn {
+        margin-top: 10px;
+        margin-left: 8px;
       }
 
       .md-snackbar {

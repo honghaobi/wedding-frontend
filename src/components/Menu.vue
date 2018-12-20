@@ -3,8 +3,8 @@
     <nav id="bt-menu" class="bt-menu">
       <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
       <ul>
-        <li><a href="#" class="bt-icon icon-user-outline route">
-          <router-link to="/">PARTY</router-link>
+        <li><a href="#" class="bt-icon icon-star route">
+          <router-link to="/">H&K</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-sun route">
           <router-link to="/rsvp">RSVP</router-link>
@@ -15,8 +15,8 @@
         <li><a href="#" class="bt-icon icon-speaker route">
           <router-link to="/travel">TRAVEL</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-star route">
-          <router-link to="/hk">H&K</router-link>
+        <li><a href="#" class="bt-icon icon-user-outline route">
+          <router-link to="/party">PARTY</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-bubble route">
           <router-link to="/proposal">PROPOSAL</router-link>
@@ -127,13 +127,13 @@
 <style lang="scss" scoped>
   @import "./../css/main.scss";
 
-  $color_1: #fff;
+  $color_1: $navy;
   $color_2: transparent;
   $color_3: $primary-color;
   $background_color_1: rgba(0, 0, 0, 0);
-  $background_color_2: rgba(0, 0, 0, 0.3);
-  $background_color_3: #fff;
-  $border_color_1: #333;
+  $background_color_2: rgba(0, 0, 0, 0.5);
+  $background_color_3: $navy;
+  $border_color_1: $white;
 
 
   .container {
@@ -162,7 +162,7 @@
       pointer-events: none;
 
       &:first-of-type {
-        top: 75px;
+        top: 70px;
         left: 0;
 
         li {
@@ -174,8 +174,7 @@
           pointer-events: auto;
 
           a {
-            padding: 0 20px;
-            box-shadow: inset 0 1px rgba(0, 0, 0, 0.2);
+            padding: 0 10px;
             color: $color_1;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -189,12 +188,6 @@
 
             &:focus {
               color: $color_3;
-            }
-          }
-
-          &:last-child {
-            a {
-              box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 -1px rgba(0, 0, 0, 0.2);
             }
           }
         }
@@ -367,7 +360,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: $color_1;
         content: '';
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
@@ -380,7 +373,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background: $color_1;
         content: '';
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
