@@ -252,7 +252,7 @@
 
   .bt-menu.bt-menu-open {
     height: 100%;
-    border-width: 0px 0px 50px 150px;
+    border-width: 0px 0px 50px 120px;
     background-color: $background_color_2;
     -webkit-transition: border-width 0.3s, background-color 0.3s;
     transition: border-width 0.3s, background-color 0.3s;

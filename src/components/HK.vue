@@ -226,14 +226,15 @@
       opacity: 0.70;
     }
 
+    //TODO: mobile background-attachment: fixed; not working
     .parallax-one {
       padding-top: 250px;
       padding-bottom: 250px;
       overflow: hidden;
       position: relative;
-      width: 100%;
+      width: 100vw;
       background-image: url("./../assets/photos/1.jpg");
-      /*background-attachment: fixed;*/
+      background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
@@ -248,7 +249,7 @@
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/2.jpg");
-      /*background-attachment: fixed;*/
+      background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
@@ -263,7 +264,7 @@
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/3.jpg");
-      /*background-attachment: fixed;*/
+      background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
