@@ -230,8 +230,8 @@
     }
 
     .parallax-one {
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 250px;
+      padding-bottom: 250px;
       overflow: hidden;
       position: relative;
       width: 100%;

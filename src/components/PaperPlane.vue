@@ -19,17 +19,18 @@
   };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  @import "./../css/main.scss";
 
   @keyframes fly
   {
     0%
     {
-      transform: perspective(1000px) rotateY(160deg) translateX(110vw) translateY(100%);
+      transform: perspective(1000px) rotateY(160deg) translateX(110vw) translateY(20%);
     }
     100%
     {
-      transform: perspective(1000px) rotateY(200deg) translateX(-120vw) translateY(-100%);
+      transform: perspective(1000px) rotateY(200deg) translateX(-120vw) translateY(-80%);
     }
   }
 
@@ -53,7 +54,7 @@
   #lside
   {
     border-top: 25vh solid transparent;
-    border-right: 50vh solid #ececec;
+    border-right: 50vh solid $off-white-cream-2;
     transform: rotate(-5deg) rotateY(0deg) rotateX(-10deg);
     transform-origin: bottom;
   }
@@ -62,7 +63,7 @@
   {
     margin-top: -25vh;
     border-top: 25vh solid transparent;
-    border-right: 50vh solid #ececec;
+    border-right: 50vh solid $off-white-cream-2;
     transform: rotate(-5deg) rotateY(0deg) rotateX(10deg);
     transform-origin: bottom;
   }
@@ -70,7 +71,7 @@
   #lwing
   {
     margin-top: -25vh;
-    border-bottom: 25vh solid #f5f5f5;
+    border-bottom: 25vh solid $off-white-cream;
     border-right: 30vh solid transparent;
     border-left: 50vh solid transparent;
     transform: rotate(-22deg) rotateX(55deg) rotateY(-10deg) rotateZ(25deg);
@@ -80,7 +81,7 @@
   #rwing
   {
     margin-top: -25vh;
-    border-bottom: 25vh solid #f5f5f5;
+    border-bottom: 25vh solid $off-white-cream;
     border-right: 30vh solid transparent;
     border-left: 50vh solid transparent;
     transform: rotate(-22deg) rotateX(-55deg) rotateY(10deg) rotateZ(25deg);

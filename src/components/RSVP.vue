@@ -3,7 +3,7 @@
     <div class="md-layout">
       <md-card class="md-layout-item rsvp">
         <md-card-header>
-          <h1><strong class="pageTitle">RSVP</strong></h1>
+          <div id="cardTitle">RSVP</div>
         </md-card-header>
 
         <md-card-content>
@@ -66,11 +66,11 @@
                 </transition>
               </div>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar1" md-persistent>
-                HOORAY!! WE KNEW YOU'D MAKE IT!!!
+                Hooray!! We Knew You'd Make It!!!
               </md-snackbar>
             </md-step>
 
-            <md-step id="second" md-label="Pack Yo Bags!" :md-editable="false" :md-done.sync="second">
+            <md-step id="second" md-label="Pack Your Bags! We’ll Catch You On the Beach!!" :md-editable="false" :md-done.sync="second">
               <div class="md-layout">
                 <div class="md-layout-item md-large-size-100" v-if="selectedGuest">
                   <span class="guestName" v-if="selectedGuestAttending">{{selectedGuest.full_name}}</span>
@@ -113,7 +113,7 @@
                   </md-datepicker>
                 </div>
                 <div class="md-layout-item md-large-size-100">
-                  <md-button class="md-raised md-primary" id="saveBtn" @click="saveTravelInfo()" :disabled="travelInfoSaved">Save</md-button>
+                  <md-button class="md-raised md-primary" id="saveBtn1" @click="saveTravelInfo()" :disabled="travelInfoSaved">Save</md-button>
                   <transition name="slide-fade-left">
                     <md-button v-if="travelInfoSaved" class="md-raised md-accent" @click="setDone('second', 'third')">Continue</md-button>
                   </transition>
@@ -123,7 +123,7 @@
                 Saving your traveling info. You can always come back and update your booking status!
               </md-snackbar>
             </md-step>
-            <md-step id="third" md-label="Other Info" :md-editable="false" :md-done.sync="third">
+            <md-step id="third" md-label="All the Fun Things and Not Enough Time!" :md-editable="false" :md-done.sync="third">
               <div class="md-layout">
                 <div class="md-layout-item md-xlarge-size-50" v-if="selectedGuest">
                   <span class="guestName"> {{ selectedGuest.full_name }}</span>
@@ -176,12 +176,12 @@
                   </div>
                 </div>
                 <div class="md-layout-item md-large-size-100">
-                  <md-button class="md-raised md-primary" id="saveBtn" @click="saveOtherInfo()">Save</md-button>
-                  <md-button class="md-raised md-accent" @click="setDone('third', 'first')">Reset</md-button>
+                  <md-button class="md-raised md-primary" id="saveBtn2" @click="saveOtherInfo()">Save</md-button>
+                  <md-button class="md-raised md-accent" @click="setDone('third', 'first')">Go To Resort Page</md-button>
                 </div>
               </div>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar3" md-persistent>
-                Updating your personal information. Counting down starts now!
+                Updating your preferences. We will keep you in the loop on group events we end up booking. But feel free to do your own thing.
               </md-snackbar>
             </md-step>
           </md-steppers>
@@ -191,9 +191,24 @@
         </md-card-actions>
       </md-card>
     </div>
+    <md-dialog :md-active.sync="showRSVPDialog">
+      <md-dialog-title class="title"> It looks like you have already RSVP'd</md-dialog-title>
+      <div class="message">Do you need to update your RSVP, Resort or Traveling information?</div>
+      <md-dialog-actions>
+        <md-button id="dialogBtn2" class="md-primary md-raised" @click="handleContinueRSVPDialog">Continue</md-button>
+      </md-dialog-actions>
+    </md-dialog>
+    <md-dialog :md-active.sync="showRejectionDialog">
+      <md-dialog-title class="title"> We will miss you!</md-dialog-title>
+      <div class="message">We absolutely understand if you want to celebrate from afar!</div>
+      <md-dialog-actions>
+        <md-button id="dialogBtn1" class="md-primary md-raised" @click="handleCloseRejectionDialog">Cheers</md-button>
+      </md-dialog-actions>
+    </md-dialog>
     <transition name="slide-top">
       <Wave v-if="guestResortBooked"/>
     </transition>
+    <Balloons v-if="otherInfoSaved"/>
     <PaperPlane v-if="guestFlightBooked"/>
     <Confetti v-if="guestsAttending"/>
   </div>
@@ -201,19 +216,24 @@
 
 <script>
   import store from '../store';
+  import router from './../router';
   import VanillaTilt from '../js/vanilla-tilt';
   import Confetti from './Confetti';
   import PaperPlane from './PaperPlane';
   import Wave from './Wave';
+  import Balloons from './Balloons';
 
   export default {
     name: 'RSVP',
     components: {
       Confetti,
       PaperPlane,
-      Wave
+      Wave,
+      Balloons,
     },
     data: () => ({
+      showRejectionDialog: false,
+      showRSVPDialog: false,
       searchedGuest: null,
       selectedGuest: null,
       selectedGuestAttending: true,
@@ -224,6 +244,7 @@
       guestFlightBooked: false,
       guestResortBooked: false,
       travelInfoSaved: false,
+      otherInfoSaved: false,
       snackBarDuration: 5000,
       snackBar1: false,
       snackBar2: false,
@@ -255,25 +276,31 @@
     mounted() {
       if ( this.window.width > 600 ) {
         VanillaTilt.init(document.querySelector('.rsvp'), {
-          max: 25,
+          max: 10,
           speed: 2000,
-          scale: 1.02,
+          scale: 1,
         });
       }
 
-      //TODO: Implement DropDown Perspective.
     },
     destroyed() {
       window.removeEventListener('resize', this.handleResize);
     },
     methods: {
       setGuest() {
-        //TODO: check if the guest already has been rsvped?
 
         this.selectedGuest = store.getters.getGuestById(this.searchedGuest.id);
         if ( this.selectedGuest.relation ) {
           this.selectedGuestPartner = store.getters.getGuestById(this.selectedGuest.relation);
         }
+        if ( this.selectedGuest.attending === true || this.selectedGuest.attending === false ) {
+          this.showRSVPDialog = true;
+          this.selectedGuestAttending = this.selectedGuest.attending;
+          this.selectedGuestPartner = this.selectedGuestPartner;
+          this.selectedGuestPartnerIncluded = true;
+          this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
+        }
+
       },
       checkSearchedGuest() {
         if ( !this.searchedGuest ) {
@@ -295,7 +322,7 @@
           this.snackBar1 = true;
           this.guestsAttending = true;
         } else {
-          //TODO: create Dialog or message to people who are not attending / animation
+          this.showRejectionDialog = true;
         }
 
         store.dispatch('UPDATE_GUEST_BY_ID', {
@@ -308,6 +335,12 @@
             attending: this.selectedGuestPartnerAttending,
           });
         }
+      },
+      handleContinueRSVPDialog: function (event) {
+        this.showRSVPDialog = false;
+      },
+      handleCloseRejectionDialog: function (event) {
+        router.push({ path: '/' });
       },
       toggleFlightStatus() {
         this.guestFlightBooked = this.selectedGuest.flight_booked;
@@ -342,6 +375,7 @@
       },
       saveOtherInfo() {
         this.snackBar3 = true;
+        this.otherInfoSaved = true;
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuest.id,
@@ -365,7 +399,8 @@
       setDone(id, index) {
         this[id] = true;
         if ( index === 'first' ) {
-          Object.assign(this.$data, this.$options.data());
+          // Object.assign(this.$data, this.$options.data());
+          router.push({ path: '/resort' });
         } else if ( index === 'second' ) {
           if ( !this.selectedGuestAttending && this.selectedGuestPartnerAttending ) {
             this.selectedGuest = this.selectedGuestPartner;
@@ -382,7 +417,6 @@
         if ( index ) {
           this.active = index;
         }
-
       },
       handleResize() {
         this.window.width = window.innerWidth;
@@ -409,6 +443,7 @@
     height: 100vh;
     overflow: hidden;
     background-color: $off-white;
+    z-index: -2;
 
     .md-card {
       max-width: 700px;
@@ -416,6 +451,23 @@
       max-height: 90%;
       overflow: auto;
       z-index: 0;
+      -webkit-box-shadow: 15px 15px 75px -10px rgba($accent-color, .75);
+      -moz-box-shadow: 15px 15px 75px -10px rgba($accent-color, .75);
+      box-shadow: 15px 15px 75px -10px rgba($accent-color, .75);
+
+
+      .md-card-header {
+        padding: 16px;
+
+        #cardTitle {
+          margin: 8px;
+          font-family: 'Bad Script', cursive;
+          font-weight: bolder;
+          color: $accent-color;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
 
       .partner {
         text-align: left;
@@ -443,7 +495,11 @@
         color: $white;
       }
 
-      #saveBtn {
+      #saveBtn1 {
+        color: $white;
+      }
+
+      #saveBtn2 {
         color: $white;
       }
 
@@ -499,4 +555,33 @@
       }
     }
   }
+
+  .md-dialog {
+    width: 400px;
+    max-height: 300px;
+
+    .title {
+      line-height: 50px;
+      margin: 8px;
+      font-family: 'Bad Script', cursive;
+      font-weight: bolder;
+      color: $accent-color;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .message {
+      text-align: center;
+      margin: 20px;
+    }
+
+    #dialogBtn1 {
+      color: $white;
+    }
+
+    #dialogBtn2 {
+      color: $white;
+    }
+  }
+
 </style>

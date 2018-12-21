@@ -18,9 +18,11 @@
         '#FFEFE9',
         '#FCEEC9',
         '#F6B670',
+        '#99DBD3',
         '#31CDB3',
+        '#40A195',
         '#104954',
-        '#132237',
+        '#132237'
       ];
 
       function loadDesign() {
@@ -350,5 +352,4 @@
 </script>
 
 <style lang="scss" scoped>
-
 </style>

@@ -127,12 +127,12 @@
 <style lang="scss" scoped>
   @import "./../css/main.scss";
 
-  $color_1: $navy;
+  $color_1: $accent-color;
   $color_2: transparent;
   $color_3: $primary-color;
   $background_color_1: rgba(0, 0, 0, 0);
   $background_color_2: rgba(0, 0, 0, 0.5);
-  $background_color_3: $navy;
+  $background_color_3: $accent-color;
   $border_color_1: $white;
 
 

@@ -10,7 +10,7 @@ export default new Router(
     routes: [
       {
         path: '/',
-        name: 'henry+kelli',
+        name: 'home',
         component() {
           return import('./components/HK.vue');
         },

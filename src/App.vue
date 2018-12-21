@@ -29,6 +29,13 @@
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'Poppins', sans-serif;
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      font-family: 'Barlow', sans-serif;
+    }
   }
 
 </style>
