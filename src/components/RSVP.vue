@@ -209,6 +209,7 @@
       <Wave v-if="guestResortBooked"/>
     </transition>
     <Balloons v-if="otherInfoSaved"/>
+    <Balloons/>
     <PaperPlane v-if="guestFlightBooked"/>
     <Confetti v-if="guestsAttending"/>
   </div>

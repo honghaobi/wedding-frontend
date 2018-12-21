@@ -29,12 +29,12 @@
 
     img {
       pointer-events: none;
-      /*width: 15%;*/
+      width: 15%;
       position: absolute;
     }
 
     #balloon1 {
-      left: 5%;
+      left: 10%;
       animation: floating 5s linear,
       fadeInOut 5s linear,
       swaying 2s ease-in-out infinite alternate,
@@ -42,7 +42,7 @@
     }
 
     #balloon2 {
-      left: 20%;
+      left: 22.5%;
       animation: floating 4.8s linear,
       fadeInOut 5s linear,
       swaying2 4s ease-in-out infinite alternate,
@@ -58,7 +58,7 @@
     }
 
     #balloon4 {
-      left: 50%;
+      left: 47.5%;
       animation: floating 5.1s linear,
       fadeInOut 5s linear,
       swaying 2s ease-in-out infinite alternate,
@@ -66,7 +66,7 @@
     }
 
     #balloon5 {
-      left: 65%;
+      left: 60%;
       animation: floating 5s linear,
       fadeInOut 5s linear,
       swaying2 1.7s ease-in-out infinite alternate,
@@ -74,7 +74,7 @@
     }
 
     #balloon6 {
-      left: 80%;
+      left: 72.5%;
       animation: floating 4.7s linear,
       fadeInOut 5s linear,
       swaying 1.8s ease-in-out infinite alternate,
@@ -102,7 +102,7 @@
 
   @keyframes floating {
     0% {
-      bottom: -40%;
+      bottom: -30%;
     }
 
     100% {
