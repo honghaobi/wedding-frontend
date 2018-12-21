@@ -29,7 +29,7 @@
 
     img {
       pointer-events: none;
-      width: 15%;
+      /*width: 15%;*/
       position: absolute;
     }
 
