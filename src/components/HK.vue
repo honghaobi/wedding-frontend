@@ -232,7 +232,7 @@
       padding-bottom: 250px;
       overflow: hidden;
       position: relative;
-      width: 100vw;
+      width: 100%;
       background-image: url("./../assets/photos/1.jpg");
       background-attachment: fixed;
       background-size: cover;
@@ -307,6 +307,7 @@
       .block {
         padding: 40px;
         width: 620px;
+        width: 100%;
       }
     }
   }
@@ -315,7 +316,7 @@
     #parallax-world-of-ugg {
       .block {
         padding: 30px;
-        width: 420px;
+        width: 100%;
         padding: 30px;
       }
 
@@ -324,18 +325,24 @@
       }
 
       .parallax-one {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100%;
+        /*background-attachment: scroll;*/
       }
 
       .parallax-two {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100%;
+        /*background-attachment: scroll;*/
       }
 
       .parallax-three {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 100%;
+        /*background-attachment: scroll;*/
       }
     }
   }
@@ -344,7 +351,7 @@
     #parallax-world-of-ugg {
       .block {
         padding: 30px 15px;
-        width: 290px;
+        width: 100%;
       }
     }
   }
