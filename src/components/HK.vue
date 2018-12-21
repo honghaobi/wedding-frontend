@@ -11,9 +11,9 @@
     </section>
 
     <!--<section>-->
-      <!--<div class="title">-->
-        <!--<img id="logo" src="./../assets/images/logo.png"/>-->
-      <!--</div>-->
+    <!--<div class="title">-->
+    <!--<img id="logo" src="./../assets/images/logo.png"/>-->
+    <!--</div>-->
     <!--</section>-->
 
     <section>
@@ -119,8 +119,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
   $color_1: black;
   $color_2: white;
@@ -128,9 +126,8 @@
   $color_4: #3d3c3a;
   $color_5: #c48660;
   $font_family_1: 'Oswald', sans-serif;
-  $font_family_2: 'Source Sans Pro', sans-serif;
+  $font_family_2: 'Poppins', sans-serif;
   $background_color_1: black;
-
 
   #main {
     width: 100%;
@@ -236,7 +233,7 @@
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/1.jpg");
-      background-attachment: fixed;
+      /*background-attachment: fixed;*/
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
@@ -251,7 +248,7 @@
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/2.jpg");
-      background-attachment: fixed;
+      /*background-attachment: fixed;*/
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;
@@ -266,7 +263,7 @@
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/3.jpg");
-      background-attachment: fixed;
+      /*background-attachment: fixed;*/
       background-size: cover;
       -moz-background-size: cover;
       -webkit-background-size: cover;

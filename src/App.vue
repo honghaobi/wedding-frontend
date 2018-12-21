@@ -7,6 +7,7 @@
 
 <script>
   import Menu from './components/Menu';
+
   export default {
     name: 'app',
     components: {
@@ -17,6 +18,7 @@
 
 <style lang="scss">
   @import "~vue-material/dist/theme/engine";
+  @import "~hover.css";
   @import "./css/main.scss";
 
   @include md-register-theme("default", (
@@ -31,9 +33,7 @@
     -moz-osx-font-smoothing: grayscale;
 
     font-family: 'Poppins', sans-serif;
-    @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px) {
+    @media only screen and (max-device-width: 480px) {
       font-family: 'Barlow', sans-serif;
     }
   }

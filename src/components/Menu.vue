@@ -1,24 +1,24 @@
 <template>
   <div class="container">
     <nav id="bt-menu" class="bt-menu">
-      <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+      <a href="#" class="bt-menu-trigger hvr-bob"><span>Menu</span></a>
       <ul>
-        <li><a href="#" class="bt-icon icon-star route">
+        <li><a href="#" class="bt-icon icon-star route hvr-wobble-horizontal">
           <router-link to="/">H&K</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-sun route">
+        <li><a href="#" class="bt-icon icon-sun route hvr-wobble-horizontal">
           <router-link to="/rsvp">RSVP</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-windows route">
+        <li><a href="#" class="bt-icon icon-windows route hvr-wobble-horizontal">
           <router-link to="/resort">RESORT</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-speaker route">
+        <li><a href="#" class="bt-icon icon-speaker route hvr-wobble-horizontal">
           <router-link to="/travel">TRAVEL</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-user-outline route">
+        <li><a href="#" class="bt-icon icon-user-outline route hvr-wobble-horizontal">
           <router-link to="/party">PARTY</router-link>
         </a></li>
-        <li><a href="#" class="bt-icon icon-bubble route">
+        <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/proposal">PROPOSAL</router-link>
         </a></li>
       </ul>
