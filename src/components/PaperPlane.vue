@@ -54,7 +54,7 @@
   #lside
   {
     border-top: 25vh solid transparent;
-    border-right: 50vh solid $off-white-cream-2;
+    border-right: 50vh solid $accent-color-shade-2;
     transform: rotate(-5deg) rotateY(0deg) rotateX(-10deg);
     transform-origin: bottom;
   }
@@ -63,7 +63,7 @@
   {
     margin-top: -25vh;
     border-top: 25vh solid transparent;
-    border-right: 50vh solid $off-white-cream-2;
+    border-right: 50vh solid $accent-color-shade-2;
     transform: rotate(-5deg) rotateY(0deg) rotateX(10deg);
     transform-origin: bottom;
   }
@@ -71,7 +71,7 @@
   #lwing
   {
     margin-top: -25vh;
-    border-bottom: 25vh solid $off-white-cream;
+    border-bottom: 25vh solid $accent-color-shade-1;
     border-right: 30vh solid transparent;
     border-left: 50vh solid transparent;
     transform: rotate(-22deg) rotateX(55deg) rotateY(-10deg) rotateZ(25deg);
@@ -81,7 +81,7 @@
   #rwing
   {
     margin-top: -25vh;
-    border-bottom: 25vh solid $off-white-cream;
+    border-bottom: 25vh solid $accent-color-shade-1;
     border-right: 30vh solid transparent;
     border-left: 50vh solid transparent;
     transform: rotate(-22deg) rotateX(-55deg) rotateY(10deg) rotateZ(25deg);

@@ -30,6 +30,13 @@ export default new Router(
         },
       },
       {
+        path: '/resort',
+        name: 'resort',
+        component() {
+          return import('./components/Resort.vue');
+        },
+      },
+      {
         path: '/party',
         name: 'party',
         component() {

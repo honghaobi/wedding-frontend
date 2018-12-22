@@ -307,7 +307,6 @@
       .block {
         padding: 40px;
         width: 620px;
-        width: 100%;
       }
     }
   }
@@ -327,22 +326,19 @@
       .parallax-one {
         padding-top: 200px;
         padding-bottom: 200px;
-        width: 100%;
-        /*background-attachment: scroll;*/
+        background-attachment: scroll;
       }
 
       .parallax-two {
         padding-top: 200px;
         padding-bottom: 200px;
-        width: 100%;
-        /*background-attachment: scroll;*/
+        background-attachment: scroll;
       }
 
       .parallax-three {
         padding-top: 200px;
         padding-bottom: 200px;
-        width: 100%;
-        /*background-attachment: scroll;*/
+        background-attachment: scroll;
       }
     }
   }
