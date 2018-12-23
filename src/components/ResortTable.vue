@@ -1,0 +1,125 @@
+<template>
+  <div>
+    <md-table>
+      <md-table-toolbar>
+        <h1 class="md-title">ALL INCLUSIVE PLAN</h1>
+        <span class="subHeader">Rates include taxes, fee and gratuities</span>
+      </md-table-toolbar>
+      <md-table-row>
+        <md-table-head>Suite Category</md-table-head>
+        <md-table-head>Max Occupancy</md-table-head>
+        <md-table-head>SINGLE</md-table-head>
+        <md-table-head>DOUBLE</md-table-head>
+        <md-table-head>TRIPLE</md-table-head>
+        <md-table-head>QUAD</md-table-head>
+        <md-table-head>FIFTH</md-table-head>
+        <md-table-head>SIXTH</md-table-head>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>JUNIOR SUITE</md-table-cell>
+        <md-table-cell>3</md-table-cell>
+        <md-table-cell>$439</md-table-cell>
+        <md-table-cell>$259</md-table-cell>
+        <md-table-cell>$227</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>JUNIOR SUITE OCEAN VIEW</md-table-cell>
+        <md-table-cell>3</md-table-cell>
+        <md-table-cell>$492</md-table-cell>
+        <md-table-cell>$286</md-table-cell>
+        <md-table-cell>$245</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>1BDR SUITE</md-table-cell>
+        <md-table-cell>4</md-table-cell>
+        <md-table-cell>$553</md-table-cell>
+        <md-table-cell>$316</md-table-cell>
+        <md-table-cell>$266</md-table-cell>
+        <md-table-cell>$240</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>2BDR SUITE</md-table-cell>
+        <md-table-cell>6</md-table-cell>
+        <md-table-cell>$952</md-table-cell>
+        <md-table-cell>$516</md-table-cell>
+        <md-table-cell>$371</md-table-cell>
+        <md-table-cell>$298</md-table-cell>
+        <md-table-cell>$271</md-table-cell>
+        <md-table-cell>$253</md-table-cell>
+      </md-table-row>
+    </md-table>
+    <md-card class="tableDescription md-accent">
+      All inclusive plan rates are per person, per night, based on selected occupancy, quoted in US dollars.
+      3 nights minimum stay required. Rates include taxes, fee and gratuities.
+    </md-card>
+    <hr/>
+    <md-table>
+      <md-table-toolbar>
+        <h1 class="md-title">EUROPEAN PLAN (Room Only)</h1>
+        <span class="subHeader">Rates include taxes, fee and gratuities</span>
+      </md-table-toolbar>
+      <md-table-row>
+        <md-table-head>Suite Category</md-table-head>
+        <md-table-head>JUNIOR SUITE</md-table-head>
+        <md-table-head>JUNIOR SUITE</md-table-head>
+        <md-table-head>JUNIOR SUITE OV</md-table-head>
+        <md-table-head>JUNIOR SUITE OV</md-table-head>
+        <md-table-head>ONE BEDROOM</md-table-head>
+        <md-table-head>TWO BEDROOM</md-table-head>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>Rate</md-table-cell>
+        <md-table-cell>$358.87</md-table-cell>
+        <md-table-cell>$443.00</md-table-cell>
+        <md-table-cell>$412.48</md-table-cell>
+        <md-table-cell>$496.62</md-table-cell>
+        <md-table-cell>$473.52</md-table-cell>
+        <md-table-cell>$873.78</md-table-cell>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>Occupancy</md-table-cell>
+        <md-table-cell>2</md-table-cell>
+        <md-table-cell>3</md-table-cell>
+        <md-table-cell>2</md-table-cell>
+        <md-table-cell>3</md-table-cell>
+        <md-table-cell>2</md-table-cell>
+        <md-table-cell>4</md-table-cell>
+      </md-table-row>
+    </md-table>
+    <md-card class="tableDescription md-accent">
+      European plan rates are per suite, per night, based on selected occupancy, quoted in US dollars.
+      3 nights minimum stay required. Rates include taxes, fee and gratuities.
+    </md-card>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'Resort-Table',
+  };
+</script>
+
+<style lang="scss" scoped>
+  @import "./../css/main.scss";
+
+  .subHeader {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  .tableDescription {
+    padding: 5%;
+  }
+
+  hr {
+    margin: 40px 0
+  }
+</style>

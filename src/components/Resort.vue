@@ -10,12 +10,6 @@
       </div>
     </section>
 
-    <!--<section>-->
-    <!--<div class="title">-->
-    <!--<img id="logo" src="./../assets/images/logo.png"/>-->
-    <!--</div>-->
-    <!--</section>-->
-
     <section>
       <div class="block">
         <p><span class="first-character sc">I</span>
@@ -41,26 +35,8 @@
 
     <section>
       <div class="block">
-        <p><span class="first-character ny">B</span>
-          reaking into the New York fashion world is no easy task. But by the early 2000's, UGG Australia
-          began to take it by storm. The evolution of UGG from a brand that made sheepskin boots, slippers,
-          clogs and sandals for an active, outdoor lifestyle to a brand that was now being touted as a
-          symbol of a stylish, casual and luxurious lifestyle was swift. Much of this was due to a brand
-          repositioning effort that transformed UGG into a high-end luxury footwear maker. As a fashion
-          brand, UGG advertisements now graced the pages of Vogue Magazine as well as other fashion books.
-          In the mid 2000's, the desire for premium casual fashion was popping up all over the world and UGG
-          was now perfectly aligned with this movement.</p>
+        <RoomsTable/>
         <p class="line-break margin-top-10"></p>
-        <p class="margin-top-10">
-          Fueled by celebrities from coast to coast wearing UGG boots and slippers on their downtime, an entirely new era of
-          fashion was carved out. As a result, the desire and love for UGG increased as people wanted to go deeper into this
-          relaxed UGG experience. UGG began offering numerous color and style variations on their sheepskin boots and slippers.
-          Cold weather boots for women and men and leather casuals were added with great success. What started as a niche item,
-          UGG sheepskin boots were now a must-have staple in everyone's wardrobe. More UGG collections followed, showcasing
-          everything from knit boots to sneakers to wedges, all the while maintaining that luxurious feel UGG is known for all
-          over the world. UGG products were now seen on runways and in fashion shoots from coast to coast. Before long, the
-          love spread even further.</p>
-
       </div>
     </section>
 
@@ -100,22 +76,32 @@
         <h2>ROOF TOP POOL</h2>
       </div>
     </section>
-
+    <md-button class="md-primary md-raised" id="bookBtn" @click="goToBookingLink">
+      Click Here To Book the Resort With Our Discounted Price
+    </md-button>
   </div>
 </template>
 <script>
 
   import RoomsCarousel from './RoomsCarousel';
+  import RoomsTable from './ResortTable';
 
   export default {
     name: 'Resort',
     components: {
-      RoomsCarousel
+      RoomsCarousel,
+      RoomsTable
+    },
+    methods: {
+      goToBookingLink() {
+        window.open("https://cabo.garzablancaresort.com/wedding-groups/kelli-and-henry-bi-wedding", '_blank');
+      }
     }
   };
 </script>
 
 <style lang="scss" scoped>
+  @import "../css/main.scss";
 
   $color_1: black;
   $color_2: white;
@@ -282,6 +268,7 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
+
     .line-break {
       border-bottom: 1px solid black;
       width: 150px;
@@ -365,6 +352,28 @@
         padding: 30px 15px;
         width: 100%;
       }
+    }
+  }
+
+  #bookBtn {
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    color: $white;
+    z-index: 9;
+    white-space: normal;
+  }
+
+  @media screen and (max-width: 479px) {
+    #bookBtn{
+      height: 60px;
     }
   }
 
