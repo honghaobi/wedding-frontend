@@ -154,7 +154,8 @@
   }
 
   .md-card {
-    width: 330px;
+    min-width: 260px;
+    max-width: 330px;
     margin: 10px;
     display: inline-block;
     vertical-align: top;
