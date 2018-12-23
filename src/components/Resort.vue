@@ -132,7 +132,6 @@
   $color_1: black;
   $color_2: white;
   $font_family_1: 'Oswald', sans-serif;
-  $font_family_2: 'Poppins', sans-serif;
   $background_color_1: black;
 
   .primaryColor {
@@ -207,7 +206,6 @@
     }
 
     p {
-      font-family: $font_family_2;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -322,7 +320,6 @@
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
-    font-family: $font_family_2;
   }
 
   @media screen and (max-width: 959px) and (min-width: 768px) {
