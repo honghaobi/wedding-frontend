@@ -6,68 +6,88 @@
     </section>
     <section>
       <div class="parallax-one">
-        <h2>Garza Blanca</h2>
+        <h2 class="link" @click="newTabToLink(garzaURL)">Garza Blanca</h2>
       </div>
     </section>
 
     <section>
       <div class="block">
-        <p><span class="first-character sc">I</span>
-          n 1978, Brian Smith landed in Southern California with a bag of sheepskin boots and hope. He fell
-          in love with the sheepskin experience and was convinced the world would one day share this love.
-          The beaches of Southern California had long been an epicenter of a relaxed, casual lifestyle, a
-          lifestyle that Brian felt was a perfect fit for his brand. So he founded the UGG brand, began
-          selling his sheepskin boots and they were an immediate sensation. By the mid 1980's, the UGG brand
-          became a symbol of relaxed southern California culture, gaining momentum through surf shops and
-          other shops up and down the coast of California, from San Diego to Santa Cruz. UGG boots reached
-          beyond the beach, popping up in big cities and small towns all over, and in every level of
-          society. Girls wore their surfer boyfriend's pair of UGG boots like a letterman jacket. When
-          winter came along, UGG boots were in ski shops and were seen in lodges from Mammoth to Aspen.</p>
+        <p><span class="first-character primaryColor">W</span>
+          e have our room block through Garza Blanca Resort. It’s pretty epic if you ask us. It’s an optional all-inclusive resort located right in
+          the middle of Cabo and San Jose. It’s a brand new 5 star luxury resort, but we have an insane deal because we got our room block while they
+          were still under construction. The booking rates at Garza are on par with other all-inclusive rates.This is where we will be staying along
+          with our families and bridal party. This is also where we will have our events like the “welcome party”, pick up, drop off on the day of the
+          wedding and a brunch pool party for the day after the wedding. We would love for you all to stay here with is so we can maximize the time we
+          get spend with you all. That being said, feel free to stay other places based on your preferences and needs. We have other suggestions for
+          your stay below. For those of you that do not what all-inclusive is, it means everything is included (drinks, meals, snacks, booze, tips to
+          the waiters/bartenders). The European plan is room only and you will then have to pay for your food, drinks, tips, etc..If you do decide to
+          stay at Garza Blanca with us, please make sure you book using the link at the bottom of your screen to ensure you get our discounted rate
+          and the resort knows that you are part of our wedding festivities. Also, don’t forget to check out the FAQ page for more info/questions
+          about the resort</p>
         <RoomsCarousel/>
       </div>
     </section>
 
     <section>
       <div class="parallax-two">
-        <h2>Booking</h2>
+        <h2>Room Block Rates</h2>
       </div>
     </section>
 
     <section>
       <div class="block">
         <RoomsTable/>
-        <p class="line-break margin-top-10"></p>
       </div>
     </section>
 
     <section>
       <div class="parallax-three">
-        <h2>ENCHANTED FOREST</h2>
+        <h2>Other Options</h2>
       </div>
     </section>
 
     <section>
       <div class="block">
-        <p><span class="first-character atw">W</span>
-          hen the New York fashion community notices your brand, the world soon follows. The widespread
-          love for UGG extended to Europe in the mid-2000's along with the stylish casual movement and
-          demand for premium casual fashion. UGG boots and shoes were now seen walking the streets of
-          London, Paris and Amsterdam with regularity. To meet the rising demand from new fans, UGG opened
-          flagship stores in the UK and an additional location in Moscow. As the love spread farther East,
-          concept stores were opened in Beijing, Shanghai and Tokyo. UGG Australia is now an international
-          brand that is loved by all. This love is a result of a magical combination of the amazing
-          functional benefits of sheepskin and the heightened emotional feeling you get when you slip them
-          on your feet. In short, you just feel better all over when you wear UGG boots, slippers, and
-          shoes.</p>
-        <p class="line-break margin-top-10"></p>
-        <p class="margin-top-10">
-          In 2011, UGG will go back to its roots and focus on bringing the active men that brought the brand to life back with
-          new styles allowing them to love the brand again as well. Partnering with Super Bowl champion and NFL MVP Tom Brady,
-          UGG will invite even more men to feel the love the rest of the world knows so well. UGG will also step into the world
-          of high fashion with UGG Collection. The UGG Collection fuses the timeless craft of Italian shoemaking with the
-          reliable magic of sheepskin, bringing the luxurious feel of UGG to high end fashion. As the love for UGG continues to
-          spread across the world, we have continued to offer new and unexpected ways to experience the brand. The UGG journey
-          continues on and the love for UGG continues to spread.</p>
+        <md-card>
+          <md-card-media>
+            <img src="../assets/photos/other/palmar.jpg"/>
+          </md-card-media>
+
+          <md-card-header>
+            <div class="md-title">Villa Del Palmar Resort</div>
+            <div class="md-subhead">Optional All-Inclusive</div>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button @click="newTabToLink(palmarURL)" class="md-accent md-dense md-raised">Link</md-button>
+          </md-card-actions>
+
+          <md-card-content>
+            Villa Del Palmar is also optional and all-inclusive as well. This resort is a cheaper option in Cabo. Although, it’s about
+            20 minutes away from our resort, and about 40 minutes from the Venue. Keep in mind the shuttles for the wedding day will be picking up and
+            dropping off at Garza. Visit the website for up to date booking rates.
+          </md-card-content>
+        </md-card>
+        <md-card>
+          <md-card-media>
+            <img src="../assets/photos/other/villa.jpg"/>
+          </md-card-media>
+
+          <md-card-header>
+            <div class="md-title">AirBnB</div>
+            <div class="md-subhead">Condos & Villas</div>
+          </md-card-header>
+
+          <md-card-actions>
+            <md-button @click="newTabToLink(airbnbURL)" class="md-accent md-dense md-raised">Link</md-button>
+          </md-card-actions>
+
+          <md-card-content>
+            You can check out AirBnB for condos or villa in all price ranges. If you choose to do this they are mostly located in either in Cabo San
+            Lucas or San Jose del Cabo. San Jose del Cabo is closer to our wedding venue, and Cabo San Lucas is downtown Cabo closer to the tourist
+            attractions.
+          </md-card-content>
+        </md-card>
       </div>
     </section>
 
@@ -76,7 +96,7 @@
         <h2>ROOF TOP POOL</h2>
       </div>
     </section>
-    <md-button class="md-primary md-raised" id="bookBtn" @click="goToBookingLink">
+    <md-button class="md-primary md-raised" id="bookBtn" @click="newTabToLink(garzaWeddingURL)">
       Click Here To Book the Resort With Our Discounted Price
     </md-button>
   </div>
@@ -92,9 +112,15 @@
       RoomsCarousel,
       RoomsTable
     },
+    data: () => ({
+      airbnbURL: 'https://www.airbnb.com/',
+      palmarURL: 'https://cabo.villadelpalmar.com/',
+      garzaWeddingURL: 'https://cabo.garzablancaresort.com/wedding-groups/kelli-and-henry-bi-wedding',
+      garzaURL: 'https://cabo.garzablancaresort.com'
+    }),
     methods: {
-      goToBookingLink() {
-        window.open("https://cabo.garzablancaresort.com/wedding-groups/kelli-and-henry-bi-wedding", '_blank');
+      newTabToLink(linkURL) {
+        window.open(linkURL, '_blank');
       }
     }
   };
@@ -105,22 +131,34 @@
 
   $color_1: black;
   $color_2: white;
-  $color_3: #3b8595;
-  $color_4: #3d3c3a;
-  $color_5: #c48660;
   $font_family_1: 'Oswald', sans-serif;
   $font_family_2: 'Poppins', sans-serif;
   $background_color_1: black;
+
+  .primaryColor {
+    color: $primary-color;
+  }
 
   #main {
     width: 100%;
     padding: 0;
   }
 
+  .link {
+    cursor: pointer;
+  }
+
   .content-asset {
     p {
       margin: 0 auto;
     }
+  }
+
+  .md-card {
+    width: 330px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
   }
 
   .breadcrumb {
@@ -287,18 +325,6 @@
     font-family: $font_family_2;
   }
 
-  .sc {
-    color: $color_3;
-  }
-
-  .ny {
-    color: $color_4;
-  }
-
-  .atw {
-    color: $color_5;
-  }
-
   @media screen and (max-width: 959px) and (min-width: 768px) {
     #parallax-world-of-ugg {
       .block {
@@ -372,7 +398,7 @@
   }
 
   @media screen and (max-width: 479px) {
-    #bookBtn{
+    #bookBtn {
       height: 60px;
     }
   }
