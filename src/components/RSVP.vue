@@ -296,11 +296,11 @@
         if ( this.selectedGuest.attending === true || this.selectedGuest.attending === false ) {
           this.showRSVPDialog = true;
           this.selectedGuestAttending = this.selectedGuest.attending;
-          this.selectedGuestPartner = this.selectedGuestPartner;
-          this.selectedGuestPartnerIncluded = true;
-          this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
+          if ( this.selectedGuestPartner ) {
+            this.selectedGuestPartnerIncluded = true;
+            this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
+          }
         }
-
       },
       checkSearchedGuest() {
         if ( !this.searchedGuest ) {

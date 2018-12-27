@@ -118,7 +118,7 @@
 
     <section>
       <div class="parallax-five">
-        <h2>Travel</h2>
+        <h2>Adventures</h2>
       </div>
     </section>
 
@@ -310,7 +310,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/5.jpg");
+      background-image: url("./../assets/photos/hk/12.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;

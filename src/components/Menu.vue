@@ -134,7 +134,7 @@
   $color_2: transparent;
   $color_3: $primary-color;
   $background_color_1: rgba(0, 0, 0, 0);
-  $background_color_2: rgba(0, 0, 0, 0.5);
+  $background_color_2: rgba(20, 34, 54, 0.5);
   $background_color_3: $accent-color;
   $border_color_1: $white;
 

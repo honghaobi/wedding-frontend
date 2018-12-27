@@ -59,6 +59,9 @@
     <md-card class="tableDescription md-accent">
       All inclusive plan rates are per person, per night, based on selected occupancy, quoted in US dollars.
       3 nights minimum stay required. Rates include taxes, fee and gratuities.
+      <hr/>
+      If you want to get a group and book a 3 or 4 bedroom loft / penthouse.
+      Please let us know and we will get you the best rate possible.
     </md-card>
     <hr/>
     <md-table>

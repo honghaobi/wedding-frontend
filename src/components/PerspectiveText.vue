@@ -63,7 +63,7 @@
   ** Apply styles to the parent element
   */
   .Words {
-    background-color: $accent-color;
+    background-color: $primary-color;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -115,7 +115,7 @@
     transform: translate3d(0, 0, 0);
     vertical-align: top;
     white-space: nowrap;
-    color: $primary-color;
+    color: $accent-color;
   }
 
   /*

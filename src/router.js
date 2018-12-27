@@ -36,6 +36,13 @@ export default new Router(
           return import('./components/Resort.vue');
         },
       },
+      {
+        path: '/travel',
+        name: 'travel',
+        component() {
+          return import('./components/Travel.vue');
+        },
+      },
       // {
       //   path: '/gallery',
       //   name: 'gallery',

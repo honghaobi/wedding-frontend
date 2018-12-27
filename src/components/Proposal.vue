@@ -5,7 +5,7 @@
               allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen
               allowfullscreen></iframe>
     </div>
-    <md-content class="md-primary viewingMessage">please rotate your device for best viewing</md-content>
+    <md-content class="md-primary viewingMessage">please rotate your device and use full-screen for best viewing</md-content>
   </div>
 </template>
 
