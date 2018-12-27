@@ -89,7 +89,7 @@
 
     <section>
       <div class="parallax-four">
-        <h2>Family First</h2>
+        <h2>Family</h2>
       </div>
     </section>
 
