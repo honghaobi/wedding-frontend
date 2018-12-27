@@ -6,7 +6,7 @@
     </section>
     <section>
       <div class="parallax-one">
-        <h2 class="link" @click="newTabToLink(garzaURL)">Garza Blanca</h2>
+        <h2>Garza Blanca</h2>
       </div>
     </section>
 
@@ -116,7 +116,6 @@
       airbnbURL: 'https://www.airbnb.com/',
       palmarURL: 'https://cabo.villadelpalmar.com/',
       garzaWeddingURL: 'https://cabo.garzablancaresort.com/wedding-groups/kelli-and-henry-bi-wedding',
-      garzaURL: 'https://cabo.garzablancaresort.com'
     }),
     methods: {
       newTabToLink(linkURL) {
@@ -129,10 +128,7 @@
 <style lang="scss" scoped>
   @import "../css/main.scss";
 
-  $color_1: black;
-  $color_2: white;
   $font_family_1: 'Oswald', sans-serif;
-  $background_color_1: black;
 
   .primaryColor {
     color: $primary-color;
@@ -141,10 +137,6 @@
   #main {
     width: 100%;
     padding: 0;
-  }
-
-  .link {
-    cursor: pointer;
   }
 
   .content-asset {
@@ -179,7 +171,7 @@
       font-size: 24px;
       font-weight: 400;
       text-transform: uppercase;
-      color: $color_1;
+      color: $accent-color;
       padding: 0;
       margin: 0;
     }
@@ -189,7 +181,7 @@
       font-size: 70px;
       letter-spacing: 10px;
       text-align: center;
-      color: $color_2;
+      color: $white;
       font-weight: 400;
       text-transform: uppercase;
       z-index: 10;
@@ -203,7 +195,7 @@
       font-weight: 400;
       letter-spacing: 8px;
       text-transform: uppercase;
-      color: $color_1;
+      color: $accent-color;
     }
 
     p {
@@ -213,7 +205,7 @@
     }
 
     .title {
-      background: white;
+      background: $white;
       padding: 40px;
       margin: 0 auto;
       text-align: center;
@@ -224,7 +216,7 @@
     }
 
     .block {
-      background: white;
+      background: $white;
       padding: 60px;
       width: 820px;
       margin: 0 auto;
@@ -232,7 +224,7 @@
     }
 
     .block-gray {
-      background: #f2f2f2;
+      background: #C7D6DC;
       padding: 60px;
     }
 
@@ -242,7 +234,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $background_color_1;
+      background-color: $black;
       opacity: 0.70;
     }
 
@@ -307,7 +299,7 @@
     }
 
     .line-break {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $accent-color;
       width: 150px;
       margin: 0 auto;
     }
