@@ -88,6 +88,12 @@
     </section>
 
     <section>
+      <div class="parallax-four">
+        <h2>Family First</h2>
+      </div>
+    </section>
+
+    <section>
       <div class="block">
         <p><span class="first-character">H</span>
           enry & Kelli are both big family people, it’s the most important. So when the two decided to introduce each other to the families it was a
@@ -128,12 +134,9 @@
 </template>
 
 <script>
-  import PerspectiveText from '../components/PerspectiveText';
-
   export default {
-    name: 'LetsParty',
+    name: 'home',
     components: {
-      PerspectiveText
     },
   };
 </script>

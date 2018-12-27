@@ -36,13 +36,13 @@ export default new Router(
           return import('./components/Resort.vue');
         },
       },
-      {
-        path: '/gallery',
-        name: 'gallery',
-        component() {
-          return import('./components/Gallery.vue');
-        },
-      },
+      // {
+      //   path: '/gallery',
+      //   name: 'gallery',
+      //   component() {
+      //     return import('./components/Gallery.vue');
+      //   },
+      // },
       {
         path: '/party',
         name: 'party',
@@ -57,13 +57,13 @@ export default new Router(
           return import('./components/Proposal.vue');
         },
       },
-      {
-        path: '/registry',
-        name: 'proposal',
-        component() {
-          return import('./components/Registry.vue');
-        },
-      },
+      // {
+      //   path: '/registry',
+      //   name: 'proposal',
+      //   component() {
+      //     return import('./components/Registry.vue');
+      //   },
+      // },
       {
         path: '/faq',
         name: 'faq',

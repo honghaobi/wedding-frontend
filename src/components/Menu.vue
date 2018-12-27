@@ -21,6 +21,9 @@
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/proposal">PROPOSAL</router-link>
         </a></li>
+        <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <router-link to="/faq">FAQ</router-link>
+        </a></li>
       </ul>
     </nav>
   </div>

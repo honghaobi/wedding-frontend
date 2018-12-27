@@ -6,7 +6,7 @@
     </section>
     <section>
       <div class="parallax-one">
-        <h2>FAQ</h2>
+        <h2>HENRY + KELLI</h2>
       </div>
     </section>
 
@@ -88,6 +88,12 @@
     </section>
 
     <section>
+      <div class="parallax-four">
+        <h2>Family First</h2>
+      </div>
+    </section>
+
+    <section>
       <div class="block">
         <p><span class="first-character">H</span>
           enry & Kelli are both big family people, it’s the most important. So when the two decided to introduce each other to the families it was a
@@ -128,13 +134,9 @@
 </template>
 
 <script>
-  import PerspectiveText from '../components/PerspectiveText';
 
   export default {
-    name: 'LetsParty',
-    components: {
-      PerspectiveText
-    },
+    name: 'FAQ',
   };
 </script>
 
@@ -248,7 +250,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/1.jpg");
+      background-image: url("./../assets/photos/hk/8.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -263,7 +265,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/2.jpg");
+      background-image: url("./../assets/photos/hk/9.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -278,7 +280,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/3.jpg");
+      background-image: url("./../assets/photos/hk/10.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -293,7 +295,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/4.jpg");
+      background-image: url("./../assets/photos/hk/11.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -307,7 +309,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/5.jpg");
+      background-image: url("./../assets/photos/hk/12.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
