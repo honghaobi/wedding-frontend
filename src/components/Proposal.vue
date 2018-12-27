@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div class="block">
-      <video id="video-background" autoplay loop preload="auto">
-        <source src="../assets/videos/hk.mp4" type="video/mp4">
-      </video>
-      <!--<iframe id="video-background" src="https://www.youtube.com/embed/0gVaAjEFMl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+  <div class="videoBG">
+    <div class="videoWrapper">
+      <iframe src="https://player.vimeo.com/video/308382888?loop=1&autoplay=1&color=54D4C4&title=0&byline=0&portrait=0"
+              allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen
+              allowfullscreen></iframe>
     </div>
+    <md-content class="md-primary viewingMessage">please rotate your device for best viewing</md-content>
   </div>
 </template>
 
@@ -13,20 +13,44 @@
   export default {
     name: 'Proposal',
     components: {},
-    // mounted() {
-    //   const videoElement = document.getElementById('video-background');
-    // }
   };
 </script>
 
 <style lang="scss" scoped>
-  #video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+  @import "./../css/main.scss";
+
+  .videoBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+
+      object,
+      embed,
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .viewingMessage {
+      display: none;
+    }
+
+    @media only screen and (max-device-width: 480px) and (orientation: portrait) {
+      .viewingMessage {
+        text-align: center;
+        color: $white;
+        display: block;
+      }
+    }
   }
 </style>
