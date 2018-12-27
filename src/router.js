@@ -37,6 +37,13 @@ export default new Router(
         },
       },
       {
+        path: '/gallery',
+        name: 'gallery',
+        component() {
+          return import('./components/Gallery.vue');
+        },
+      },
+      {
         path: '/party',
         name: 'party',
         component() {
@@ -48,6 +55,20 @@ export default new Router(
         name: 'proposal',
         component() {
           return import('./components/Proposal.vue');
+        },
+      },
+      {
+        path: '/registry',
+        name: 'proposal',
+        component() {
+          return import('./components/Registry.vue');
+        },
+      },
+      {
+        path: '/faq',
+        name: 'faq',
+        component() {
+          return import('./components/FAQ.vue');
         },
       },
     ],
