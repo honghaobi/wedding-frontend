@@ -24,7 +24,7 @@
           stay at Garza Blanca with us, please make sure you book using the link at the bottom of your screen to ensure you get our discounted rate
           and the resort knows that you are part of our wedding festivities. Also, don’t forget to check out the FAQ page for more info/questions
           about the resort</p>
-        <p>How long should we stay?</p>
+        <h3>How long should we stay?</h3>
         <p>
           Good question!! Big reason why we picked Cabo is because we want to make this experience a vacation for y'all! We have our room block rate
           locked from June 16th - June 25th. With that being said, we will have planned events from June 19th to June 22nd, assumming people are
@@ -198,14 +198,15 @@
     h3 {
       font-family: $font_family_1;
       font-size: 14px;
-      line-height: 0;
+      text-align: left;
       font-weight: 400;
-      letter-spacing: 8px;
+      letter-spacing: 2px;
       text-transform: uppercase;
-      color: $accent-color;
+      color: $primary-color-shade-2;
     }
 
     p {
+      color: $accent-color;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;

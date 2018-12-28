@@ -200,10 +200,11 @@
       font-weight: 400;
       letter-spacing: 8px;
       text-transform: uppercase;
-      color: $accent-color;
+      color: $primary-color-shade-2;
     }
 
     p {
+      color: $accent-color;
       font-family: $font_family_2;
       font-weight: 400;
       font-size: 14px;

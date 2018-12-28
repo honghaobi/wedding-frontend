@@ -22,10 +22,9 @@
           it's not much but any bit helps ;)
         </p>
         <p>
-          To use your Discount Code, go online to <a href="https://www.alaskaair.com/">alaskaair.com</a> and input the Discount Code when searching
-          for flights. The discount will be applied
-          to any flights meeting the contract parameters. By clicking the “?” next to the discount code box after entering the code you may view a
-          detailed description of the rules.
+          To use your Discount Code, go online to <a href="https://www.alaskaair.com/" target="_blank">alaskaair.com</a> and input the Discount Code
+          when searching for flights. The discount will be applied to any flights meeting the contract parameters. By clicking the “?” next to the
+          discount code box after entering the code you may view a detailed description of the rules.
         </p>
         <p>
           We are contacting other Airlines to get any coupon code and group travel discounts, so please check back on this page to look for more ways
@@ -132,10 +131,11 @@
       font-weight: 400;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: $accent-color;
+      color: $primary-color-shade-2;
     }
 
     p {
+      color: $accent-color;
       font-family: $font_family_2;
       font-weight: 400;
       font-size: 14px;

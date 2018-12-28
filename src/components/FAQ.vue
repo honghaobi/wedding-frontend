@@ -50,7 +50,8 @@
            ocean, snorkel etc..</p>
 
         <h3 class="md-subheader">Is there a specific wedding attire?</h3>
-        <p>There is no required attire. It will be hot, so feel free to wear shorts, just no jeans or jorts (never jorts).</p>
+        <p>Think Boho Chic! jk... There is no required attire. It will be warm, and we want you to be comfortable and ready to break it down on the
+           dance floor. so feel free to wear shorts, romper, romphim, etc... just no jeans or jorts (never jorts).</p>
 
         <h3 class="md-subheader">How does cell service work in Cabo?</h3>
         <p>If you have T-mobile, some plans include Mexico data and text in your plan without needing to sign up for anything. We have T-mobile and
@@ -59,12 +60,12 @@
            text capabilities while connected to wifi.</p>
 
         <h3 class="md-subheader">Who do I contact for questions when we are in Cabo?</h3>
-        <ol>
-          <li>Stephanie McKeown-Maid of Honor (253)380-9892</li>
-          <li>Will Schumacher- Best Man (206) 388-8795</li>
-          <li>Jerri McKeown- Mother of the Bride (253)380-9802</li>
-          <li>Jessica Wolff- Wedding Planner WhatsApp +52 1 624 157 2647</li>
-        </ol>
+        <ul>
+          <li>Stephanie McKeown - Maid of Honor (253)380-9892</li>
+          <li>Will Schumacher - Best Man (206)388-8795</li>
+          <li>Jerri McKeown - Mother of the Bride (253)380-9802</li>
+          <li>Jessica Wolff - Wedding Planner WhatsApp +52 1 624 157 2647</li>
+        </ul>
 
         <h3 class="md-subheader">Should I choose all-inclusive or the European plan?</h3>
         <p>We suggest doing all-inclusive because it takes the stress out of bringing cash to pay for food drinks at the resort. This is a nicer
@@ -78,8 +79,9 @@
            government has spent $50 billion dollars to improve safety. In 2018 violence was down by 70%. But to be extra safe, stay in the tourist
            areas
            and don’t act a fool. Also, read this articles below.
-          <a href="https://www.forbes.com/sites/forbestravelguide/2018/08/31/is-it-safe-to-travel-to-los-cabos/#41314f25206a">Safe to Travel to
-                                                                                                                              Cabo?</a></p>
+          <a href="https://www.forbes.com/sites/forbestravelguide/2018/08/31/is-it-safe-to-travel-to-los-cabos/#41314f25206a" target="_blank">
+            Safe to Travel to Cabo?</a>
+        </p>
         <h3 class="md-subheader">Do I need to learn Spanish?</h3>
         <p>Most locals in tourist areas know English. But it wouldn’t hurt to brush up on some phrases so you can order that tequila shot like a pro.
            You can learn with the free app Duolingo, or download Google Translate for in the moment translations.</p>
@@ -182,11 +184,12 @@
       font-weight: 400;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: $accent-color;
+      color: $primary-color-shade-2;
       padding: 0;
     }
 
     p {
+      color: $accent-color;
       font-family: $font_family_2;
       font-weight: 400;
       font-size: 14px;
