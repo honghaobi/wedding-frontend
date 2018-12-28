@@ -43,13 +43,13 @@ export default new Router(
           return import('./components/Travel.vue');
         },
       },
-      // {
-      //   path: '/gallery',
-      //   name: 'gallery',
-      //   component() {
-      //     return import('./components/Gallery.vue');
-      //   },
-      // },
+      {
+        path: '/gallery',
+        name: 'gallery',
+        component() {
+          return import('./components/Gallery.vue');
+        },
+      },
       {
         path: '/party',
         name: 'party',
