@@ -12,15 +12,99 @@
 
     <section>
       <div class="block">
-        <p><span class="first-character">A</span>
-          Any Questions you have we have answers! if not please drop us a line on here.
-        </p>
-        <h3 class="md-subheader">Alaska Airline Discount Code</h3>
 
-        <p>
-          We are contacting other Airlines to get any coupon code and group travel discounts, so please check back on this page to look for more ways
-          to save.
-        </p>
+        <h3 class="md-subheader">Why did you guys decide to do a destination wedding?</h3>
+        <p>Good question! Weddings can be stressful. We wanted our day to be filled with fun events in the sun and less stress. And can you really
+           trust Washington summer not to rain?! We also know that our friends and family work so hard all year long so it’s an opportunity to get out
+           of town, away from the real world. That way you can all let go, have fun, and not have to worry about going to work the next day.</p>
+
+        <h3 class="md-subheader">When should we book or flights?</h3>
+        <p>Download the hopper app to track flights. Although they do not partner with Alaska so you will have to check alaska flights separately. We
+           will also be sending out updates via email if we find a cheap deal so you guys can jump on it!</p>
+
+        <h3 class="md-subheader">After we land, how do we get to our resort?</h3>
+        <p>Here are shuttle services that we recommend booking through:
+           1)
+           2)
+           You can pay before you get there and there will be a driver waiting outside with a Company sign. Check in with the driver so he can mark
+           that you have arrived. When all guests have arrived he will start loading up the shuttle so stay close. After the baggage claim, there is
+           an area of shuttle workers that will try to get you to get on one of their shuttles, just keep walking past them until you get outside.
+           That’s where all the pre-paid shuttles will wait.</p>
+
+        <h3 class="md-subheader">How do we get to the wedding Venue?</h3>
+        <p>We will have set up Shuttles to take guests to and from Acre. The shuttles will be leaving Garza Blanca. The time is still TBD, but we will
+           provide you with a timeline of the weekend. in your room when you arrive.</p>
+
+        <h3 class="md-subheader">Can I bring my kids?</h3>
+        <p>Yes and no. Kids under 12 stay free at Garza. We love all your babies, but unfortunately our venue discourages children. For this reason we
+           are not allowing kids to the venue. We will be contacting our resort to try and set up some babysitting options, so if that is something
+           you are interested in, please contact us directly.</p>
+
+        <h3 class="md-subheader">Can we bring a plus one?</h3>
+        <p>Only names on the invite are allowed to the wedding. It’s nothing personal but we are limited by cost and number of guests. Thank you for
+           understanding.</p>
+
+        <h3 class="md-subheader">What is there to do in Cabo?</h3>
+        <p>We will have some specific events set up for people if they want to join like, fishing, golfing, a night out in Cabo. But if you want to do
+           things on your own that’s fine too! You can check out the shops downtown, go to the famous bars like Mango Deck and the Office, swim in the
+           ocean, snorkel etc..</p>
+
+        <h3 class="md-subheader">Is there a specific wedding attire?</h3>
+        <p>There is no required attire. It will be hot, so feel free to wear shorts, just no jeans or jorts (never jorts).</p>
+
+        <h3 class="md-subheader">How does cell service work in Cabo?</h3>
+        <p>If you have T-mobile, some plans include Mexico data and text in your plan without needing to sign up for anything. We have T-mobile and
+           have never had issues. For other carriers, you may need to pay around $3-5 a day for data and text and call capabilities. We have found
+           it’s worth it for at least one person in your party to have data for the map feature and calling taxis. You can also download WhatsApp for
+           text capabilities while connected to wifi.</p>
+
+        <h3 class="md-subheader">Who do I contact for questions when we are in Cabo?</h3>
+        <ol>
+          <li>Stephanie McKeown-Maid of Honor (253)380-9892</li>
+          <li>Will Schumacher- Best Man (206) 388-8795</li>
+          <li>Jerri McKeown- Mother of the Bride (253)380-9802</li>
+          <li>Jessica Wolff- Wedding Planner WhatsApp +52 1 624 157 2647</li>
+        </ol>
+
+        <h3 class="md-subheader">Should I choose all-inclusive or the European plan?</h3>
+        <p>We suggest doing all-inclusive because it takes the stress out of bringing cash to pay for food drinks at the resort. This is a nicer
+           resort with better food so a dinner check will be about $60/per person. Alcoholic drinks run about $11/drink not including tips. So we feel
+           the European plan may only be worth it if you are not planning to drink and don’t think you will be eating at the resort much. Otherwise
+           food and drinks can add up really fast. You will get the most for your money if you are eating most meals at the resort and planning on
+           drinking.</p>
+
+        <h3 class="md-subheader">I’m worried about if Cabo San Lucas is safe to travel?</h3>
+        <p>Bad things happen in every city, and it doesn’t mean they are not safe. Mexico did have an increase violence in 2017. But since the Mexican
+           government has spent $50 billion dollars to improve safety. In 2018 violence was down by 70%. But to be extra safe, stay in the tourist
+           areas
+           and don’t act a fool. Also, read this articles below.
+          <a href="https://www.forbes.com/sites/forbestravelguide/2018/08/31/is-it-safe-to-travel-to-los-cabos/#41314f25206a">Safe to Travel to
+                                                                                                                              Cabo?</a></p>
+        <h3 class="md-subheader">Do I need to learn Spanish?</h3>
+        <p>Most locals in tourist areas know English. But it wouldn’t hurt to brush up on some phrases so you can order that tequila shot like a pro.
+           You can learn with the free app Duolingo, or download Google Translate for in the moment translations.</p>
+
+        <h3 class="md-subheader">Should we rent a car?</h3>
+        <p>If you are feeling adventurous and want to explore what Cabo has to offer, renting a car would be the way to go! You can book a car for as
+           little as $3/day in Cabo. But we suggest also purchasing insurance when booking your car. Some car insurances will extend your insurance
+           into Mexico so it might be worth it to check with your company first! We have personally never rented a car while there because you can
+           always take a taxi or book shuttle into town if you have a group.</p>
+
+        <h3 class="md-subheader">What is the exchange rate and should I bring pesos?</h3>
+        <p>As of 01/01/19 the exchange rate was $19.92 MXN pesos to $1 USD. The rate is subject to change daily so make sure you
+           check back. You will get the best rate if you get pesos from your bank but make sure you order them at least a week before your departure
+           date. The booths at the airport will charge you a fee. Most places accept debit and credit cards if you are looking to buy anything while
+           you are down there. If you want to tip, you should bring some pesos but they will also accept dollars if you are in a pinch. If you are
+           doing all-inclusive you really don’t need any pesos, unless you get a taxi or want to buy drinks when we go out in Cabo.</p>
+
+        <h3 class="md-subheader">When should I request my passport?</h3>
+        <p>Passport processing takes between 6 to 8 weeks, however, if you choose an expedited service, you can receive a faster
+           processing time. There is a $60 fee to expedite. Sooner than later is always better.</p>
+
+        <h3 class="md-subheader">What are the plans leading up to the wedding day?</h3>
+        <p>The only event we would love for you to attend is the welcome meet and greet with drinks, cocktails and snacks. This will be
+           on Thursday night at Garza Blanca, time is TBD. Otherwise, feel free to make this your vacation and do what you want.</p>
+
       </div>
     </section>
 
@@ -94,11 +178,12 @@
     h3 {
       font-family: $font_family_1;
       font-size: 14px;
-      line-height: 0;
+      text-align: left;
       font-weight: 400;
-      letter-spacing: 8px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: $accent-color;
+      padding: 0;
     }
 
     p {

@@ -33,16 +33,10 @@
         </p>
         <h3 class="md-subheader"> Car Rentals</h3>
         <p>
-          If you are feeling adventurous and want to explore waht Cabo has to offer, renting a car would be the way to go! However, we strongly
+          If you are feeling adventurous and want to explore what Cabo has to offer, renting a car would be the way to go! However, we strongly
           strongly recommend you get insurance. You may be able to extend your current insurance into Mexico (not really sure if it works that way but
           worth a shot). Otherwise we will be providing transportation to a number of the events from the blocked resort and from Acre, to and from
           the town for a night out.
-        </p>
-        <h3 class="md-subheader"> Cell Service</h3>
-        <p>
-          We visited and simply turned on our travel plan and switched it off after we left and didn't have any issues. Obviously every plan is
-          different but cell phones work and are a thing even in Mexico so check with your provider if you're unclear on how to make sure your phone
-          is workable while you're getting your tan on.
         </p>
       </div>
     </section>
@@ -136,7 +130,7 @@
       font-size: 14px;
       text-align: left;
       font-weight: 400;
-      letter-spacing: 8px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       color: $accent-color;
     }
