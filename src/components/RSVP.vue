@@ -129,6 +129,7 @@
                   <span class="guestName"> {{ selectedGuest.full_name }}</span>
                   <md-field class="personalInfo">
                     <label>Phone</label>
+                    <md-tooltip md-direction="top">please enter a 10 digit phone number without any dashes, spaces or parenthesis</md-tooltip>
                     <md-input v-model=selectedGuest.phone></md-input>
                   </md-field>
                   <md-field class="personalInfo">
@@ -156,6 +157,7 @@
                   <span class="guestName"> {{ selectedGuestPartner.full_name }}</span>
                   <md-field class="personalInfo">
                     <label>Phone</label>
+                    <md-tooltip md-direction="top">please enter a 10 digit phone number without any dashes, spaces or parenthesis</md-tooltip>
                     <md-input v-model=selectedGuestPartner.phone></md-input>
                   </md-field>
                   <md-field class="personalInfo">
@@ -298,7 +300,7 @@
         if ( this.selectedGuest.attending === true || this.selectedGuest.attending === false ) {
           this.showRSVPDialog = true;
           this.selectedGuestAttending = this.selectedGuest.attending;
-          if ( this.selectedGuestPartner && this.selectedGuestPartner.attending) {
+          if ( this.selectedGuestPartner && this.selectedGuestPartner.attending ) {
             this.selectedGuestPartnerIncluded = true;
             this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
           }
@@ -392,6 +394,7 @@
       saveOtherInfo() {
         this.snackBar3 = true;
         this.otherInfoSaved = true;
+        const guestMessage = 'You have opted-in to receive text messages from us for any wedding updates, event info and flight pricing changes! You can save this number as HKWedding or you can simply opt-out on the rsvp page.';
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuest.id,
@@ -402,6 +405,14 @@
             opt_message: this.selectedGuest.opt_message,
             opt_email: this.selectedGuest.opt_email,
           });
+          if ( this.selectedGuest.phone && this.selectedGuest.opt_message ) {
+            store.dispatch('SEND_GUEST_SMS', {
+              id: this.selectedGuest.id,
+              phone: `+1${this.selectedGuest.phone}`,
+              //TODO: rewrite initial text message to guest.
+              message: `Hi ${this.selectedGuest.first_name}, ${guestMessage}`,
+            });
+          }
         }
         if ( this.selectedGuestPartner ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
@@ -413,6 +424,14 @@
             opt_message: this.selectedGuestPartner.opt_message,
             opt_email: this.selectedGuestPartner.opt_email,
           });
+          if ( this.selectedGuestPartner.phone && this.selectedGuestPartner.opt_message ) {
+            store.dispatch('SEND_GUEST_SMS', {
+              id: this.selectedGuestPartner.id,
+              phone: `+1${this.selectedGuestPartner.phone}`,
+              //TODO: rewrite initial text message to guest.
+              message: `Hi ${this.selectedGuestPartner.first_name}, ${guestMessage}`,
+            });
+          }
         }
         this.snackBar2 = true;
       },

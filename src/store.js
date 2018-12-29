@@ -55,6 +55,10 @@ export default new Vuex.Store({
     SEND_HENRY_RSVP_STATUS( context, payload ) {
       const updatedGuest = guestUpdateCleanUp(payload);
       GuestsAPI.sendHenryRSVPGuestById( updatedGuest.id, updatedGuest );
+    },
+    SEND_GUEST_SMS( context, payload ) {
+      const updatedGuest = guestUpdateCleanUp(payload);
+      GuestsAPI.sendGuestSMS( updatedGuest.id, updatedGuest );
     }
   },
   getters: {

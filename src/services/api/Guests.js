@@ -30,4 +30,8 @@ export default {
     return axios.post(`/sms-rsvp/${anId}`, guestData)
       .then((response) => response.data);
   },
+  sendGuestSMS(anId, guestData) {
+    return axios.post(`/sms-guest/${anId}`, guestData)
+      .then((response) => response.data);
+  },
 };
