@@ -16,7 +16,7 @@
           <router-link to="/travel">TRAVEL</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-user-outline route hvr-wobble-horizontal">
-          <router-link to="/party">PARTY</router-link>
+          <router-link to="/bridal">BRIDAL</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/proposal">PROPOSAL</router-link>

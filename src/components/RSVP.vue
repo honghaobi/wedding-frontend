@@ -177,7 +177,6 @@
                 </div>
                 <div class="md-layout-item md-large-size-100">
                   <md-button class="md-raised md-primary" id="saveBtn2" @click="saveOtherInfo()">Save</md-button>
-                  <md-button class="md-raised md-accent" @click="setDone('third', 'first')">Go To Resort Page</md-button>
                 </div>
               </div>
               <md-snackbar md-position="center" :md-duration="snackBarDuration" :md-active.sync="snackBar3" md-persistent>
@@ -398,10 +397,7 @@
       },
       setDone(id, index) {
         this[id] = true;
-        if ( index === 'first' ) {
-          // Object.assign(this.$data, this.$options.data());
-          router.push({ path: '/resort' });
-        } else if ( index === 'second' ) {
+        if ( index === 'second' ) {
           if ( !this.selectedGuestAttending && this.selectedGuestPartnerAttending ) {
             this.selectedGuest = this.selectedGuestPartner;
             this.selectedGuestPartner = {};

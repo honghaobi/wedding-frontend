@@ -51,10 +51,10 @@ export default new Router(
         },
       },
       {
-        path: '/party',
-        name: 'party',
+        path: '/bridal',
+        name: 'bridal',
         component() {
-          return import('./components/LetsParty.vue');
+          return import('./components/Bridal.vue');
         },
       },
       {
@@ -66,7 +66,7 @@ export default new Router(
       },
       // {
       //   path: '/registry',
-      //   name: 'proposal',
+      //   name: 'registry',
       //   component() {
       //     return import('./components/Registry.vue');
       //   },
