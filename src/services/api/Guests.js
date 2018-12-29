@@ -24,6 +24,10 @@ export default {
   },
   updateGuestById(anId, guestData) {
     return axios.post(`/guest/${anId}`, guestData)
-      .then((response) =>  response.data);
+      .then((response) => response.data);
+  },
+  sendHenryRSVPGuestById(anId, guestData) {
+    return axios.post(`/sms-rsvp/${anId}`, guestData)
+      .then((response) => response.data);
   },
 };

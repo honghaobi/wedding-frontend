@@ -23,7 +23,7 @@ function guestTableCleanUp( data ) {
 }
 
 function guestUpdateCleanUp( data ) {
-  let cleanUpdata = data
+  let cleanUpdata = data;
   delete data.full_name;
   if ( cleanUpdata['id'] ){
     cleanUpdata['id'] = cleanUpdata['id'].toString();
@@ -51,6 +51,10 @@ export default new Vuex.Store({
       GuestsAPI.updateGuestById( updatedGuest.id, updatedGuest ).then( (guests) => {
         context.commit('LOAD_ALL_GUESTS', guestTableCleanUp( guests ))
       });
+    },
+    SEND_HENRY_RSVP_STATUS( context, payload ) {
+      const updatedGuest = guestUpdateCleanUp(payload);
+      GuestsAPI.sendHenryRSVPGuestById( updatedGuest.id, updatedGuest );
     }
   },
   getters: {

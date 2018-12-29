@@ -10,9 +10,13 @@
         <label>Email</label>
         <md-input v-model=guest.email></md-input>
       </md-field>
-      <md-checkbox v-model=guest.attending>Attending</md-checkbox>
-      <md-checkbox v-model=guest.resort_booked>Resort Booked</md-checkbox>
-      <md-checkbox v-model=guest.flight_booked>Flight Booked</md-checkbox>
+      <div class="md-checkbox-container">
+        <md-checkbox v-model=guest.attending>Attending</md-checkbox>
+        <md-checkbox v-model=guest.resort_booked>Resort Booked</md-checkbox>
+        <md-checkbox v-model=guest.flight_booked>Flight Booked</md-checkbox>
+        <md-checkbox v-model=guest.opt_message>Opt-in Message</md-checkbox>
+        <md-checkbox v-model=guest.opt_email>Opt-in Email</md-checkbox>
+      </div>
       <md-datepicker v-model="guest.resort_arrival_date">
         <label>Arrival Date</label>
       </md-datepicker>
@@ -23,11 +27,14 @@
         <label>Allergies</label>
         <md-input v-model=guest.food_allergies></md-input>
       </md-field>
-      <md-field>
-        <label>Events</label>
-        <md-input v-model=guest.events></md-input>
-      </md-field>
-
+      <h3>Events</h3>
+      <div class="md-checkbox-container">
+        <md-checkbox v-model="guest.events" value="boatCruise">Boat Cruise</md-checkbox>
+        <md-checkbox v-model="guest.events" value="nightClubs">Night Clubs</md-checkbox>
+        <md-checkbox v-model="guest.events" value="fishing">Fishing</md-checkbox>
+        <md-checkbox v-model="guest.events" value="golfing">Golfing</md-checkbox>
+        <md-checkbox v-model="guest.events" value="waterSport">Water Sports</md-checkbox>
+      </div>
       <md-dialog-actions>
         <md-button class="md-primary" @click="handleClose">Close</md-button>
         <md-button class="md-accent" @click="handleSave">Save</md-button>
@@ -54,7 +61,20 @@
         this.showDialog = false;
       },
       handleSave: function (event) {
-        store.dispatch('UPDATE_GUEST_BY_ID', this.guest);
+        store.dispatch('UPDATE_GUEST_BY_ID', {
+          id: this.guest.id,
+          phone: this.guest.phone,
+          email: this.guest.email,
+          attending: this.guest.attending,
+          resort_booked: this.guest.resort_booked,
+          flight_booked: this.guest.flight_booked,
+          opt_message: this.guest.opt_message,
+          opt_email: this.guest.opt_email,
+          resort_arrival_date: this.guest.resort_arrival_date,
+          resort_departure_date: this.guest.resort_departure_date,
+          food_allergies: this.guest.food_allergies,
+          events: JSON.stringify(this.guest.events),
+        });
         this.showDialog = false;
       },
     },
@@ -64,7 +84,8 @@
 <style lang="scss" scoped>
   .md-dialog {
     padding: 15px;
-    width: 430px;
+    min-width: 450px;
+    max-width: 700px;
     overflow-y: scroll;
   }
 </style>

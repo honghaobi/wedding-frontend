@@ -135,6 +135,8 @@
                     <label>Email</label>
                     <md-input v-model=selectedGuest.email></md-input>
                   </md-field>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_message">Opt-In Text Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_email">Opt-In Email Updates</md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuest.food_allergies></md-input>
@@ -143,11 +145,11 @@
                     <span class="checkBoxTitle"> Events That Tickle Your Fancy:</span>
                   </div>
                   <div class="checkBoxContainer">
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="boatCruise">Boat Cruise</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="nightClubs">Night Clubs</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="fishing">Fishing</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="golfing">Golfing</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuest.events" value="waterSport">Water Sports</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.events" value="boatCruise">Boat Cruise</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.events" value="nightClubs">Night Clubs</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.events" value="fishing">Fishing</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.events" value="golfing">Golfing</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.events" value="waterSport">Water Sports</md-checkbox>
                   </div>
                 </div>
                 <div class="md-layout-item md-xlarge-size-50" v-if="selectedGuestPartnerAttending">
@@ -160,6 +162,8 @@
                     <label>Email</label>
                     <md-input v-model=selectedGuestPartner.email></md-input>
                   </md-field>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_message">Opt-In Text Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_email">Opt-In Email Updates</md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuestPartner.food_allergies></md-input>
@@ -168,11 +172,11 @@
                     <span class="checkBoxTitle"> Events That Tickle Your Fancy:</span>
                   </div>
                   <div class="checkBoxContainer">
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="boatCruise">Boat Cruise</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="nightClubs">Night Clubs</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="fishing">Fishing</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="golfing">Golfing</md-checkbox>
-                    <md-checkbox class="eventCheckBox" v-model="selectedGuestPartner.events" value="waterSport">Water Sports</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.events" value="boatCruise">Boat Cruise</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.events" value="nightClubs">Night Clubs</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.events" value="fishing">Fishing</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.events" value="golfing">Golfing</md-checkbox>
+                    <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.events" value="waterSport">Water Sports</md-checkbox>
                   </div>
                 </div>
                 <div class="md-layout-item md-large-size-100">
@@ -287,7 +291,6 @@
     },
     methods: {
       setGuest() {
-
         this.selectedGuest = store.getters.getGuestById(this.searchedGuest.id);
         if ( this.selectedGuest.relation ) {
           this.selectedGuestPartner = store.getters.getGuestById(this.selectedGuest.relation);
@@ -295,7 +298,7 @@
         if ( this.selectedGuest.attending === true || this.selectedGuest.attending === false ) {
           this.showRSVPDialog = true;
           this.selectedGuestAttending = this.selectedGuest.attending;
-          if ( this.selectedGuestPartner ) {
+          if ( this.selectedGuestPartner && this.selectedGuestPartner.attending) {
             this.selectedGuestPartnerIncluded = true;
             this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
           }
@@ -328,11 +331,25 @@
           id: this.selectedGuest.id,
           attending: this.selectedGuestAttending,
         });
+
+        if ( this.selectedGuestAttending !== this.selectedGuest.attending ) {
+          store.dispatch('SEND_HENRY_RSVP_STATUS', {
+            id: this.selectedGuest.id,
+            attending: this.selectedGuestAttending,
+          });
+        }
+
         if ( this.selectedGuestPartnerIncluded ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuestPartner.id,
             attending: this.selectedGuestPartnerAttending,
           });
+          if ( this.selectedGuestPartnerAttending !== this.selectedGuestPartner.attending ) {
+            store.dispatch('SEND_HENRY_RSVP_STATUS', {
+              id: this.selectedGuestPartner.id,
+              attending: this.selectedGuestPartnerAttending,
+            });
+          }
         }
       },
       handleContinueRSVPDialog: function (event) {
@@ -382,6 +399,8 @@
             email: this.selectedGuest.email,
             food_allergies: this.selectedGuest.food_allergies,
             events: JSON.stringify(this.selectedGuest.events),
+            opt_message: this.selectedGuest.opt_message,
+            opt_email: this.selectedGuest.opt_email,
           });
         }
         if ( this.selectedGuestPartner ) {
@@ -391,6 +410,8 @@
             email: this.selectedGuestPartner.email,
             food_allergies: this.selectedGuestPartner.food_allergies,
             events: this.selectedGuestPartner.events ? JSON.stringify(this.selectedGuestPartner.events) : '',
+            opt_message: this.selectedGuestPartner.opt_message,
+            opt_email: this.selectedGuestPartner.opt_email,
           });
         }
         this.snackBar2 = true;
@@ -534,6 +555,10 @@
         margin: 0;
       }
 
+      .rsvpCheckBox {
+        margin: 10px 30px 0 0;
+      }
+
       .checkBoxContainer {
 
         .checkBoxTitle {
@@ -545,7 +570,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
 
-        .eventCheckBox {
+        .rsvpCheckBox {
           margin: 10px 30px 0 0;
         }
       }

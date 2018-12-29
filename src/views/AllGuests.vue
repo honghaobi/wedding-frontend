@@ -21,6 +21,8 @@
         <md-table-cell md-label="Attending">{{ item.attending }}</md-table-cell>
         <md-table-cell md-label="R-Booked">{{ item.resort_booked }}</md-table-cell>
         <md-table-cell md-label="F-Booked">{{ item.flight_booked }}</md-table-cell>
+        <md-table-cell md-label="Opt-In-Message">{{ item.opt_message }}</md-table-cell>
+        <md-table-cell md-label="Opt-In-Email">{{ item.opt_email }}</md-table-cell>
       </md-table-row>
     </md-table>
   </div>
