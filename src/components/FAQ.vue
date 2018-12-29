@@ -109,6 +109,10 @@
         <p>The only event we would love for you to attend is the welcome meet and greet with drinks, cocktails and snacks. This will be
            on Thursday night at Garza Blanca, time is TBD. Otherwise, feel free to make this your vacation and do what you want.</p>
 
+        <h3 class="md-subheader">Where is the ceremony/reception taking place?</h3>
+        <p>The wedding is at a beautiful outdoor event space called ACRE, a 25 acre piece of farmland adjacent to San Jose del Cabo and located 25
+           minutes from Garza Blanca. We will be providing transportation to and from the wedding.</p>
+
       </div>
     </section>
 

@@ -59,6 +59,9 @@ export default new Vuex.Store({
     SEND_GUEST_SMS( context, payload ) {
       const updatedGuest = guestUpdateCleanUp(payload);
       GuestsAPI.sendGuestSMS( updatedGuest.id, updatedGuest );
+    },
+    SEND_GUEST_EMAIL( context, payload ) {
+      GuestsAPI.sendGuestEmail( payload );
     }
   },
   getters: {

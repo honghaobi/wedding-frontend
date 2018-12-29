@@ -394,7 +394,8 @@
       saveOtherInfo() {
         this.snackBar3 = true;
         this.otherInfoSaved = true;
-        const guestMessage = 'We are stoked you are making to time to celebrate with us! You’ve requested to get updates from us via text! We won’t spam you, promise. You will get wedding updates, event info, and flight price changes, and maybe a cute gif every once in a while. Please save this number as HKWedding. If you no longer wish to receive texts from us you can opt- out on the RSVP page! ';
+        const guestTextMessage = 'We are stoked you are making to time to celebrate with us! You’ve requested to get updates from us via text! We won’t spam you, promise. You will get wedding updates, event info, and flight price changes, and maybe a cute gif every once in a while. Please save this number as HKWedding. If you no longer wish to receive texts from us you can opt- out on the RSVP page! ';
+        const guestEmailMessage = 'We’re doing the cha-cha over here because you are coming to the wedding! Since you chose to get email updates from us, we will send you emails every so often about wedding info, event updates, and flight price changes. If you do not wish to get updates feel free to opt-out on the RSVP page!';
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuest.id,
@@ -409,8 +410,16 @@
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuest.id,
               phone: `+1${this.selectedGuest.phone}`,
-              //TODO: rewrite initial text message to guest.
-              message: `Holla ${this.selectedGuest.first_name}! ${guestMessage}`,
+              message: `Holla ${this.selectedGuest.first_name}! ${guestTextMessage}`,
+            });
+          }
+          if ( this.selectedGuest.email && this.selectedGuest.opt_email ) {
+            store.dispatch('SEND_GUEST_EMAIL', {
+              id: this.selectedGuest.id,
+              first_name: this.selectedGuest.first_name,
+              email: this.selectedGuest.email,
+              title: 'You are coming to Henry & Kelli Wedding in CABO',
+              message: guestEmailMessage,
             });
           }
         }
@@ -428,8 +437,16 @@
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuestPartner.id,
               phone: `+1${this.selectedGuestPartner.phone}`,
-              //TODO: rewrite initial text message to guest.
-              message: `Holla ${this.selectedGuestPartner.first_name}! ${guestMessage}`,
+              message: `Holla ${this.selectedGuestPartner.first_name}! ${guestTextMessage}`,
+            });
+          }
+          if ( this.selectedGuestPartner.email && this.selectedGuestPartner.opt_email ) {
+            store.dispatch('SEND_GUEST_EMAIL', {
+              id: this.selectedGuestPartner.id,
+              first_name: this.selectedGuestPartner.first_name,
+              email: this.selectedGuestPartner.email,
+              title: 'You are coming to Henry & Kelli Wedding in CABO',
+              message: guestEmailMessage,
             });
           }
         }

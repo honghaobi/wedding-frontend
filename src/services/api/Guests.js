@@ -34,4 +34,8 @@ export default {
     return axios.post(`/sms-guest/${anId}`, guestData)
       .then((response) => response.data);
   },
+  sendGuestEmail(emailData) {
+    return axios.post(`/sms-email`, emailData)
+      .then((response) => response.data);
+  },
 };
