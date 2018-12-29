@@ -19,15 +19,14 @@
     <section>
       <div class="block">
         <p><span class="first-character">L</span>
-          et’s rewind back to Apple Cup November 29th, 2013 (Washington’s college football rivalry game). Kelli in crimson and Henry in a purple UW
-          jersey and a backwards cap. They were introduced by their mutual bestfriend Brooke at a tailgating party, drinking Rainiers and playing
-          cornhole. Henry was talking a lot of shit and forcing peeps taking shots. Aaaandddd the Cougars took a big L. Looking back, it’s a day to
-          remember because that’s the day their friendship started despite the hatred of each other’s team.
+          et’s rewind back to Apple Cup November 29th, 2013. Kelli in crimson and Henry in a purple UW jersey and a backwards cap. We were introduced
+          by our mutual best friend Brooke at a tailgating party, drinking Rainier’s and playing cornhole. Henry was talking a lot of shit and forcing
+          peeps to take shots. Aaaandddd the Cougs took a big L. Looking back, it’s a day to remember, because it was day our friendship started
+          despite the rivalry.
         </p>
         <p>
-          For the next 2 years their friendship grew stronger. They got to know each other over concerts, group events, and having deep conversations
-          about life over tacos. They will both tell you that there was an unspoken connection between them, and they were always drawn towards
-          eachother.
+          Over the next 2 years our friendship grew stronger. We got to know each other over concerts, group hangs, and deep conversations about life
+          over tacos. We will both tell you that there was an instant connection between us, and have always been drawn towards each other.
         </p>
       </div>
     </section>
@@ -41,19 +40,18 @@
     <section>
       <div class="block">
         <p class="margin-top-10"><span class="first-character">F</span>
-          Fast forward to Halloween of 2015. Henry came into the Kelli’s work because he "tweaked his back" and needed a massage. During the session,
-          Henry asked her if she wanted to come over and he would make her steak dinner. Kelli was a little taken back and thought to herself "Is he
-          asking me out on a date?!"
+          ast forward to October of 2015. Henry made a massage appointment with Kelli because he "tweaked his back". But we all know he was using
+          this as an excuse to holla at Kell. During the session, Henry asked if she wanted to come over for a fancy steak dinner . Kelli was taken
+          aback and thought "Is he asking me out?!"
         </p>
         <p>
           He was.
         </p>
         <p>
-          After that dinner date, they started hanging out almost every night. They had so much fun together, and it was starting to get serious. Both
-          could see this being the real thing, the “One”, their person, *insert more corny phrases here*. Then the fairytale needed to take a pause.
-          Henry had just got out of a long term relationship that summer and was a little hesitant to be off the market for good. Was he ready?
-          Because he knew Kelli would be it. They had deep conversation and Kelli and Henry decided that if he wasn’t ready, then they did not want
-          this to ruin their friendship that they both cherished.
+          After the dinner date, we started hanging out almost every day. Both could see this being the real deal, *insert more corny phrases here*.
+          Then the fairytale paused for a moment. Henry had just got out of a long term relationship that summer and was a little hesitant to be off
+          the market for good. We had deep conversation and decided that if he wasn’t ready, then we did not want this to ruin our friendship that we
+          cherished. So at the end of the night, it was decided we would just stay friends. We were both bummed but thought it was the right choice.
         </p>
       </div>
     </section>
@@ -66,24 +64,25 @@
 
     <section>
       <div class="block">
-        <p><span class="first-character">T</span>
-          hat next month, Kelli was killin’ it on the dating app Bumble. She started seeing another guy (he was no Henry though). Henry and Kelli
-          still talked as friends and after a number of weeks, Henry realized he made a mistake. How could he be such an idiot?! He asked Kell out for
-          dinner to Din Tai Fung to talk about if they wanted to give it another shot and how he wanted to see this through, because he knew it was
-          something special. Over a ginger martini and xiao long bao she told Henry that she had started dating someone else, but did still have
-          feelings for him. What was a girl to do? She took a few weeks to think about it, but couldn’t get Henry off her mind. On December 28th, she
-          told Henry that he was the one for her. FINALLY ON THE SAME PAGE! It wasn’t a hard choice for them when they decided to move in together…2
-          months later. Some will say it’s too fast. They disagree. With learning how to live together early made their relationship stronger but not
-          without some trials and tribulations (Henry is very OCD if you don’t know, and it took Kell a while to figure out how to execute the
-          “proper” folding technique so towels fit perfectly in the closet…Don’t worry she’s a master at it now). But on the flip side Kelli has
-          taught Henry how to let the same stuff go. This is just one example of how they balance each other out. They are Yin and Yang, opposites yet
-          fit together. Together, they have always stood in unison on their beliefs, morals, values, and what is important in life. They continue to
-          push and challenge eachother to be the best versions of themselves.
+        <p><span class="first-character">M</span>
+          eanwhile, Kelli got on the dating app Bumble and started seeing another guy pretty quickly (he was no Henry though). We still talked as
+          friends and after a number of weeks, Hen realized he made a mistake. How could he be such an idiot?! He asked Kell out for dinner to Din Tai
+          Fung and told her he wanted to give it another go, because he knew it was something special. Over xiao long bao she told Henry she had
+          unfortunately started dating someone else, but still had feelings for him. Henry would wait until she figured out what she wanted. Kelli
+          took a few weeks to think about it, but couldn’t get Henry off her mind. On December 28th, she told Henry that he was the one for her. And
+          that’s how Kell played her cards right and swooped Henry up right off the market. Sorry Ladies! It wasn’t a hard choice when we decided to
+          move in together…2 months later. Some will say it’s too fast. We disagree. With learning how to live together early, it made our
+          relationship stronger; but not without some trials and tribulations (Henry is very OCD if you don’t know, and it took Kell a while to figure
+          out how to execute the “proper” folding technique so towels fit perfectly in the closet…you don’t want to see Henry upset about the
+          towels!). But on the flip side, Kell has taught him how to let go of some of those tendencies and live in the moment. This is just one
+          example of how we balance each other out. We are Yin and Yang, opposites yet in perfect balance. Together, we have always stood in unison on
+          our beliefs, morals, values, and what is important in life. We continue to push and challenge each other to be the best versions of
+          themselves.
         </p>
         <p>
-
-          In their three years together, they have been so blessed to have so many wonderful memories and experiences. They’d love to share them all
-          but here are some favorite and most influential. If you’re still reading…scroll down!</p>
+          In our three years together, we have been blessed to have so many wonderful memories and experiences with all of you wonderful humans. We’d
+          love to share them all but here are some favorites and most influential. If you’re still reading…scroll down!
+        </p>
       </div>
     </section>
 
@@ -95,19 +94,19 @@
 
     <section>
       <div class="block">
-        <p><span class="first-character">H</span>
-          enry & Kelli are both big family people, it’s the most important. So when the two decided to introduce each other to the families it was a
-          big deal. Kelli took Hen to the super classy Emerald Queen Casino with her whole family. 80 bucks was lost in the slot machines but they got
-          for dinner vouchers to the Tatoosh Grill. Ya win some ya lose some! It was there that Henry really got a chance to sit down and get to know
-          everyone. Kell’s Dad, Mark started trash talking Henry’s NFL team the Bronco’s. The mini rivalry hasn’t stopped and the McKeown family lost
-          a bet to Henry and they all had to begrudgingly wear Broncos jersey’s for a Hawks game. Henry has seamlessly fit into Kelli’s huge extended
-          family. He recently cooked a 25-pound prime rib for Christmas dinner for her family to earn even more brownie points. Kelli met Henry’s
-          family at his Grandma’s house and she learned about Kelli’s sweet tooth. Ever since, Grandma has never let Kell leave without sometime of
-          chocolate and her famously delicious dumplings for leftovers. There are frequent dinners at Grandma’s with his family and some of their
-          favorite nights. She always feeds them so well and gives the best advice about life. Soon after Henry and Kelli met, Grandma also gave her
-          the Chinese name of “xiao-nian” meaning water lily, graceful yet grounded. In March of 2019, they are visiting more of Henry’s extended
-          family in Chengdu, China with Henry’s sister Shelby. It is so exciting for the both of them that Kelli gets to experience where Henry grew
-          up and visit the places he used to be a menacing little turd (Ask him about the time he lit neighbor’s cloths on fire)
+        <p><span class="first-character">W</span>
+          e are both big family people, it’s the most important. So when we decided to introduce each other to the families it was a big deal. Kelli
+          took Hen to the super classy Emerald Queen Casino with her whole family. 80 bucks was lost in the slot machines but we got for dinner
+          vouchers to the Tatoosh Grill...ya win some ya lose some! It was there that Henry really got a chance to sit down and get to know everyone.
+          Kell’s Dad, Mark started trash talking Henry’s NFL team the Bronco’s. The mini rivalry hasn’t stopped since. The McKeown family lost a bet
+          to Henry and had to begrudgingly wear Broncos jerseys for a Hawks game. Henry has seamlessly fit into Kelli’s huge extended family. He
+          recently cooked a 25-pound prime rib for Christmas dinner for her family and earned even more brownie points. Kelli met Henry’s family at
+          his Grandma’s house and she learned about Kelli’s sweet tooth. Ever since, Grandma has never let Kell leave without some type of chocolate
+          and her famously delicious dumplings for leftovers. We have frequent dinners at Grandma’s with his family and they are some of our favorite
+          nights. She always feeds us so well and gives the best advice about life. Grandma also gave Kelli the Chinese name of “xiao-nian” meaning
+          water lily, graceful yet grounded. In March of 2019, we are visiting more of Henry’s extended family in Chengdu, China with Henry’s sister
+          Shelby. It is so exciting for the both of us that Kelli gets to experience where Henry grew up and visit the places he used to be a menacing
+          little turd (ask him about the time he lit neighbor’s clothes on fire)
         </p>
         <p>
           Everyone loves to ask when recently married couples are going to have kids. We’ll save you the suspense and tell you that we want try pretty
@@ -124,9 +123,49 @@
 
     <section>
       <div class="block">
-        <p><span class="first-character">H</span>
-
+        <p><span class="first-character">T</span>
+          ravel for us doesn’t just mean hopping on a plane, although we like to do that too. One of our favorite ways to travel is on Henry’s
+          motorcycle. We have been on so many bike trips and it’s honestly the best way to connect with each other. On a bike there’s no distraction
+          of the phone, or texting other people. It’s just the two of us, together on the road. There has been some amazing trips…like our 3 week trip
+          throughout Italy on a Moto Guzzi with nothing more than one back pack each. We started in the rolling hills of Tuscany to witness Henry’s
+          best friend Riley get married to the love of his life, Kenzie. Then explored the architecture of Florence, and history in Rome and ate our
+          weight in seafood pasta and gnocchi. Riding along the amalfi coast was breathtaking and a once in a lifetime opportunity. It was there in
+          Sorrento, Henry asked Kelli to “be his turd forever” (not joking, that’s what he said). If you haven’t peeped the video, check it out on the
+          <router-link to="/proposal">proposal</router-link>
+          page! Not all bike trips are created equal though. We once rode back to Seattle from Whistler in the summertime and got stuck in a
+          torrential downpour on the freeway. Shivering, we rode to a small town before the US border to dry our clothes at a laundromat so we could
+          make it the final 3 hours home. Finally dry and somewhat warm we reached the border only to have to wait in more rain ...Let’s just say
+          there was some tears coming from Henry. (ok fine, you all know it was Kelli). She cries sometimes especially when learning how to ski.
+          We both love the mountains and frequent the Washington ski resorts as well as Whistler. When we started dating, Kelli wasn’t a very good
+          skier. She knew the basics but there was a lot of pizza/french fry action going on. From getting lost in the backcountry to spending 25 days
+          skiing in one season, it has become one of our favorite mutual hobbies. Kelli thinks she’s pretty decent now and can mostly keep up with
+          Henry. We now love taking trips with their ski buds to Colorado, as well as our annual Whistler trip with 50+ of our rad friends. Nothing
+          better than a full day on the mountain to earn that apres ski hot toddy!
         </p>
+        <p>
+          Since we can’t ski in the summertime, we love attending concerts and music festivals of all kinds. In our three years together have been to
+          countless shows. The gorge is one of our happy places and favorite venues. Anyone down to start a petition to bring Sasquatch back?! One of
+          the most memorable shows was when we were front row for Alabama Shakes at Sasquatch in 2016. Keeping that one in the memory bank. A close
+          runner up to the Gorge is the Red Rocks in Denver. We stumbled across an old jam band called STS9 on a trip to Denver and have now been to
+          two of their shows at Red Rocks now. It has become a new tradition of sorts. Mostly because it always aligns with the Broncos season opening
+          game and Henry’s birthday. Another memorable festival was Coachella, because Henry was able to meet some of Kelli’s oldest friends for the
+          first time. Despite the 110 degree weather it was such a fun week of music, dancing all night, and great friends. Also, Radiohead performed
+          and it was a dream come true for Henry.
+          Again, we could go on and on about all of the adventures we’ve had. But on a serious note, making memories with all you fools is the REASON
+          we travel! And NO Flynn, they won’t be going to Electric Forest for our Honeymoon.
+        </p>
+        <p>
+          Cheers to all the mems we will get to experience with you in the future!
+        </p>
+        <p class="love">
+          <3 Hen and Kell
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="parallax-six">
+        <h2>More to Come</h2>
       </div>
     </section>
 
@@ -136,8 +175,7 @@
 <script>
   export default {
     name: 'home',
-    components: {
-    },
+    components: {},
   };
 </script>
 
@@ -189,7 +227,7 @@
       color: $white;
       font-weight: 400;
       text-transform: uppercase;
-      z-index: 10;
+      z-index: 2;
       opacity: .9;
     }
 
@@ -305,13 +343,29 @@
       background-repeat: no-repeat;
       background-position: center center;
     }
+
     .parallax-five {
       padding-top: 200px;
       padding-bottom: 200px;
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/12.jpg");
+      background-image: url("./../assets/photos/hk/10.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .parallax-six {
+      padding-top: 300px;
+      padding-bottom: 300px;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background-image: url("./../assets/photos/hk/7.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -337,6 +391,13 @@
     padding-right: 8px;
     padding-left: 3px;
     font-family: $font_family_2;
+  }
+
+  .love {
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    color: $accent-color;
+    font-size: 30px;
   }
 
   @media screen and (max-width: 959px) and (min-width: 768px) {
@@ -385,6 +446,12 @@
       }
 
       .parallax-five {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-attachment: scroll;
+      }
+
+      .parallax-six {
         padding-top: 200px;
         padding-bottom: 200px;
         background-attachment: scroll;

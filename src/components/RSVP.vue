@@ -394,7 +394,7 @@
       saveOtherInfo() {
         this.snackBar3 = true;
         this.otherInfoSaved = true;
-        const guestMessage = 'You have opted-in to receive text messages from us for any wedding updates, event info and flight pricing changes! You can save this number as HKWedding or you can simply opt-out on the rsvp page.';
+        const guestMessage = 'We are stoked you are making to time to celebrate with us! You’ve requested to get updates from us via text! We won’t spam you, promise. You will get wedding updates, event info, and flight price changes, and maybe a cute gif every once in a while. Please save this number as HKWedding. If you no longer wish to receive texts from us you can opt- out on the RSVP page! ';
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
             id: this.selectedGuest.id,
@@ -410,7 +410,7 @@
               id: this.selectedGuest.id,
               phone: `+1${this.selectedGuest.phone}`,
               //TODO: rewrite initial text message to guest.
-              message: `Hi ${this.selectedGuest.first_name}, ${guestMessage}`,
+              message: `Holla ${this.selectedGuest.first_name}! ${guestMessage}`,
             });
           }
         }
@@ -429,7 +429,7 @@
               id: this.selectedGuestPartner.id,
               phone: `+1${this.selectedGuestPartner.phone}`,
               //TODO: rewrite initial text message to guest.
-              message: `Hi ${this.selectedGuestPartner.first_name}, ${guestMessage}`,
+              message: `Holla ${this.selectedGuestPartner.first_name}! ${guestMessage}`,
             });
           }
         }

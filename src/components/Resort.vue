@@ -191,7 +191,7 @@
       color: $white;
       font-weight: 400;
       text-transform: uppercase;
-      z-index: 10;
+      z-index: 2;
       opacity: .9;
     }
 
@@ -292,8 +292,8 @@
     }
 
     .parallax-four {
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 300px;
+      padding-bottom: 300px;
       overflow: hidden;
       position: relative;
       width: 100%;

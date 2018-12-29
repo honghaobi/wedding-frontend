@@ -19,26 +19,28 @@
            of town, away from the real world. That way you can all let go, have fun, and not have to worry about going to work the next day.</p>
 
         <h3 class="md-subheader">When should we book or flights?</h3>
-        <p>Download the hopper app to track flights. Although they do not partner with Alaska so you will have to check alaska flights separately. We
-           will also be sending out updates via email if we find a cheap deal so you guys can jump on it!</p>
+        <p>Download the hopper app to track flights. Although they do not partner with Alaska or Dleta so you will have to check those flights
+           separately. We will also be sending out updates via email if we find a cheap deal so you guys can jump on it!</p>
 
         <h3 class="md-subheader">After we land, how do we get to our resort?</h3>
         <p>Here are shuttle services that we recommend booking through:
-           1)
-           2)
-           You can pay before you get there and there will be a driver waiting outside with a Company sign. Check in with the driver so he can mark
-           that you have arrived. When all guests have arrived he will start loading up the shuttle so stay close. After the baggage claim, there is
-           an area of shuttle workers that will try to get you to get on one of their shuttles, just keep walking past them until you get outside.
-           That’s where all the pre-paid shuttles will wait.</p>
+          <span class="md-accent">Impala Shuttles was recommended by our wedding planner.</span>
+           You can pre-pay online before the trip. This is the preferred method. You will go past baggage claim and through a foyer, turn right to
+           exit the airport. The pre-paid shuttles will be waiting there. There will be a driver waiting with an Impala sign (or whatever shuttle
+           service you decide). Check in with the driver so he can mark that you have arrived. When all guests have checked in he will start loading
+           up the shuttle so stay close. After the baggage claim, in the foyer is an area of shuttle workers that will try to get you to get on one of
+           their shuttles, just keep walking past them until you get outside. It can be a little overwhelming but don’t feel bad if you ignore
+           them. </p>
 
         <h3 class="md-subheader">How do we get to the wedding Venue?</h3>
-        <p>We will have set up Shuttles to take guests to and from Acre. The shuttles will be leaving Garza Blanca. The time is still TBD, but we will
-           provide you with a timeline of the weekend. in your room when you arrive.</p>
+        <p>We will have set up Shuttles/buses to take guests to and from Acre. The shuttles will be leaving Garza Blanca. The time is still TBD, but
+           we will provide you with a timeline of the weekend. in your room when you arrive.</p>
 
         <h3 class="md-subheader">Can I bring my kids?</h3>
-        <p>Yes and no. Kids under 12 stay free at Garza. We love all your babies, but unfortunately our venue discourages children. For this reason we
-           are not allowing kids to the venue. We will be contacting our resort to try and set up some babysitting options, so if that is something
-           you are interested in, please contact us directly.</p>
+        <p>This is our biggest adulting moment yet and while we love your children, this is a grown-ups only wedding. If you must bring them,
+           kids under 12 stay free at Garza, but unfortunately our venue discourages children. For this reason we are not allowing kids to the
+           wedding portion. We will be contacting our resort to try and set up some babysitting options, so if that is something you are interested
+           in please contact us directly.</p>
 
         <h3 class="md-subheader">Can we bring a plus one?</h3>
         <p>Only names on the invite are allowed to the wedding. It’s nothing personal but we are limited by cost and number of guests. Thank you for
@@ -50,8 +52,8 @@
            ocean, snorkel etc..</p>
 
         <h3 class="md-subheader">Is there a specific wedding attire?</h3>
-        <p>Think Boho Chic! jk... There is no required attire. It will be warm, and we want you to be comfortable and ready to break it down on the
-           dance floor. so feel free to wear shorts, romper, romphim, etc... just no jeans or jorts (never jorts).</p>
+        <p>Vacation cocktail attire. Some examples are slacks and a nice short sleeve button up for guys. It will be hot so feel free to wear shorts
+           (just no jorts, NEVER jorts). A summer cocktail dress for gals. (no flip flops please).</p>
 
         <h3 class="md-subheader">How does cell service work in Cabo?</h3>
         <p>If you have T-mobile, some plans include Mexico data and text in your plan without needing to sign up for anything. We have T-mobile and
@@ -115,6 +117,11 @@
         <h2>More Questions?</h2>
       </div>
     </section>
+    <section>
+      <div class="block">
+        <h1>FORM FOR MORE QUESTION RESPONSE</h1>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -173,7 +180,7 @@
       color: $white;
       font-weight: 400;
       text-transform: uppercase;
-      z-index: 10;
+      z-index: 2;
       opacity: .9;
     }
 
@@ -252,52 +259,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/9.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .parallax-three {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
       background-image: url("./../assets/photos/hk/10.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .parallax-four {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background-image: url("./../assets/photos/hk/11.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .parallax-five {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background-image: url("./../assets/photos/hk/12.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -358,23 +320,6 @@
         background-attachment: scroll;
       }
 
-      .parallax-three {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-attachment: scroll;
-      }
-
-      .parallax-four {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-attachment: scroll;
-      }
-
-      .parallax-five {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background-attachment: scroll;
-      }
     }
   }
 

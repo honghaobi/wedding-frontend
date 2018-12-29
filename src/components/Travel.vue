@@ -13,29 +13,39 @@
     <section>
       <div class="block">
         <p><span class="first-character">A</span>
-          ttending destination wedding could be an hassle, especially traveling internationally! and that's why we want to help you along the way!! We
-          have following information, suggestion tha could help you plan for this awesome vacation!!
+          ttending destination wedding can an hassle, especially traveling internationally. We want to help you along the way and make this process as
+          easy as possible! We have some travel information below that can help you navigate when and how to book flights. Shuttle information is on
+          the FAQ page, if you need assistance setting that up! Always, if you have questions please feel free to reach out to us.
         </p>
+
+        <h3 class="md-subheader">Hopper App</h3>
+        <p>
+          Download the ‘Hopper’ app in the Google Play or Apple Store. It’s a free app that tracks current prices of flights and will give you
+          predictions when the best time to book is. Select a flight that you want to watch pricing for and you will get notifications when the price
+          increases or drops. They have a 96% accuracy rating. They do not contract with Alaska so if you plan to fly with them, please check their
+          site for price changes.
+        </p>
+
         <h3 class="md-subheader">Alaska Airline Discount Code</h3>
         <p>
           You can book your flights through Alaska airline using our discount code <span class="discountCode"> ECMC181 </span> for 5-7% off! We know
-          it's not much but any bit helps ;)
+          it's not much, but any little bit helps.
         </p>
         <p>
-          To use your Discount Code, go online to <a href="https://www.alaskaair.com/" target="_blank">alaskaair.com</a> and input the Discount Code
-          when searching for flights. The discount will be applied to any flights meeting the contract parameters. By clicking the “?” next to the
-          discount code box after entering the code you may view a detailed description of the rules.
+          To use your Discount Code, go online to <a href="https://www.alaskaair.com/" target="_blank">alaskaair.com</a> On the main booking page
+          there is an option to select ‘use discount code or companion fare code” and input the Discount Code. The discount will automatically be
+          applied to the prices to any flight to cabo from any airport. By clicking the “?” next to the discount code box after entering the code you
+          may view a detailed description of the rules and restrictions. We are contacting other Airlines to get other coupon code and group travel
+          discounts, so please check back on this page to look for more ways to save.
         </p>
-        <p>
-          We are contacting other Airlines to get any coupon code and group travel discounts, so please check back on this page to look for more ways
-          to save.
-        </p>
+
         <h3 class="md-subheader"> Car Rentals</h3>
         <p>
-          If you are feeling adventurous and want to explore what Cabo has to offer, renting a car would be the way to go! However, we strongly
-          strongly recommend you get insurance. You may be able to extend your current insurance into Mexico (not really sure if it works that way but
-          worth a shot). Otherwise we will be providing transportation to a number of the events from the blocked resort and from Acre, to and from
-          the town for a night out.
+          We honestly don’t feel that renting a car is necessary. If you have a group it’s cheap to get a shuttle or taxi into town. The hotel can
+          easily hail you a cab. Mexico doesn’t have Uber so for getting home you will have to hail a cab back yourself. But parking downtown can be a
+          hassle as well. However, if you decide you want a car we strongly strongly recommend you get insurance. You may be able to extend your
+          current insurance into Mexico (not really sure if it works that way but worth a shot). Otherwise we will be providing transportation to a
+          number of the events from the blocked resort and from Acre, to and from the town for a night out.
         </p>
       </div>
     </section>
@@ -120,7 +130,7 @@
       color: $white;
       font-weight: 400;
       text-transform: uppercase;
-      z-index: 10;
+      z-index: 2;
       opacity: .9;
     }
 
