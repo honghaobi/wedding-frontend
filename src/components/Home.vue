@@ -74,7 +74,7 @@
       margin-left: 0px;
     }
   }
-  
+
   .border {
     border: 30px solid $white;
     position: fixed;

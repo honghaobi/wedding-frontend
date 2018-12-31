@@ -493,7 +493,11 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: $off-white;
+    background-image: url('./../assets/photos/other/rsvp-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     z-index: -2;
 
     .md-card {
