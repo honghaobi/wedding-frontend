@@ -286,7 +286,6 @@
           scale: 1,
         });
       }
-
     },
     destroyed() {
       window.removeEventListener('resize', this.handleResize);
@@ -480,7 +479,6 @@
       }
     },
   };
-
 </script>
 
 <style lang="scss" scoped>

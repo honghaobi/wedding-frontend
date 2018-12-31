@@ -6,7 +6,7 @@
     </section>
     <section>
       <div class="parallax-one">
-        <h2>HENRY + KELLI</h2>
+        <h2>Our Story</h2>
       </div>
     </section>
 
@@ -290,7 +290,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/1.jpg");
+      background-image: url("./../assets/photos/hk/14.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
@@ -305,7 +305,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/2.jpg");
+      background-image: url("./../assets/photos/hk/13.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;

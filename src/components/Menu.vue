@@ -4,7 +4,7 @@
       <a href="#" class="bt-menu-trigger hvr-bob"><span>Menu</span></a>
       <ul>
         <li><a href="#" class="bt-icon icon-star route hvr-wobble-horizontal">
-          <router-link to="/">H&K</router-link>
+          <router-link to="/">Home</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-sun route hvr-wobble-horizontal">
           <router-link to="/rsvp">RSVP</router-link>
@@ -14,6 +14,9 @@
         </a></li>
         <li><a href="#" class="bt-icon icon-speaker route hvr-wobble-horizontal">
           <router-link to="/travel">TRAVEL</router-link>
+        </a></li>
+        <li><a href="#" class="bt-icon icon-star route hvr-wobble-horizontal">
+          <router-link to="/hk">H&K</router-link>
         </a></li>
         <li><a href="#" class="bt-icon icon-user-outline route hvr-wobble-horizontal">
           <router-link to="/bridal">BRIDAL</router-link>

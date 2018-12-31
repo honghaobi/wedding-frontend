@@ -12,6 +12,13 @@ export default new Router(
         path: '/',
         name: 'home',
         component() {
+          return import('./components/Home.vue');
+        },
+      },
+      {
+        path: '/hk',
+        name: 'hk',
+        component() {
           return import('./components/HK.vue');
         },
       },
