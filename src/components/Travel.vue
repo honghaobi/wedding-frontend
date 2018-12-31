@@ -18,6 +18,15 @@
           the FAQ page, if you need assistance setting that up! Always, if you have questions please feel free to reach out to us.
         </p>
 
+        <h3 class="md-subheader">Expedia</h3>
+        <p>
+          You can check third party booking sites like <a
+          href="https://www.expedia.com/Flights-Search?trip=roundtrip&leg1=from%3ASeattle%2C%20WA%2C%20United%20States%20(SEA)%2Cto%3ASan%20Jose%20del%20Cabo%2C%20Baja%20California%20Sur%2C%20Mexico%20(SJD-Los%20Cabos%20Intl.)%2Cdeparture%3A06%2F19%2F2019TANYT&leg2=from%3ASan%20Jose%20del%20Cabo%2C%20Baja%20California%20Sur%2C%20Mexico%20(SJD-Los%20Cabos%20Intl.)%2Cto%3ASeattle%2C%20WA%2C%20United%20States%20(SEA)%2Cdeparture%3A06%2F23%2F2019TANYT&passengers=adults%3A2%2Cchildren%3A0%2Cseniors%3A0%2Cinfantinlap%3AY&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com"
+          target="_blank">Expedia</a> for cheap deals on flights. For a reasonable and desirable flight times during June look
+          for flights that are in the low 400’s. That’s a decent deal and we suggest booking if you see a flight that price. Flights with longer
+          layovers and less desirable times may be a bit cheaper.
+        </p>
+
         <h3 class="md-subheader">Hopper App</h3>
         <p>
           Download the ‘Hopper’ app in the Google Play or Apple Store. It’s a free app that tracks current prices of flights and will give you
@@ -203,42 +212,12 @@
     }
 
     .parallax-two {
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 300px;
+      padding-bottom: 300px;
       overflow: hidden;
       position: relative;
       width: 100%;
       background-image: url("./../assets/photos/hk/13.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .parallax-three {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background-image: url("./../assets/photos/hk/12.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .parallax-four {
-      padding-top: 200px;
-      padding-bottom: 200px;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background-image: url("./../assets/photos/hk/15.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;

@@ -13,7 +13,6 @@
 
       const myAnimationDuration = 5000;
 
-      //TODO: Set Confetti Colors
       const myListOfColors = [
         '#FFEFE9',
         '#FCEEC9',

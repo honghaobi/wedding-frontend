@@ -417,7 +417,7 @@
               id: this.selectedGuest.id,
               first_name: this.selectedGuest.first_name,
               email: this.selectedGuest.email,
-              title: 'You are coming to Henry & Kelli Wedding in CABO',
+              title: `${this.selectedGuest.first_name}, You are coming to Henry & Kelli Wedding in CABO`,
               message: guestEmailMessage,
             });
           }
@@ -444,12 +444,15 @@
               id: this.selectedGuestPartner.id,
               first_name: this.selectedGuestPartner.first_name,
               email: this.selectedGuestPartner.email,
-              title: 'You are coming to Henry & Kelli Wedding in CABO',
+              title: `${this.selectedGuestPartner.first_name}, You are coming to Henry & Kelli Wedding in CABO`,
               message: guestEmailMessage,
             });
           }
         }
         this.snackBar2 = true;
+        setTimeout(() => {
+          router.push('resort');
+        }, 5000);
       },
       setDone(id, index) {
         this[id] = true;
@@ -561,10 +564,6 @@
       #continueBtn {
         margin-top: 10px;
         margin-left: 8px;
-      }
-
-      .md-snackbar {
-        background-color: $accent-color;
       }
 
       .question1 {

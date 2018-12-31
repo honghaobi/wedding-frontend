@@ -263,7 +263,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/10.jpg");
+      background-image: url("./../assets/photos/hk/11.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;

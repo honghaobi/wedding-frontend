@@ -37,26 +37,3 @@
 .slide-top-enter, .slide-top-leave-to {
   transform: translateY(20px);
 }
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #DB6DD6,
-    0 0 20px $white,
-    0 0 30px $white,
-    0 0 40px $primary-color-shade-1,
-    0 0 70px $primary-color-shade-1,
-    0 0 80px $primary-color,
-    0 0 100px $primary-color,
-    0 0 150px $primary-color-shade-2;
-  }
-  to {
-    text-shadow: 0 0 5px #DB6DD6,
-    0 0 10px $white,
-    0 0 15px $white,
-    0 0 20px $primary-color-shade-1,
-    0 0 35px $primary-color-shade-1,
-    0 0 40px $primary-color,
-    0 0 50px $primary-color,
-    0 0 75px $primary-color-shade-2;
-  }
-}

@@ -22,7 +22,8 @@
       window: {
         width: 0,
         height: 0
-      }
+      },
+      loaded: false,
     }),
     created() {
       window.addEventListener('resize', this.handleResize);
@@ -44,6 +45,9 @@
       handleResize() {
         this.window.width = window.innerWidth;
         this.window.height = window.innerHeight;
+      },
+      onLoaded() {
+        this.loaded = true;
       }
     }
   };

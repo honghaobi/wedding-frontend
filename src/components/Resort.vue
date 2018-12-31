@@ -393,12 +393,6 @@
     color: $white;
     z-index: 2;
     white-space: normal;
-
-    :hover {
-      -webkit-animation: neon1 2s ease-in-out infinite alternate;
-      -moz-animation: neon1 2s ease-in-out infinite alternate;
-      animation: neon1 2s ease-in-out infinite alternate;
-    }
   }
 
 
