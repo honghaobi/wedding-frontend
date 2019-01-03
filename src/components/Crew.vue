@@ -116,7 +116,6 @@
   export default {
     name: 'Crew',
     mounted() {
-
       // Helper vars and functions.
       function extend(a, b) {
         for ( var key in b ) {
@@ -761,7 +760,7 @@
             }
           }
         }
-        ];
+      ];
 
       function init() {
         var idx = 0;
@@ -782,8 +781,12 @@
 
   section {
     display: flex;
+    background-image: url("./../assets/photos/crew/crew-bg.png");
+    background-size: 500px 500px;
+    background-repeat: repeat;
     justify-items: center;
     flex-wrap: wrap;
+    padding: 1.5em;
   }
 
   .tilter {
@@ -791,7 +794,7 @@
     position: relative;
     width: 280px;
     height: 387px;
-    margin: 1.5em 2.5em;
+    margin: 1.5em 1.5em;
     color: #fff;
     flex: none;
     perspective: 1000px;
@@ -804,6 +807,19 @@
       color: $primary-color;
       text-shadow: 2px 2px 5px rgba($accent-color, 0.5);
       outline: none;
+    }
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    section {
+      padding-top: 2em;
+    }
+
+    .tilter {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
   }
 
@@ -978,7 +994,7 @@
     .tilter__deco--lines path {
       stroke-dasharray: 1270;
       stroke-dashoffset: 1270;
-      transition: stroke-dashoffset 0.7s;
+      transition: stroke-dashoffset 1s;
     }
 
     &:hover .tilter__deco--lines path {
@@ -986,7 +1002,7 @@
     }
 
     .tilter__figure::before {
-      box-shadow: none;
+      box-shadow: 0 30px 20px rgba($accent-color, 0.4);
     }
   }
 
