@@ -1,54 +1,24 @@
 <template>
   <div>
-    <section class="content content--c1">
-      <a href="#" class="tilter tilter--1">
+    <section class="content">
+      <span class="tilter tilter--5">
         <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/bridal/will2.jpg" alt="img01"/>
+          <img class="tilter__image" src="./../assets/photos/crew/brian1.jpg"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
           <figcaption class="tilter__caption">
-            <h3 class="tilter__title">Will Schumaker</h3>
-            <p class="tilter__description">Best Man</p>
+            <h3 class="tilter__title">Brian James</h3>
+            <p class="tilter__description">Officiant</p>
           </figcaption>
           <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
             <path d="M20.5,20.5h260v375h-260V20.5z"/>
           </svg>
         </figure>
-      </a>
-      <a href="#" class="tilter tilter--1">
+      </span>
+      <span class="tilter tilter--5">
         <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/bridal/riley2.jpg" alt="img02"/>
-          <div class="tilter__deco tilter__deco--shine">
-            <div></div>
-          </div>
-          <figcaption class="tilter__caption">
-            <h3 class="tilter__title">Riley Brazil</h3>
-            <p class="tilter__description">Groomsman</p>
-          </figcaption>
-          <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-            <path d="M20.5,20.5h260v375h-260V20.5z"/>
-          </svg>
-        </figure>
-      </a>
-      <a href="#" class="tilter tilter--1">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/bridal/stu2.jpg" alt="img02"/>
-          <div class="tilter__deco tilter__deco--shine">
-            <div></div>
-          </div>
-          <figcaption class="tilter__caption">
-            <h3 class="tilter__title">Stuart Anderson</h3>
-            <p class="tilter__description">Groomsman</p>
-          </figcaption>
-          <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-            <path d="M20.5,20.5h260v375h-260V20.5z"/>
-          </svg>
-        </figure>
-      </a>
-      <a href="#" class="tilter tilter--1">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="https://picsum.photos/300/500" alt="img01"/>
+          <img class="tilter__image" src="./../assets/photos/crew/steph1.jpg"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -60,10 +30,25 @@
             <path d="M20.5,20.5h260v375h-260V20.5z"/>
           </svg>
         </figure>
-      </a>
-      <a href="#" class="tilter tilter--1">
+      </span>
+      <span class="tilter tilter--5">
         <figure class="tilter__figure">
-          <img class="tilter__image" src="https://picsum.photos/300/500" alt="img02"/>
+          <img class="tilter__image" src="./../assets/photos/crew/will1.jpg"/>
+          <div class="tilter__deco tilter__deco--shine">
+            <div></div>
+          </div>
+          <figcaption class="tilter__caption">
+            <h3 class="tilter__title">Will Schumaker</h3>
+            <p class="tilter__description">Best Man</p>
+          </figcaption>
+          <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+            <path d="M20.5,20.5h260v375h-260V20.5z"/>
+          </svg>
+        </figure>
+      </span>
+      <span class="tilter tilter--5">
+        <figure class="tilter__figure">
+          <img class="tilter__image" src="./../assets/photos/crew/brooke1.jpg"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -75,35 +60,61 @@
             <path d="M20.5,20.5h260v375h-260V20.5z"/>
           </svg>
         </figure>
-      </a>
-      <a href="#" class="tilter tilter--1">
+      </span>
+      <span class="tilter tilter--5">
         <figure class="tilter__figure">
-          <img class="tilter__image" src="https://picsum.photos/300/500" alt="img02"/>
+          <img class="tilter__image" src="./../assets/photos/crew/riley1.jpg"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
           <figcaption class="tilter__caption">
-            <h3 class="tilter__title">Samantha Lyons</h3>
+            <h3 class="tilter__title">Riley Brazil</h3>
             <p class="tilter__description">Groomsman</p>
           </figcaption>
           <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
             <path d="M20.5,20.5h260v375h-260V20.5z"/>
           </svg>
         </figure>
-      </a>
+      </span>
+      <span class="tilter tilter--5">
+        <figure class="tilter__figure">
+          <img class="tilter__image" src="./../assets/photos/crew/sam1.jpg"/>
+          <div class="tilter__deco tilter__deco--shine">
+            <div></div>
+          </div>
+          <figcaption class="tilter__caption">
+            <h3 class="tilter__title">Samantha Lyon</h3>
+            <p class="tilter__description">Bridesmaid</p>
+          </figcaption>
+          <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+            <path d="M20.5,20.5h260v375h-260V20.5z"/>
+          </svg>
+        </figure>
+      </span>
+      <span class="tilter tilter--5">
+        <figure class="tilter__figure">
+          <img class="tilter__image" src="./../assets/photos/crew/stu1.jpg"/>
+          <div class="tilter__deco tilter__deco--shine">
+            <div></div>
+          </div>
+          <figcaption class="tilter__caption">
+            <h3 class="tilter__title">Stuart Anderson</h3>
+            <p class="tilter__description">Groomsman</p>
+          </figcaption>
+          <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+            <path d="M20.5,20.5h260v375h-260V20.5z"/>
+          </svg>
+        </figure>
+      </span>
     </section>
   </div>
 </template>
 
 <script>
-  import PerspectiveText from '../components/PerspectiveText';
   import anime from './../js/anime.min.js';
 
   export default {
-    name: 'Bridal',
-    components: {
-      PerspectiveText
-    },
+    name: 'Crew',
     mounted() {
 
       // Helper vars and functions.
@@ -749,14 +760,15 @@
               }
             }
           }
-        }];
+        }
+        ];
 
       function init() {
         var idx = 0;
-        [].slice.call(document.querySelectorAll('a.tilter'))
+        [].slice.call(document.querySelectorAll('span.tilter'))
           .forEach(function (el, pos) {
-            idx = pos % 2 === 0 ? idx + 1 : idx;
-            new TiltFx(el, tiltSettings[idx - 1]);
+            // idx = pos % 2 === 0 ? idx + 1 : idx;
+            new TiltFx(el, tiltSettings[6]);
           });
       }
 
@@ -766,9 +778,9 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "./../css/main.scss";
 
   section {
-    padding: 5%;
     display: flex;
     justify-items: center;
     flex-wrap: wrap;
@@ -777,8 +789,8 @@
   .tilter {
     display: block;
     position: relative;
-    width: 300px;
-    height: 415px;
+    width: 280px;
+    height: 387px;
     margin: 1.5em 2.5em;
     color: #fff;
     flex: none;
@@ -789,7 +801,8 @@
     }
 
     &:hover, &:focus {
-      color: #fff;
+      color: $primary-color;
+      text-shadow: 2px 2px 5px rgba($accent-color, 0.5);
       outline: none;
     }
   }

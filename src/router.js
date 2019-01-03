@@ -58,10 +58,10 @@ export default new Router(
         },
       },
       {
-        path: '/bridal',
-        name: 'bridal',
+        path: '/crew',
+        name: 'crew',
         component() {
-          return import('./components/Bridal.vue');
+          return import('./components/Crew.vue');
         },
       },
       {
