@@ -136,8 +136,8 @@
                     <label>Email</label>
                     <md-input v-model=selectedGuest.email></md-input>
                   </md-field>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_message">Opt-In Text Updates</md-checkbox>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_email">Opt-In Email Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_message" :disabled="!selectedGuest.phone">Opt-In Text Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_email" :disabled="!selectedGuest.email">Opt-In Email Updates</md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuest.food_allergies></md-input>
@@ -164,8 +164,8 @@
                     <label>Email</label>
                     <md-input v-model=selectedGuestPartner.email></md-input>
                   </md-field>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_message">Opt-In Text Updates</md-checkbox>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_email">Opt-In Email Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_message" :disabled="!selectedGuestPartner.phone">Opt-In Text Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_email" :disabled="!selectedGuestPartner.email">Opt-In Email Updates</md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuestPartner.food_allergies></md-input>
@@ -242,7 +242,11 @@
       searchedGuest: null,
       selectedGuest: null,
       selectedGuestAttending: true,
+      selectedGuestOptPhone: null,
+      selectedGuestOptEmail: true,
       selectedGuestPartner: null,
+      selectedGuestPartnerOptPhone: null,
+      selectedGuestPartnerOptEmail: true,
       selectedGuestPartnerIncluded: null,
       selectedGuestPartnerAttending: false,
       guestsAttending: false,
@@ -299,9 +303,13 @@
         if ( this.selectedGuest.attending === true || this.selectedGuest.attending === false ) {
           this.showRSVPDialog = true;
           this.selectedGuestAttending = this.selectedGuest.attending;
+          this.selectedGuestOptPhone = this.selectedGuest.opt_message;
+          this.selectedGuestOptEmail = this.selectedGuest.opt_email;
           if ( this.selectedGuestPartner && this.selectedGuestPartner.attending ) {
             this.selectedGuestPartnerIncluded = true;
             this.selectedGuestPartnerAttending = this.selectedGuestPartner.attending;
+            this.selectedGuestPartnerOptPhone = this.selectedGuestPartner.opt_message;
+            this.selectedGuestPartnerOptEmail = this.selectedGuestPartner.opt_email;
           }
         }
       },
@@ -405,14 +413,14 @@
             opt_message: this.selectedGuest.opt_message,
             opt_email: this.selectedGuest.opt_email,
           });
-          if ( this.selectedGuest.phone && this.selectedGuest.opt_message ) {
+          if ( this.selectedGuest.phone && this.selectedGuest.opt_message && this.selectedGuestOptPhone === null) {
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuest.id,
               phone: `+1${this.selectedGuest.phone}`,
               message: `Holla ${this.selectedGuest.first_name}! ${guestTextMessage}`,
             });
           }
-          if ( this.selectedGuest.email && this.selectedGuest.opt_email ) {
+          if ( this.selectedGuest.email && this.selectedGuest.opt_email && this.selectedGuestOptEmail === null) {
             store.dispatch('SEND_GUEST_EMAIL', {
               id: this.selectedGuest.id,
               first_name: this.selectedGuest.first_name,
@@ -432,14 +440,14 @@
             opt_message: this.selectedGuestPartner.opt_message,
             opt_email: this.selectedGuestPartner.opt_email,
           });
-          if ( this.selectedGuestPartner.phone && this.selectedGuestPartner.opt_message ) {
+          if ( this.selectedGuestPartner.phone && this.selectedGuestPartner.opt_message && this.selectedGuestPartnerOptPhone === null) {
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuestPartner.id,
               phone: `+1${this.selectedGuestPartner.phone}`,
               message: `Holla ${this.selectedGuestPartner.first_name}! ${guestTextMessage}`,
             });
           }
-          if ( this.selectedGuestPartner.email && this.selectedGuestPartner.opt_email ) {
+          if ( this.selectedGuestPartner.email && this.selectedGuestPartner.opt_email && this.selectedGuestPartnerOptEmail === null) {
             store.dispatch('SEND_GUEST_EMAIL', {
               id: this.selectedGuestPartner.id,
               first_name: this.selectedGuestPartner.first_name,
