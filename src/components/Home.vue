@@ -4,6 +4,7 @@
       <div class="middleground">
         <div class="foreground">
           <h2>Henry&nbsp;&nbsp;Kelli</h2>
+          <PointerBubbles/>
         </div>
       </div>
     </div>
@@ -14,10 +15,13 @@
 
 <script>
   import VanillaTilt from '../js/vanilla-tilt';
+  import PointerBubbles from './../components/PointerBubbles';
 
   export default {
     name: 'home',
-    components: {},
+    components: {
+      PointerBubbles
+    },
     data: () => ({
       window: {
         width: 0,

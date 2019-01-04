@@ -364,6 +364,7 @@
       user-select: none;
       -webkit-transition: background-color 0.3s;
       transition: background-color 0.3s;
+      box-shadow: 1px 2px $primary-color-shade-1;
 
       &:before {
         position: absolute;
@@ -376,6 +377,7 @@
         transition: transform 0.3s;
         -webkit-transform: translateY(-250%);
         transform: translateY(-250%);
+        box-shadow: 1px 2px $primary-color-shade-1;
       }
 
       &:after {
@@ -389,6 +391,7 @@
         transition: transform 0.3s;
         -webkit-transform: translateY(250%);
         transform: translateY(250%);
+        box-shadow: 1px 2px $primary-color-shade-1;
       }
     }
   }

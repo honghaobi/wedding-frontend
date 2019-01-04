@@ -2,8 +2,9 @@
   <div>
     <section class="content">
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/brian1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.brian=!images.brian" @mouseleave="images.brian=!images.brian">
+          <img class="tilter__image" src="./../assets/photos/crew/brian1.jpg" v-if="images.brian"/>
+          <img class="tilter__image" src="./../assets/photos/crew/brian2.jpg" v-if="!images.brian"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -17,8 +18,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/steph1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.steph=!images.steph" @mouseleave="images.steph=!images.steph">
+          <img class="tilter__image" src="./../assets/photos/crew/steph1.jpg" v-if="images.steph"/>
+          <img class="tilter__image" src="./../assets/photos/crew/steph2.jpg" v-if="!images.steph"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -32,8 +34,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/will1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.will=!images.will" @mouseleave="images.will=!images.will">
+          <img class="tilter__image" src="./../assets/photos/crew/will1.jpg" v-if="images.will"/>
+          <img class="tilter__image" src="./../assets/photos/crew/will2.jpg" v-if="!images.will"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -47,8 +50,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/brooke1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.brooke=!images.brooke" @mouseleave="images.brooke=!images.brooke">
+           <img class="tilter__image" src="./../assets/photos/crew/brooke1.jpg" v-if="images.brooke"/>
+          <img class="tilter__image" src="./../assets/photos/crew/brooke2.jpg" v-if="!images.brooke"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -62,8 +66,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/riley1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.riley=!images.riley" @mouseleave="images.riley=!images.riley">
+           <img class="tilter__image" src="./../assets/photos/crew/riley1.jpg" v-if="images.riley"/>
+          <img class="tilter__image" src="./../assets/photos/crew/riley2.jpg" v-if="!images.riley"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -77,8 +82,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/sam1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.sam=!images.sam" @mouseleave="images.sam=!images.sam">
+           <img class="tilter__image" src="./../assets/photos/crew/sam1.jpg" v-if="images.sam"/>
+          <img class="tilter__image" src="./../assets/photos/crew/sam2.jpg" v-if="!images.sam"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -92,8 +98,9 @@
         </figure>
       </span>
       <span class="tilter tilter--5">
-        <figure class="tilter__figure">
-          <img class="tilter__image" src="./../assets/photos/crew/stu1.jpg"/>
+        <figure class="tilter__figure" @mouseenter="images.stu=!images.stu" @mouseleave="images.stu=!images.stu">
+           <img class="tilter__image" src="./../assets/photos/crew/stu1.jpg" v-if="images.stu"/>
+          <img class="tilter__image" src="./../assets/photos/crew/stu2.jpg" v-if="!images.stu"/>
           <div class="tilter__deco tilter__deco--shine">
             <div></div>
           </div>
@@ -115,6 +122,19 @@
 
   export default {
     name: 'Crew',
+    data: () => ({
+      images: {
+        brian: true,
+        will: true,
+        riley: true,
+        stu: true,
+        steph: true,
+        sam: true,
+        brooke: true,
+      },
+    }),
+    methods: {
+    },
     mounted() {
       // Helper vars and functions.
       function extend(a, b) {
@@ -773,6 +793,7 @@
 
       init();
     }
+
   };
 </script>
 
@@ -781,7 +802,7 @@
 
   section {
     display: flex;
-    background-image: url("./../assets/photos/crew/crew-bg.png");
+    background-image: url("./../assets/photos/crew/crew-bg.jpg");
     background-size: 500px 500px;
     background-repeat: repeat;
     justify-items: center;
@@ -799,9 +820,9 @@
     flex: none;
     perspective: 1000px;
 
-    * {
-      pointer-events: none;
-    }
+    /** {*/
+    /*pointer-events: none;*/
+    /*}*/
 
     &:hover, &:focus {
       color: $primary-color;
@@ -831,6 +852,7 @@
   }*/
 
   .tilter__figure, .tilter__image {
+    cursor: pointer;
     margin: 0;
     width: 100%;
     height: 100%;
