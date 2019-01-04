@@ -91,13 +91,15 @@
       }
 
       const colorArray = [
-        '90, 211, 196',
-        '20, 34, 54',
-        '252, 238, 201'
+        // '90, 211, 196',
+        // '20, 34, 54',
+        '172, 127, 97',
+        '252, 238, 201',
+        '235, 235, 235'
       ];
 
       function drawCircles() {
-        for ( let i = 0; i < 6; i++ ) {
+        for ( let i = 0; i < 2; i++ ) {
           let radius = Math.floor(Math.random() * 5) + 0;
           let vx = (Math.random() * 2) - 1;
           let vy = (Math.random() * 2) - 1;
@@ -140,12 +142,10 @@
 
 <style land="scss" scoped>
   @import "./../css/main.scss";
-
   canvas
   {
     margin: 0;
     padding: 0;
     touch-action: none;
-
   }
 </style>
