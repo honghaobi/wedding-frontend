@@ -38,4 +38,8 @@ export default {
     return axios.post(`/sms-email`, emailData)
       .then((response) => response.data);
   },
+  sendHenryQuestion(messageData) {
+    return axios.post(`/question`, messageData)
+      .then((response) => response.data);
+  },
 };

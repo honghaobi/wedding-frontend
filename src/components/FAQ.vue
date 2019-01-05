@@ -121,11 +121,6 @@
         <h2>More Questions?</h2>
       </div>
     </section>
-    <section>
-      <div class="block">
-        <h1>FORM FOR MORE QUESTION RESPONSE</h1>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -258,8 +253,8 @@
     }
 
     .parallax-two {
-      padding-top: 200px;
-      padding-bottom: 200px;
+      padding-top: 300px;
+      padding-bottom: 300px;
       overflow: hidden;
       position: relative;
       width: 100%;
@@ -323,7 +318,6 @@
         padding-bottom: 200px;
         background-attachment: scroll;
       }
-
     }
   }
 

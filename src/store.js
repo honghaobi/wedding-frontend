@@ -62,7 +62,10 @@ export default new Vuex.Store({
     },
     SEND_GUEST_EMAIL( context, payload ) {
       GuestsAPI.sendGuestEmail( payload );
-    }
+    },
+    SEND_HENRY_QUESTION( context, payload ) {
+      GuestsAPI.sendHenryQuestion( payload );
+    },
   },
   getters: {
     getAllGuests: state => state.guests,

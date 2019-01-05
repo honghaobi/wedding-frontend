@@ -56,11 +56,11 @@
       showDialog: false,
     }),
     methods: {
-      handleClose: function (event) {
+      handleClose() {
         //TODO: revert back to initial guest data;
         this.showDialog = false;
       },
-      handleSave: function (event) {
+      handleSave() {
         store.dispatch('UPDATE_GUEST_BY_ID', {
           id: this.guest.id,
           phone: this.guest.phone,

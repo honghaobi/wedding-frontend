@@ -31,14 +31,44 @@
           <router-link to="/faq">FAQ</router-link>
         </a></li>
       </ul>
+      <img class="question hvr-bounce-in" @click="showQuestionDialog = true" src="./../assets/images/question.png"/>
+      <md-dialog :md-active.sync="showQuestionDialog">
+        <md-dialog-title>
+          <h3>Any other burning questions?</h3>
+          <div class="md-subheading">Ask us anything or just want to drop us a line.
+                                     This will send us a text message and email. We will be sure to get back to you ASAP.
+          </div>
+        </md-dialog-title>
+        <md-dialog-content>
+          <md-field>
+            <label>Your Name</label>
+            <md-input v-model="guestName" required></md-input>
+          </md-field>
+          <md-field>
+            <label>Your Question</label>
+            <md-textarea v-model="guestQuestion" required></md-textarea>
+          </md-field>
+        </md-dialog-content>
+        <md-dialog-actions>
+          <md-button class="md-accent md-raised" @click="handleClose">Close</md-button>
+          <md-button class="md-primary md-raised" @click="handleSend" :disabled="!guestQuestion">Send</md-button>
+        </md-dialog-actions>
+      </md-dialog>
     </nav>
   </div>
 </template>
 
 <script>
+  import store from '../store';
+
   export default {
     name: 'Menu',
     components: {},
+    data: () => ({
+      showQuestionDialog: false,
+      guestName: null,
+      guestQuestion: null,
+    }),
     mounted() {
       function classReg(className) {
         return new RegExp('(^|\\s+)' + className + '(\\s+|$)');
@@ -130,6 +160,21 @@
 
       init();
     },
+    methods: {
+      handleClose() {
+        this.showQuestionDialog = false;
+      },
+      handleSend() {
+        if ( this.guestName && this.guestQuestion ) {
+          store.dispatch('SEND_HENRY_QUESTION', {
+            guestName: this.guestName,
+            guestQuestion: this.guestQuestion,
+          });
+          this.showQuestionDialog = false;
+          this.guestQuestion = null;
+        }
+      }
+    }
   };
 </script>
 
@@ -143,7 +188,6 @@
   $background_color_2: rgba(20, 34, 54, 0.5);
   $background_color_3: $accent-color;
   $border_color_1: $white;
-
 
   .container {
     padding: 0px;
@@ -177,7 +221,7 @@
 
         li {
           width: 150px;
-          height: 50px;
+          height: 45px;
           line-height: 50px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);
@@ -260,12 +304,25 @@
     }
   }
 
+  .question {
+    display: none;
+  }
+
   .bt-menu.bt-menu-open {
     height: 100%;
     border-width: 0px 0px 50px 120px;
     background-color: $background_color_2;
     -webkit-transition: border-width 0.3s, background-color 0.3s;
     transition: border-width 0.3s, background-color 0.3s;
+
+    .question {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      width: 40px;
+      right: 5px;
+      bottom: -45px;
+    }
 
     ul {
       &:first-of-type {
