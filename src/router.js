@@ -71,13 +71,6 @@ export default new Router(
           return import('./components/Proposal.vue');
         },
       },
-      // {
-      //   path: '/registry',
-      //   name: 'registry',
-      //   component() {
-      //     return import('./components/Registry.vue');
-      //   },
-      // },
       {
         path: '/faq',
         name: 'faq',

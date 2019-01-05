@@ -27,6 +27,9 @@
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/gallery">Gallery</router-link>
         </a></li>
+        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <a href="https://www.zola.com/registry/henryandkelli" target="_blank">Registry</a>
+        </a></li>
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/faq">FAQ</router-link>
         </a></li>
@@ -34,7 +37,7 @@
       <img class="question hvr-bounce-in" @click="showQuestionDialog = true" src="./../assets/images/question.png"/>
       <md-dialog :md-active.sync="showQuestionDialog">
         <md-dialog-title>
-          <h3>Any other burning questions?</h3>
+          <h3>Got a question for us?</h3>
           <div class="md-subheading">Ask us anything or just want to drop us a line.
                                      This will send us a text message and email. We will be sure to get back to you ASAP.
           </div>
@@ -145,8 +148,10 @@
         };
 
         menu.addEventListener('click', function (ev) {
-          ev.stopPropagation();
-          ev.preventDefault();
+          if ( ev.target.href !== 'https://www.zola.com/registry/henryandkelli' ) {
+            ev.stopPropagation();
+            ev.preventDefault();
+          }
           if ( classie.has(menu, 'bt-menu-open') ) {
             resetMenu();
           } else {
