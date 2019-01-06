@@ -27,8 +27,8 @@
         <h3>How long should we stay?</h3>
         <p>
           Good question!! Big reason why we picked Cabo is because we want to make this experience a vacation for y'all! We have our room block rate
-          locked from June 16th - June 25th. With that being said, we will have planned events from June 19th to June 22nd, assumming people are
-          flying out on the Sunday the 23rd. So stay as long as your heart desire and
+          locked from June 16th - June 25th. With that being said, we will have planned events from June 19th to June 22nd, assuming people are
+          flying out on the Sunday the 23rd. So stay as long as your heart desires.
         </p>
         <RoomsCarousel/>
       </div>

@@ -34,7 +34,7 @@
 
         <h3 class="md-subheader">How do we get to the wedding Venue?</h3>
         <p>We will have set up Shuttles/buses to take guests to and from Acre. The shuttles will be leaving Garza Blanca. The time is still TBD, but
-           we will provide you with a timeline of the weekend. in your room when you arrive.</p>
+           we will provide you with a timeline of the weekend in your room when you arrive.</p>
 
         <h3 class="md-subheader">Can I bring my kids?</h3>
         <p>This is our biggest adulting moment yet and while we love your children, this is a grown-ups only wedding. If you must bring them,
@@ -79,8 +79,7 @@
         <h3 class="md-subheader">I’m worried about if Cabo San Lucas is safe to travel?</h3>
         <p>Bad things happen in every city, and it doesn’t mean they are not safe. Mexico did have an increase violence in 2017. But since the Mexican
            government has spent $50 billion dollars to improve safety. In 2018 violence was down by 70%. But to be extra safe, stay in the tourist
-           areas
-           and don’t act a fool. Also, read this articles below.
+           areas and don’t act a fool. Also, read this article below.
           <a href="https://www.forbes.com/sites/forbestravelguide/2018/08/31/is-it-safe-to-travel-to-los-cabos/#41314f25206a" target="_blank">
             Safe to Travel to Cabo?</a>
         </p>

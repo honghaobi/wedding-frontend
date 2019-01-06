@@ -13,7 +13,7 @@
     <section>
       <div class="block">
         <p><span class="first-character">A</span>
-          ttending destination wedding can an hassle, especially traveling internationally. We want to help you along the way and make this process as
+          ttending a destination wedding can be a hassle, especially traveling internationally. We want to help you along the way and make this process as
           easy as possible! We have some travel information below that can help you navigate when and how to book flights. Shuttle information is on
           the FAQ page, if you need assistance setting that up! Always, if you have questions please feel free to reach out to us.
         </p>

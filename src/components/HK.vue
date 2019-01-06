@@ -21,7 +21,7 @@
         <p><span class="first-character">L</span>
           et’s rewind back to Apple Cup November 29th, 2013. Kelli in crimson and Henry in a purple UW jersey and a backwards cap. We were introduced
           by our mutual best friend Brooke at a tailgating party, drinking Rainier’s and playing cornhole. Henry was talking a lot of shit and forcing
-          peeps to take shots. Aaaandddd the Cougs took a big L. Looking back, it’s a day to remember, because it was day our friendship started
+          peeps to take shots. Aaaandddd the Cougs took a big L. Looking back, it’s a day to remember, because it was the day our friendship started
           despite the rivalry.
         </p>
         <p>
@@ -49,7 +49,7 @@
         </p>
         <p>
           After the dinner date, we started hanging out almost every day. Both could see this being the real deal, *insert more corny phrases here*.
-          Then the fairytale paused for a moment. Henry had just got out of a long term relationship that summer and was a little hesitant to be off
+          Then the fairytale was put on hold. Henry had just gotten out of a long term relationship that summer and was a little hesitant to be off
           the market for good. We had deep conversation and decided that if he wasn’t ready, then we did not want this to ruin our friendship that we
           cherished. So at the end of the night, it was decided we would just stay friends. We were both bummed but thought it was the right choice.
         </p>
@@ -77,7 +77,7 @@
           towels!). But on the flip side, Kell has taught him how to let go of some of those tendencies and live in the moment. This is just one
           example of how we balance each other out. We are Yin and Yang, opposites yet in perfect balance. Together, we have always stood in unison on
           our beliefs, morals, values, and what is important in life. We continue to push and challenge each other to be the best versions of
-          themselves.
+          ourselves.
         </p>
         <p>
           In our three years together, we have been blessed to have so many wonderful memories and experiences with all of you wonderful humans. We’d
@@ -129,18 +129,16 @@
           of the phone, or texting other people. It’s just the two of us, together on the road. There has been some amazing trips…like our 3 week trip
           throughout Italy on a Moto Guzzi with nothing more than one back pack each. We started in the rolling hills of Tuscany to witness Henry’s
           best friend Riley get married to the love of his life, Kenzie. Then explored the architecture of Florence, and history in Rome and ate our
-          weight in seafood pasta and gnocchi. Riding along the amalfi coast was breathtaking and a once in a lifetime opportunity. It was there in
+          weight in seafood pasta and gnocchi. Riding along the Amalfi Coast was breathtaking and a once in a lifetime opportunity. It was there in
           Sorrento, Henry asked Kelli to “be his turd forever” (not joking, that’s what he said). If you haven’t peeped the video, check it out on the
           <router-link to="/proposal">proposal</router-link>
-          page! Not all bike trips are created equal though. We once rode back to Seattle from Whistler in the summertime and got stuck in a
-          torrential downpour on the freeway. Shivering, we rode to a small town before the US border to dry our clothes at a laundromat so we could
-          make it the final 3 hours home. Finally dry and somewhat warm we reached the border only to have to wait in more rain ...Let’s just say
-          there was some tears coming from Henry. (ok fine, you all know it was Kelli). She cries sometimes especially when learning how to ski.
-          We both love the mountains and frequent the Washington ski resorts as well as Whistler. When we started dating, Kelli wasn’t a very good
-          skier. She knew the basics but there was a lot of pizza/french fry action going on. From getting lost in the backcountry to spending 25 days
-          skiing in one season, it has become one of our favorite mutual hobbies. Kelli thinks she’s pretty decent now and can mostly keep up with
-          Henry. We now love taking trips with their ski buds to Colorado, as well as our annual Whistler trip with 50+ of our rad friends. Nothing
-          better than a full day on the mountain to earn that apres ski hot toddy!
+          page! Not all bike trips are rainbows and butterflies though. We once rode back to Seattle from Whistler in the summertime and got stuck in
+          a torrential downpour on the freeway. Shivering, we rode to a small town before the US border to dry our clothes at a laundromat so we could
+          make it the final 3 hours home. We both love the mountains and frequent the Washington ski resorts as well as Whistler. When we started
+          dating, Kelli wasn’t a very good skier. She knew the basics but there was a lot of pizza/french fry action going on. From getting lost in
+          the backcountry to spending 25 days skiing in one season, it has become one of our favorite winter time activities. Kelli thinks she’s
+          pretty decent now and can mostly keep up with Henry. We now love taking trips with our ski buds to Colorado, Salt Lake City as well as our
+          annual Whistler trip with 50+ of our rad friends. Nothing better than a full day on the mountain to earn that apres ski hot toddy!
         </p>
         <p>
           Since we can’t ski in the summertime, we love attending concerts and music festivals of all kinds. In our three years together have been to
@@ -150,9 +148,8 @@
           two of their shows at Red Rocks now. It has become a new tradition of sorts. Mostly because it always aligns with the Broncos season opening
           game and Henry’s birthday. Another memorable festival was Coachella, because Henry was able to meet some of Kelli’s oldest friends for the
           first time. Despite the 110 degree weather it was such a fun week of music, dancing all night, and great friends. Also, Radiohead performed
-          and it was a dream come true for Henry.
-          Again, we could go on and on about all of the adventures we’ve had. But on a serious note, making memories with all you fools is the REASON
-          we travel! And NO Flynn, they won’t be going to Electric Forest for our Honeymoon.
+          and it was a dream come true for Henry. Again, we could go on and on about all of the adventures we’ve had. But on a serious note, making
+          memories with all you fools is the REASON we travel! And NO Flynn, they won’t be going to Electric Forest for our Honeymoon.
         </p>
         <p>
           Cheers to all the mems we will get to experience with you in the future!

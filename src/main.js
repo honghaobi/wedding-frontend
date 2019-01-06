@@ -10,14 +10,15 @@ import store from './store';
 import 'vue-material/dist/vue-material.css';
 
 Vue.config.productionTip = false;
-Vue.use(VueMaterial);
-Vue.use(VueCarousel);
-Vue.use(VueMasonryPlugin);
-Vue.use(Viewer);
+
 Vue.use(VueAnalytics, {
   id: 'UA-131760917-1',
   router
 });
+Vue.use(VueMaterial);
+Vue.use(VueCarousel);
+Vue.use(VueMasonryPlugin);
+Vue.use(Viewer);
 
 store.dispatch('LOAD_ALL_GUESTS');
 
