@@ -64,6 +64,7 @@
   $font_family_2: 'Poppins', sans-serif;
 
   h2 {
+    cursor: default;
     position: fixed;
     font-family: $font_family_1;
     font-size: 70px;
@@ -73,13 +74,14 @@
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.5;
-    margin-left: -8px;
+    margin-left: -10px;
+    top: 50%;
   }
 
   @media screen and (max-width: 479px) {
     h2 {
       font-size: 25px;
-      margin-left: 0px;
+      margin-left: 3px;
     }
   }
 

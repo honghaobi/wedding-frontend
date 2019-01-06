@@ -226,7 +226,7 @@
 
         li {
           width: 150px;
-          height: 45px;
+          height: 42px;
           line-height: 50px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);

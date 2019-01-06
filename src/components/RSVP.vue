@@ -514,7 +514,6 @@
     .md-card {
       max-width: 700px;
       min-width: 300px;
-      max-height: 90%;
       overflow: auto;
       z-index: 0;
       -webkit-box-shadow: 15px 15px 75px -10px rgba($accent-color, .75);

@@ -1,19 +1,28 @@
 import Vue from 'vue';
 import VueMaterial from 'vue-material';
 import VueCarousel from 'vue-carousel';
+import VueAnalytics from 'vue-analytics';
 import { VueMasonryPlugin } from 'vue-masonry';
 import Viewer from 'v-viewer';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-
 import 'vue-material/dist/vue-material.css';
+
+const isProd = process.env.NODE_ENV === 'production';
 
 Vue.config.productionTip = false;
 Vue.use(VueMaterial);
 Vue.use(VueCarousel);
 Vue.use(VueMasonryPlugin);
 Vue.use(Viewer);
+Vue.use(VueAnalytics, {
+  id: 'UA-131760917-1',
+  debug: {
+    enabled: !isProd,
+    sendHitTask: isProd,
+  }
+});
 
 store.dispatch('LOAD_ALL_GUESTS');
 
