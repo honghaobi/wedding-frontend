@@ -9,19 +9,13 @@ import router from './router';
 import store from './store';
 import 'vue-material/dist/vue-material.css';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 Vue.config.productionTip = false;
 Vue.use(VueMaterial);
 Vue.use(VueCarousel);
 Vue.use(VueMasonryPlugin);
 Vue.use(Viewer);
 Vue.use(VueAnalytics, {
-  id: 'UA-131760917-1',
-  debug: {
-    enabled: !isProd,
-    sendHitTask: isProd,
-  }
+  id: 'UA-131760917-1'
 });
 
 store.dispatch('LOAD_ALL_GUESTS');
