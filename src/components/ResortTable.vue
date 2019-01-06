@@ -113,7 +113,12 @@
 <style lang="scss" scoped>
   @import "./../css/main.scss";
 
+  .md-title{
+    overflow: visible;
+  }
+
   .subHeader {
+    margin-left: 8px;
     font-weight: bold;
     color: $primary-color;
   }

@@ -27,11 +27,11 @@
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/gallery">Gallery</router-link>
         </a></li>
-        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
-          <a href="https://www.zola.com/registry/henryandkelli" target="_blank">Registry</a>
-        </a></li>
         <li><a href="#" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <router-link to="/faq">FAQ</router-link>
+        </a></li>
+        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <a href="https://www.zola.com/registry/henryandkelli" target="_blank">Registry</a>
         </a></li>
       </ul>
       <img class="question hvr-bounce-in" @click="showQuestionDialog = true" src="./../assets/images/question.png"/>
