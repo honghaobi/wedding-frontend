@@ -15,11 +15,11 @@
         <p><span class="first-character primaryColor">W</span>
           e have our room block through Garza Blanca Resort. It’s pretty epic if you ask us. It’s an optional all-inclusive resort located right in
           the middle of Cabo and San Jose. It’s a brand new 5 star luxury resort, but we have an insane deal because we got our room block while they
-          were still under construction. The booking rates at Garza are on par with other all-inclusive rates.This is where we will be staying along
+          were still under construction. The booking rates at Garza are on par with other all-inclusive rates. This is where we will be staying along
           with our families and bridal party. This is also where we will have our events like the “welcome party”, pick up, drop off on the day of the
           wedding and a brunch pool party for the day after the wedding. We would love for you all to stay here with is so we can maximize the time we
           get spend with you all. That being said, feel free to stay other places based on your preferences and needs. We have other suggestions for
-          your stay below. For those of you that do not what all-inclusive is, it means everything is included (drinks, meals, snacks, booze, tips to
+          your stay below. For those of you that do not know what all-inclusive is, it means everything is included (drinks, meals, snacks, booze, tips to
           the waiters/bartenders). The European plan is room only and you will then have to pay for your food, drinks, tips, etc..If you do decide to
           stay at Garza Blanca with us, please make sure you book using the link at the bottom of your screen to ensure you get our discounted rate
           and the resort knows that you are part of our wedding festivities. Also, don’t forget to check out the FAQ page for more info/questions
@@ -28,7 +28,7 @@
         <p>
           Good question!! Big reason why we picked Cabo is because we want to make this experience a vacation for y'all! We have our room block rate
           locked from June 16th - June 25th. With that being said, we will have planned events from June 19th to June 22nd, assuming people are
-          flying out on the Sunday the 23rd. So stay as long as your heart desires.
+          flying out on Sunday the 23rd. So stay as long as your heart desires.
         </p>
         <RoomsCarousel/>
       </div>

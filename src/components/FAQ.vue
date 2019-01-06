@@ -16,15 +16,15 @@
         <h3 class="md-subheader">Why did you guys decide to do a destination wedding?</h3>
         <p>Good question! Weddings can be stressful. We wanted our day to be filled with fun events in the sun and less stress. And can you really
            trust Washington summer not to rain?! We also know that our friends and family work so hard all year long so it’s an opportunity to get out
-           of town, away from the real world. That way you can all let go, have fun, and not have to worry about going to work the next day.</p>
+           of town, and away from the real world. That way you can all let go, have fun, and not have to worry about going to work the next day.</p>
 
-        <h3 class="md-subheader">When should we book or flights?</h3>
-        <p>Download the hopper app to track flights. Although they do not partner with Alaska or Dleta so you will have to check those flights
+        <h3 class="md-subheader">When should we book our flights?</h3>
+        <p>Download the hopper app to track flights. Although they do not partner with Alaska or Delta so you will have to check those flights
            separately. We will also be sending out updates via email if we find a cheap deal so you guys can jump on it!</p>
 
         <h3 class="md-subheader">After we land, how do we get to our resort?</h3>
-        <p>Here are shuttle services that we recommend booking through:
-          <span class="md-accent">Impala Shuttles was recommended by our wedding planner.</span>
+        <p>Here is a shuttle service our wedding planner recommended to book through:
+          <span class="md-accent">Impala Shuttles.</span>
            You can pre-pay online before the trip. This is the preferred method. You will go past baggage claim and through a foyer, turn right to
            exit the airport. The pre-paid shuttles will be waiting there. There will be a driver waiting with an Impala sign (or whatever shuttle
            service you decide). Check in with the driver so he can mark that you have arrived. When all guests have checked in he will start loading
@@ -39,7 +39,8 @@
         <h3 class="md-subheader">Can I bring my kids?</h3>
         <p>This is our biggest adulting moment yet and while we love your children, this is a grown-ups only wedding. If you must bring them,
            kids under 12 stay free at Garza, but unfortunately our venue discourages children. For this reason we are not allowing kids to the
-           wedding portion. We will be contacting our resort to try and set up some babysitting options, so if that is something you are interested
+           wedding ceremony and reception. We will be contacting our resort to try and set up some babysitting options, so if that is something you
+           are interested
            in please contact us directly.</p>
 
         <h3 class="md-subheader">Can we bring a plus one?</h3>
@@ -49,7 +50,7 @@
         <h3 class="md-subheader">What is there to do in Cabo?</h3>
         <p>We will have some specific events set up for people if they want to join like, fishing, golfing, a night out in Cabo. But if you want to do
            things on your own that’s fine too! You can check out the shops downtown, go to the famous bars like Mango Deck and the Office, swim in the
-           ocean, snorkel etc..</p>
+           ocean, snorkel etc... Remember, this is your vacation!</p>
 
         <h3 class="md-subheader">Is there a specific wedding attire?</h3>
         <p>Vacation cocktail attire. Some examples are slacks and a nice short sleeve button up for guys. It will be hot so feel free to wear shorts
@@ -57,7 +58,7 @@
 
         <h3 class="md-subheader">How does cell service work in Cabo?</h3>
         <p>If you have T-mobile, some plans include Mexico data and text in your plan without needing to sign up for anything. We have T-mobile and
-           have never had issues. For other carriers, you may need to pay around $3-5 a day for data and text and call capabilities. We have found
+           have never had issues. For other carriers, you may need to pay around $3-5 a day for data, text and call capabilities. We have found
            it’s worth it for at least one person in your party to have data for the map feature and calling taxis. You can also download WhatsApp for
            text capabilities while connected to wifi.</p>
 
@@ -70,11 +71,11 @@
         </ul>
 
         <h3 class="md-subheader">Should I choose all-inclusive or the European plan?</h3>
-        <p>We suggest doing all-inclusive because it takes the stress out of bringing cash to pay for food drinks at the resort. This is a nicer
-           resort with better food so a dinner check will be about $60/per person. Alcoholic drinks run about $11/drink not including tips. So we feel
-           the European plan may only be worth it if you are not planning to drink and don’t think you will be eating at the resort much. Otherwise
-           food and drinks can add up really fast. You will get the most for your money if you are eating most meals at the resort and planning on
-           drinking.</p>
+        <p>We suggest doing all-inclusive because it takes the stress out of bringing cash to pay for food and drinks at the resort. This is a nicer
+           resort with better food so a dinner check will be around $60/per person. Alcoholic drinks run about $11/cocktail, $4/beer not including
+           tips. So we feel the European plan may only be worth it if you are not planning to drink and don’t think you will be eating at the resort
+           much. Otherwise food and drinks can add up really fast. For the all inclusive plan, you will get the best bang for your buck if you are
+           eating most meals at the resort and planning on drinking.</p>
 
         <h3 class="md-subheader">I’m worried about if Cabo San Lucas is safe to travel?</h3>
         <p>Bad things happen in every city, and it doesn’t mean they are not safe. Mexico did have an increase violence in 2017. But since the Mexican
@@ -83,13 +84,14 @@
           <a href="https://www.forbes.com/sites/forbestravelguide/2018/08/31/is-it-safe-to-travel-to-los-cabos/#41314f25206a" target="_blank">
             Safe to Travel to Cabo?</a>
         </p>
+
         <h3 class="md-subheader">Do I need to learn Spanish?</h3>
         <p>Most locals in tourist areas know English. But it wouldn’t hurt to brush up on some phrases so you can order that tequila shot like a pro.
            You can learn with the free app Duolingo, or download Google Translate for in the moment translations.</p>
 
         <h3 class="md-subheader">Should we rent a car?</h3>
         <p>If you are feeling adventurous and want to explore what Cabo has to offer, renting a car would be the way to go! You can book a car for as
-           little as $3/day in Cabo. But we suggest also purchasing insurance when booking your car. Some car insurances will extend your insurance
+           little as $3/day. But we suggest also purchasing insurance when booking your car. Some car insurances will extend your insurance
            into Mexico so it might be worth it to check with your company first! We have personally never rented a car while there because you can
            always take a taxi or book shuttle into town if you have a group.</p>
 

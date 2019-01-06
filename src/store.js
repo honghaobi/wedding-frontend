@@ -71,6 +71,9 @@ export default new Vuex.Store({
     getAllGuests: state => state.guests,
     getGuestById: (state) => (id) => {
       return state.guests.find(guest => guest.id == id);
-    }
+    },
+    getRSVPCounts: state => state.guests.filter((guest) => guest.attending === true).length,
+    getResortBookedCounts: state => state.guests.filter((guest) => guest.resort_booked === true).length,
+    getFlightBookedCounts: state => state.guests.filter((guest) => guest.flight_booked === true).length,
   },
 });

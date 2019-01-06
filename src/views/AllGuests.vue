@@ -25,6 +25,11 @@
         <md-table-cell md-label="Opt-In-Email">{{ item.opt_email }}</md-table-cell>
       </md-table-row>
     </md-table>
+    <md-content class="md-accent countContainer">
+      <h3> RSVP COUNT: {{guestsRSVPCount}}</h3>
+      <h3> BOOKED FLIGHTS COUNT: {{guestsFlightBookedCount}}</h3>
+      <h3> BOOKED RESORT COUNT: {{guestsResortBookedCount}}</h3>
+    </md-content>
   </div>
 </template>
 
@@ -48,6 +53,15 @@
     computed: {
       guests: () => {
         return store.getters.getAllGuests;
+      },
+      guestsRSVPCount: () => {
+        return store.getters.getRSVPCounts;
+      },
+      guestsResortBookedCount: () => {
+        return store.getters.getResortBookedCounts;
+      },
+      guestsFlightBookedCount: () => {
+        return store.getters.getFlightBookedCounts;
       }
     },
     methods: {
@@ -62,4 +76,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .countContainer {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 </style>
