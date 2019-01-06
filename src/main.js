@@ -15,7 +15,8 @@ Vue.use(VueCarousel);
 Vue.use(VueMasonryPlugin);
 Vue.use(Viewer);
 Vue.use(VueAnalytics, {
-  id: 'UA-131760917-1'
+  id: 'UA-131760917-1',
+  router
 });
 
 store.dispatch('LOAD_ALL_GUESTS');
