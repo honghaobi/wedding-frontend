@@ -19,16 +19,17 @@
           with our families and bridal party. This is also where we will have our events like the “welcome party”, pick up, drop off on the day of the
           wedding and a brunch pool party for the day after the wedding. We would love for you all to stay here with is so we can maximize the time we
           get spend with you all. That being said, feel free to stay other places based on your preferences and needs. We have other suggestions for
-          your stay below. For those of you that do not know what all-inclusive is, it means everything is included (drinks, meals, snacks, booze, tips to
-          the waiters/bartenders). The European plan is room only and you will then have to pay for your food, drinks, tips, etc..If you do decide to
-          stay at Garza Blanca with us, please make sure you book using the link at the bottom of your screen to ensure you get our discounted rate
-          and the resort knows that you are part of our wedding festivities. Also, don’t forget to check out the FAQ page for more info/questions
-          about the resort</p>
+          your stay below. For those of you that do not know what all-inclusive is, it means everything is included (drinks, meals, snacks, booze,
+          tips to the waiters/bartenders). The European plan is room only and you will then have to pay for your food, drinks, tips, etc..If you do
+          decide to stay at Garza Blanca with us, please make sure you book using the link at the bottom of your screen to ensure you get our
+          discounted rate and the resort knows that you are part of our wedding festivities. Also, don’t forget to check out the
+          <router-link to="/faq">FAQ page</router-link> for more info/questions about the resort.
+        </p>
         <h3>How long should we stay?</h3>
         <p>
           Good question!! Big reason why we picked Cabo is because we want to make this experience a vacation for y'all! We have our room block rate
           locked from June 16th - June 25th. With that being said, we will have planned events from June 19th to June 22nd, assuming people are
-          flying out on Sunday the 23rd. So stay as long as your heart desires.
+          flying out on Sunday the 23rd. So stay as long as your heart desires. <span class="primaryColor">But please book resorts by May 31st!</span>
         </p>
         <RoomsCarousel/>
       </div>

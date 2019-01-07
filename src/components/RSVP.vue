@@ -3,7 +3,7 @@
     <div class="md-layout">
       <md-card class="md-layout-item rsvp">
         <md-card-header>
-          <div id="cardTitle">RSVP</div>
+          <div id="cardTitle">RSVP By May 1st</div>
         </md-card-header>
 
         <md-card-content>
