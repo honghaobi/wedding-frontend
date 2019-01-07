@@ -83,7 +83,7 @@
                 <div class="md-layout-item md-large-size-50">
                   <div>
                     <md-switch v-model="selectedGuest.resort_booked" class="md-primary questionSwitch1" v-if="selectedGuest"
-                               @change="toggleResortStatus" :disabled="travelInfoSaved">
+                               @change="toggleResortStatus">
                       <span v-if="!selectedGuest.resort_booked">Not Yet</span> <span v-if="selectedGuest.resort_booked">Sure Did!</span>
                     </md-switch>
                   </div>
@@ -94,7 +94,7 @@
                 <div class="md-layout-item md-large-size-50">
                   <div>
                     <md-switch v-model="selectedGuest.flight_booked" class="md-primary questionSwitch2" v-if="selectedGuest"
-                               @change="toggleFlightStatus" :disabled="travelInfoSaved">
+                               @change="toggleFlightStatus">
                       <span v-if="!selectedGuest.flight_booked">Not Yet</span> <span v-if="selectedGuest.flight_booked">Heck Yah!</span>
                     </md-switch>
                   </div>
@@ -113,9 +113,8 @@
                   </md-datepicker>
                 </div>
                 <div class="md-layout-item md-large-size-100">
-                  <md-button class="md-raised md-primary" id="saveBtn1" @click="saveTravelInfo()" :disabled="travelInfoSaved">Save</md-button>
                   <transition name="slide-fade-left">
-                    <md-button v-if="travelInfoSaved" class="md-raised md-accent" @click="setDone('second', 'third')">Continue</md-button>
+                    <md-button class="md-raised md-accent" @click="setDone('second', 'third')">Continue</md-button>
                   </transition>
                 </div>
               </div>
@@ -134,10 +133,12 @@
                   </md-field>
                   <md-field class="personalInfo">
                     <label>Email</label>
-                    <md-input v-model=selectedGuest.email></md-input>
+                    <md-input type="email" v-model=selectedGuest.email></md-input>
                   </md-field>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_message" :disabled="!selectedGuest.phone">Opt-In Text Updates</md-checkbox>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_email" :disabled="!selectedGuest.email">Opt-In Email Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_message" :disabled="!selectedGuest.phone">Opt-In Text Updates
+                  </md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuest.opt_email" :disabled="!selectedGuest.email">Opt-In Email Updates
+                  </md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuest.food_allergies></md-input>
@@ -164,8 +165,12 @@
                     <label>Email</label>
                     <md-input v-model=selectedGuestPartner.email></md-input>
                   </md-field>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_message" :disabled="!selectedGuestPartner.phone">Opt-In Text Updates</md-checkbox>
-                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_email" :disabled="!selectedGuestPartner.email">Opt-In Email Updates</md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_message" :disabled="!selectedGuestPartner.phone">Opt-In Text
+                                                                                                                                       Updates
+                  </md-checkbox>
+                  <md-checkbox class="rsvpCheckBox" v-model="selectedGuestPartner.opt_email" :disabled="!selectedGuestPartner.email">Opt-In Email
+                                                                                                                                     Updates
+                  </md-checkbox>
                   <md-field class="personalInfo">
                     <label>Food Allergies</label>
                     <md-input v-model=selectedGuestPartner.food_allergies></md-input>
@@ -252,7 +257,6 @@
       guestsAttending: false,
       guestFlightBooked: false,
       guestResortBooked: false,
-      travelInfoSaved: false,
       otherInfoSaved: false,
       snackBarDuration: 5000,
       snackBar1: false,
@@ -373,31 +377,6 @@
       toggleResortStatus() {
         this.guestResortBooked = this.selectedGuest.resort_booked;
       },
-      saveTravelInfo() {
-        this.travelInfoSaved = true;
-        this.snackBar2 = true;
-        setTimeout(() => {
-          this.guestFlightBooked = false;
-        }, 3000);
-        if ( this.selectedGuest ) {
-          store.dispatch('UPDATE_GUEST_BY_ID', {
-            id: this.selectedGuest.id,
-            resort_booked: this.selectedGuest.resort_booked,
-            flight_booked: this.selectedGuest.flight_booked,
-            resort_arrival_date: this.selectedGuest.resort_arrival_date,
-            resort_departure_date: this.selectedGuest.resort_departure_date,
-          });
-        }
-        if ( this.selectedGuestPartner ) {
-          store.dispatch('UPDATE_GUEST_BY_ID', {
-            id: this.selectedGuestPartner.id,
-            resort_booked: this.selectedGuest.resort_booked,
-            flight_booked: this.selectedGuest.flight_booked,
-            resort_arrival_date: this.selectedGuest.resort_arrival_date,
-            resort_departure_date: this.selectedGuest.resort_departure_date,
-          });
-        }
-      },
       saveOtherInfo() {
         this.snackBar3 = true;
         this.otherInfoSaved = true;
@@ -413,14 +392,14 @@
             opt_message: this.selectedGuest.opt_message,
             opt_email: this.selectedGuest.opt_email,
           });
-          if ( this.selectedGuest.phone && this.selectedGuest.opt_message && this.selectedGuestOptPhone === null) {
+          if ( this.selectedGuest.phone && this.selectedGuest.opt_message && this.selectedGuestOptPhone === null ) {
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuest.id,
               phone: `+1${this.selectedGuest.phone}`,
               message: `Holla ${this.selectedGuest.first_name}! ${guestTextMessage}`,
             });
           }
-          if ( this.selectedGuest.email && this.selectedGuest.opt_email && this.selectedGuestOptEmail === null) {
+          if ( this.selectedGuest.email && this.selectedGuest.opt_email && this.selectedGuestOptEmail === null ) {
             store.dispatch('SEND_GUEST_EMAIL', {
               id: this.selectedGuest.id,
               first_name: this.selectedGuest.first_name,
@@ -440,14 +419,14 @@
             opt_message: this.selectedGuestPartner.opt_message,
             opt_email: this.selectedGuestPartner.opt_email,
           });
-          if ( this.selectedGuestPartner.phone && this.selectedGuestPartner.opt_message && this.selectedGuestPartnerOptPhone === null) {
+          if ( this.selectedGuestPartner.phone && this.selectedGuestPartner.opt_message && this.selectedGuestPartnerOptPhone === null ) {
             store.dispatch('SEND_GUEST_SMS', {
               id: this.selectedGuestPartner.id,
               phone: `+1${this.selectedGuestPartner.phone}`,
               message: `Holla ${this.selectedGuestPartner.first_name}! ${guestTextMessage}`,
             });
           }
-          if ( this.selectedGuestPartner.email && this.selectedGuestPartner.opt_email && this.selectedGuestPartnerOptEmail === null) {
+          if ( this.selectedGuestPartner.email && this.selectedGuestPartner.opt_email && this.selectedGuestPartnerOptEmail === null ) {
             store.dispatch('SEND_GUEST_EMAIL', {
               id: this.selectedGuestPartner.id,
               first_name: this.selectedGuestPartner.first_name,
@@ -476,6 +455,25 @@
         } else if ( index === 'third' ) {
           this.guestFlightBooked = false;
           this.guestResortBooked = false;
+          this.snackBar2 = true;
+          if ( this.selectedGuest ) {
+            store.dispatch('UPDATE_GUEST_BY_ID', {
+              id: this.selectedGuest.id,
+              resort_booked: this.selectedGuest.resort_booked,
+              flight_booked: this.selectedGuest.flight_booked,
+              resort_arrival_date: this.selectedGuest.resort_arrival_date,
+              resort_departure_date: this.selectedGuest.resort_departure_date,
+            });
+          }
+          if ( this.selectedGuestPartner ) {
+            store.dispatch('UPDATE_GUEST_BY_ID', {
+              id: this.selectedGuestPartner.id,
+              resort_booked: this.selectedGuest.resort_booked,
+              flight_booked: this.selectedGuest.flight_booked,
+              resort_arrival_date: this.selectedGuest.resort_arrival_date,
+              resort_departure_date: this.selectedGuest.resort_departure_date,
+            });
+          }
         }
         if ( index ) {
           this.active = index;

@@ -253,7 +253,7 @@
 
         @media only screen and (max-device-width: 480px) {
           li {
-            height: 40px;
+            height: 35px;
           }
         }
       }

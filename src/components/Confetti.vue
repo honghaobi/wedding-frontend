@@ -50,6 +50,7 @@
         canvas.width = myWidth;
         canvas.height = myHeight;
         canvas.style.position = 'absolute';
+        canvas.style.pointerEvents = 'none';
         canvas.style.top = '0px';
         canvas.style.left = '0px';
 
