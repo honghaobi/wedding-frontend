@@ -47,7 +47,7 @@
     transform: rotateY(-90deg);
     transform-style: preserve-3d;
     transition: .5s;
-    z-index: 1000;
+    z-index: 3;
     animation: fly 5s ease-in;
   }
 

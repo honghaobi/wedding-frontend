@@ -2,16 +2,19 @@
   <div id="app">
     <router-view/>
     <Menu/>
+    <LoadingLogo/>
   </div>
 </template>
 
 <script>
   import Menu from './components/Menu';
+  import LoadingLogo from './components/LoadingLogo';
 
   export default {
-    name: 'app',
+    name: 'App',
     components: {
-      Menu
+      Menu,
+      LoadingLogo
     },
   };
 </script>

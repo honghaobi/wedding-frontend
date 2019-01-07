@@ -18,7 +18,7 @@
   import PointerBubbles from './../components/PointerBubbles';
 
   export default {
-    name: 'home',
+    name: 'Home',
     components: {
       PointerBubbles
     },
@@ -27,7 +27,6 @@
         width: 0,
         height: 0
       },
-      loaded: false,
     }),
     created() {
       window.addEventListener('resize', this.handleResize);
@@ -50,9 +49,6 @@
         this.window.width = window.innerWidth;
         this.window.height = window.innerHeight;
       },
-      onLoaded() {
-        this.loaded = true;
-      }
     }
   };
 </script>

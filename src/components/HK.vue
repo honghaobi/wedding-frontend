@@ -10,12 +10,6 @@
       </div>
     </section>
 
-    <!--<section>-->
-    <!--<div class="title">-->
-    <!--<img id="logo" src="./../assets/images/logo.png"/>-->
-    <!--</div>-->
-    <!--</section>-->
-
     <section>
       <div class="block">
         <p><span class="first-character">L</span>
@@ -171,7 +165,7 @@
 
 <script>
   export default {
-    name: 'home',
+    name: 'HK',
     components: {},
   };
 </script>

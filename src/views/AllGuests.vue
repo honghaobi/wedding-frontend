@@ -44,7 +44,7 @@
     .includes(toLower(term))) || items;
 
   export default {
-    name: 'allGuests',
+    name: 'AllGuests',
     components: { EditGuestDialog },
     data: () => ({
       search: null,

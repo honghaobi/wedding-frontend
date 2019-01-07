@@ -199,7 +199,7 @@
   }
 
   .bt-menu {
-    z-index: 1000;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -409,7 +409,7 @@
     position: fixed;
     top: 10px;
     left: 20px;
-    z-index: 1000;
+    z-index: 3;
     display: block;
     width: 50px;
     height: 50px;
