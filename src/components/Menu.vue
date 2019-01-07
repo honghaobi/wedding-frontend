@@ -226,7 +226,7 @@
 
         li {
           width: 150px;
-          height: 42px;
+          height: 50px;
           line-height: 50px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);
@@ -248,6 +248,12 @@
             &:focus {
               color: $color_3;
             }
+          }
+        }
+
+        @media only screen and (max-device-width: 480px) {
+          li {
+            height: 40px;
           }
         }
       }
