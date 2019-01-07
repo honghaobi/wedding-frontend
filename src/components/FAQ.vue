@@ -12,7 +12,6 @@
 
     <section>
       <div class="block">
-
         <h3 class="md-subheader">Why did you guys decide to do a destination wedding?</h3>
         <p>Good question! Weddings can be stressful. We wanted our day to be filled with fun events in the sun and less stress. And can you really
            trust Washington summer not to rain?! We also know that our friends and family work so hard all year long so it’s an opportunity to get out
@@ -122,13 +121,47 @@
         <h2>More Questions?</h2>
       </div>
     </section>
+    <div class="block">
+
+      <h3>Got a question for us?</h3>
+      <p>Ask us anything or just want to drop us a line.
+                                 This will send us a text message and email. We will be sure to get back to you ASAP.
+      </p>
+      <md-field>
+        <label>Your Name</label>
+        <md-input v-model="guestName" required></md-input>
+      </md-field>
+      <md-field>
+        <label>Your Question</label>
+        <md-textarea v-model="guestQuestion" required></md-textarea>
+      </md-field>
+      <md-button class="md-primary md-raised" @click="handleSend" :disabled="!guestQuestion">Send</md-button>
+    </div>
   </div>
 </template>
 
 <script>
+  import store from '../store';
 
   export default {
     name: 'FAQ',
+    data: () => ({
+      showQuestionDialog: false,
+      guestName: null,
+      guestQuestion: null,
+    }),
+    methods: {
+      handleSend() {
+        if ( this.guestName && this.guestQuestion ) {
+          store.dispatch('SEND_HENRY_QUESTION', {
+            guestName: this.guestName,
+            guestQuestion: this.guestQuestion,
+          });
+          this.showQuestionDialog = false;
+          this.guestQuestion = null;
+        }
+      }
+    }
   };
 </script>
 
@@ -254,8 +287,8 @@
     }
 
     .parallax-two {
-      padding-top: 300px;
-      padding-bottom: 300px;
+      padding-top: 250px;
+      padding-bottom: 250px;
       overflow: hidden;
       position: relative;
       width: 100%;

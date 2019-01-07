@@ -217,7 +217,7 @@
       overflow: hidden;
       position: relative;
       width: 100%;
-      background-image: url("./../assets/photos/hk/13.jpg");
+      background-image: url("./../assets/photos/hk/6.jpg");
       background-attachment: fixed;
       background-size: cover;
       -moz-background-size: cover;
