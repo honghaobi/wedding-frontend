@@ -14,6 +14,8 @@
         <md-table-head>QUAD</md-table-head>
         <md-table-head>FIFTH</md-table-head>
         <md-table-head>SIXTH</md-table-head>
+        <md-table-head>SEVENTH</md-table-head>
+        <md-table-head>EIGHTH</md-table-head>
       </md-table-row>
       <md-table-row>
         <md-table-cell>JUNIOR SUITE</md-table-cell>
@@ -21,6 +23,8 @@
         <md-table-cell>$439</md-table-cell>
         <md-table-cell>$259</md-table-cell>
         <md-table-cell>$227</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
@@ -34,6 +38,8 @@
         <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
       </md-table-row>
       <md-table-row>
         <md-table-cell>1BDR SUITE</md-table-cell>
@@ -42,6 +48,8 @@
         <md-table-cell>$316</md-table-cell>
         <md-table-cell>$266</md-table-cell>
         <md-table-cell>$240</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
         <md-table-cell>N/A</md-table-cell>
       </md-table-row>
@@ -54,13 +62,27 @@
         <md-table-cell>$298</md-table-cell>
         <md-table-cell>$271</md-table-cell>
         <md-table-cell>$253</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+        <md-table-cell>N/A</md-table-cell>
+      </md-table-row>
+      <md-table-row>
+        <md-table-cell>3BDR SUITE</md-table-cell>
+        <md-table-cell>8</md-table-cell>
+        <md-table-cell>$1280</md-table-cell>
+        <md-table-cell>$687</md-table-cell>
+        <md-table-cell>$489</md-table-cell>
+        <md-table-cell>$390</md-table-cell>
+        <md-table-cell>$331</md-table-cell>
+        <md-table-cell>$292</md-table-cell>
+        <md-table-cell>$264</md-table-cell>
+        <md-table-cell>$255</md-table-cell>
       </md-table-row>
     </md-table>
     <md-card class="tableDescription md-accent">
       All inclusive plan rates are per person, per night, based on selected occupancy, quoted in US dollars.
       3 nights minimum stay required. Rates include taxes, fee and gratuities.
       <hr/>
-      If you want to get a group and book a 3 or 4 bedroom loft / penthouse.
+      If you are a baller and want to get a group and book a 4 bedroom penthouse.
       Please let us know and we will get you the best rate possible.
     </md-card>
     <hr/>
@@ -113,7 +135,7 @@
 <style lang="scss" scoped>
   @import "./../css/main.scss";
 
-  .md-title{
+  .md-title {
     overflow: visible;
   }
 
