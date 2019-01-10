@@ -27,6 +27,7 @@
     </md-table>
     <md-content class="md-accent countContainer">
       <h3> RSVP COUNT: {{guestsRSVPCount}}</h3>
+      <h3> RSVP-NO COUNT: {{guestsRSVPNOCount}}</h3>
       <h3> BOOKED FLIGHTS COUNT: {{guestsFlightBookedCount}}</h3>
       <h3> BOOKED RESORT COUNT: {{guestsResortBookedCount}}</h3>
     </md-content>
@@ -56,6 +57,9 @@
       },
       guestsRSVPCount: () => {
         return store.getters.getRSVPCounts;
+      },
+      guestsRSVPNOCount: () => {
+        return store.getters.getRSVPNOCounts;
       },
       guestsResortBookedCount: () => {
         return store.getters.getResortBookedCounts;
