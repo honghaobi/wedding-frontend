@@ -84,6 +84,9 @@
       <hr/>
       If you are a baller and want to get a group and book a 4 bedroom penthouse.
       Please let us know and we will get you the best rate possible.
+      <br/>
+      <md-button class="md-raised md-primary" id="bookBtn1" @click="newTabToLink(garzaWeddingURL)">Book Through Our Link
+      </md-button>
     </md-card>
     <hr/>
     <md-table>
@@ -122,6 +125,9 @@
     <md-card class="tableDescription md-accent">
       European plan rates are per suite, per night, based on selected occupancy, quoted in US dollars.
       3 nights minimum stay required. Rates include taxes, fee and gratuities.
+      <br/>
+      <md-button class="md-raised md-primary" id="bookBtn2" @click="newTabToLink(garzaWeddingURL)">Book Through Our Link
+      </md-button>
     </md-card>
   </div>
 </template>
@@ -129,6 +135,14 @@
 <script>
   export default {
     name: 'Resort-Table',
+    data: () => ({
+      garzaWeddingURL: 'https://cabo.garzablancaresort.com/wedding-groups/kelli-and-henry-bi-wedding',
+    }),
+    methods: {
+      newTabToLink(linkURL) {
+        window.open(linkURL, '_blank');
+      }
+    }
   };
 </script>
 
@@ -137,6 +151,20 @@
 
   .md-title {
     overflow: visible;
+  }
+
+  .md-button {
+    margin: 10px 0;
+  }
+
+  #bookBtn1 {
+    color: $white;
+    right: 0;
+  }
+
+  #bookBtn2 {
+    color: $white;
+    right: 0;
   }
 
   .subHeader {

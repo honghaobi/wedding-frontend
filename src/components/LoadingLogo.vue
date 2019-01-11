@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
-    <div class="loadingScreen hvr-bob" v-if="show">
-      <img class="logo" src="./../assets/images/logo.png"/>
+    <div class="loadingScreen" v-if="show">
+      <img class="logo hvr-bob" src="./../assets/images/logo.png"/>
     </div>
   </transition>
 </template>
