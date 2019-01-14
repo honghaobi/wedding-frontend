@@ -40,23 +40,24 @@
                 <transition name="slide-fade-top">
                   <div class="md-layout-item md-large-size-66 partner" v-if="selectedGuest">
                     <transition name="slide-fade-top">
-                      <md-checkbox class="md-primary" v-model="selectedGuestAttending" v-if="selectedGuest" :disabled="guestsAttending">
-                        <b>{{selectedGuest.full_name}}</b>
-                      </md-checkbox>
+                      <md-switch class="md-primary" v-model="selectedGuestAttending" v-if="selectedGuest" :disabled="guestsAttending">
+                        <b>{{selectedGuest.full_name}}</b> is <span v-if="!selectedGuestAttending"> Not </span>
+                        Attending
+                      </md-switch>
                     </transition>
                     <transition name="slide-fade-left">
-                      <md-checkbox class="md-primary" v-model="selectedGuestPartnerAttending" v-if="selectedGuestPartnerIncluded"
+                      <md-switch class="md-primary" v-model="selectedGuestPartnerAttending" v-if="selectedGuestPartnerIncluded"
                                    :disabled="guestsAttending">
-                        <b>{{selectedGuestPartner.full_name}}</b>
-                      </md-checkbox>
+                        <b>{{selectedGuestPartner.full_name}}</b> is <span v-if="!selectedGuestPartnerAttending"> Not </span>
+                        Attending
+                      </md-switch>
                     </transition>
                   </div>
                 </transition>
                 <transition name="slide-fade-left">
                   <div class="md-layout-item md-large-size-33" v-if="selectedGuest">
                     <md-button class="md-raised md-primary" id="rsvpBtn" @click="rsvp()" :disabled="guestsAttending">
-                      <span v-if="!selectedGuestAttending && !selectedGuestPartnerAttending"> Not </span>
-                      Attending
+                      Submit
                     </md-button>
                     <transition name="slide-fade-left">
                       <md-button class="md-raised md-accent" id="continueBtn" v-if="guestsAttending" @click="setDone('first', 'second')">Continue
