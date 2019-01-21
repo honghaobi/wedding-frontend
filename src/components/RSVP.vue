@@ -381,7 +381,7 @@
       saveOtherInfo() {
         this.snackBar3 = true;
         this.otherInfoSaved = true;
-        const guestTextMessage = 'We are stoked you are making to time to celebrate with us! You’ve requested to get updates from us via text! We won’t spam you, promise. You will get wedding updates, event info, and flight price changes, and maybe a cute gif every once in a while. Please save this number as HKWedding. If you no longer wish to receive texts from us you can opt- out on the RSVP page! ';
+        const guestTextMessage = 'We are stoked you are making the time to celebrate with us! You’ve requested to get updates from us via text! We won’t spam you, promise. You will get wedding updates, event info, and flight price changes, and maybe a cute gif every once in a while. Please save this number as HKWedding. If you no longer wish to receive texts from us you can opt- out on the RSVP page! ';
         const guestEmailMessage = 'We’re doing the cha-cha over here because you are coming to the wedding! Since you chose to get email updates from us, we will send you emails every so often about wedding info, event updates, and flight price changes. If you do not wish to get updates feel free to opt-out on the RSVP page!';
         if ( this.selectedGuest ) {
           store.dispatch('UPDATE_GUEST_BY_ID', {
