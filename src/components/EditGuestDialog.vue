@@ -10,8 +10,12 @@
         <label>Email</label>
         <md-input v-model=guest.email></md-input>
       </md-field>
+      <md-field>
+        <label>Relationship ID</label>
+        <md-input v-model=guest.relation></md-input>
+      </md-field>
       <div class="md-checkbox-container">
-        <md-checkbox v-model=guest.attending>Attending</md-checkbox>
+        <md-switch v-model=guest.attending>Attending</md-switch>
         <md-checkbox v-model=guest.resort_booked>Resort Booked</md-checkbox>
         <md-checkbox v-model=guest.flight_booked>Flight Booked</md-checkbox>
         <md-checkbox v-model=guest.opt_message>Opt-in Message</md-checkbox>
@@ -63,6 +67,7 @@
       handleSave() {
         store.dispatch('UPDATE_GUEST_BY_ID', {
           id: this.guest.id,
+          relation: this.guest.relation,
           phone: this.guest.phone,
           email: this.guest.email,
           attending: this.guest.attending,

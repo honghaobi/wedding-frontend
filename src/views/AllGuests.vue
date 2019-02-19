@@ -10,19 +10,19 @@
                             :md-description="`No guests found for this '${search}' query. Try a different search term or create a new user.`">
       </md-table-empty-state>
       <md-table-row slot="md-table-row" slot-scope="{ item }">
-        <md-table-cell md-label="More">
-          <EditGuestDialog guest={item} :guest="item"/>
-        </md-table-cell>
         <md-table-cell md-label="ID" md-sort-by="id">{{ item.id }}</md-table-cell>
         <md-table-cell md-label="First Name" md-sort-by="first_name">{{ item.first_name }}</md-table-cell>
         <md-table-cell md-label="Last Name" md-sort-by="last_name">{{ item.last_name }}</md-table-cell>
-        <md-table-cell md-label="Email">{{ item.email }}</md-table-cell>
-        <md-table-cell md-label="Phone">{{ item.phone }}</md-table-cell>
         <md-table-cell md-label="Attending">{{ item.attending }}</md-table-cell>
         <md-table-cell md-label="R-Booked">{{ item.resort_booked }}</md-table-cell>
         <md-table-cell md-label="F-Booked">{{ item.flight_booked }}</md-table-cell>
+        <md-table-cell md-label="Email">{{ item.email }}</md-table-cell>
+        <md-table-cell md-label="Phone">{{ item.phone }}</md-table-cell>
         <md-table-cell md-label="Opt-In-Message">{{ item.opt_message }}</md-table-cell>
         <md-table-cell md-label="Opt-In-Email">{{ item.opt_email }}</md-table-cell>
+        <md-table-cell md-label="More">
+          <EditGuestDialog guest={item} :guest="item"/>
+        </md-table-cell>
       </md-table-row>
     </md-table>
     <md-content class="md-accent countContainer">
