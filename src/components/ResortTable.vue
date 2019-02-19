@@ -85,6 +85,9 @@
       If you are a baller and want to get a group and book a 4 bedroom penthouse.
       Please let us know and we will get you the best rate possible.
       <br/>
+      <h4>
+        *To Reserve Room, Only First Night Deposit is Required*
+      </h4>
       <md-button class="md-raised md-primary" id="bookBtn1" @click="newTabToLink(garzaWeddingURL)">Book Through Our Link
       </md-button>
     </md-card>
@@ -126,6 +129,9 @@
       European plan rates are per suite, per night, based on selected occupancy, quoted in US dollars.
       3 nights minimum stay required. Rates include taxes, fee and gratuities.
       <br/>
+      <h4>
+        *To Reserve Room, Only First Night Deposit is Required*
+      </h4>
       <md-button class="md-raised md-primary" id="bookBtn2" @click="newTabToLink(garzaWeddingURL)">Book Through Our Link
       </md-button>
     </md-card>
