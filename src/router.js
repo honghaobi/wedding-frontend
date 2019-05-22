@@ -78,6 +78,13 @@ export default new Router(
           return import('./components/FAQ.vue');
         },
       },
+      {
+        path: '/message',
+        name: 'message',
+        component() {
+          return import('./components/Message.vue');
+        },
+      },
     ],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 };
