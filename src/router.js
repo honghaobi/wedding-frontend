@@ -85,6 +85,13 @@ export default new Router(
           return import('./components/Message.vue');
         },
       },
+      {
+        path: '/shuttle',
+        name: 'shuttle',
+        component() {
+          return import('./components/Shuttle.vue');
+        },
+      },
     ],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 };
