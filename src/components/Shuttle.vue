@@ -12,8 +12,8 @@
     <p><i class="step"> Step 1: </i>Go to <a href="http://impalacabo.net/" target="_blank"><b>impalacabo.net</b></a></p>
     <p><i class="step"> Step 2: </i>Go to "Wedding Transportation" at the top menu bar.</p>
     <p><i class="step"> Step 3: </i>Fill out the username and password and sign in.
-      <br><b class="imp">Username: KM&HB7 </b>
-      <br><b class="imp">Password: KM&HB7 </b></p>
+      <br><b class="imp">Username: KEMC&HEBI7 </b>
+      <br><b class="imp">Password: KEMC&HEBI7 </b></p>
     <p><i class="step"> Step 4: </i>
       Read the information on the sign-in page for shuttle and pricing options</p>
     <p><i class="step"> Step 5: </i>
