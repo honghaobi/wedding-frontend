@@ -32,7 +32,7 @@
     width: 100vw;
     height: 100vh;
     background-color: $off-white-cream;
-    z-index: 4;
+    z-index: 9;
     justify-content: center;
     align-items: center;
 

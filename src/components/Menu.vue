@@ -33,6 +33,15 @@
         <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
           <a href="https://www.zola.com/registry/henryandkelli" target="_blank">Registry</a>
         </a></li>
+        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <router-link to="/shuttle">SHUTTLE</router-link>
+        </a></li>
+        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <router-link to="/boat">BOAT</router-link>
+        </a></li>
+        <li><a href="#" target="_blank" class="bt-icon icon-bubble route hvr-wobble-horizontal">
+          <router-link to="/schedule">SCHEDULE</router-link>
+        </a></li>
       </ul>
       <img class="question hvr-bounce-in" @click="showQuestionDialog = true" src="./../assets/images/question.png"/>
       <md-dialog :md-active.sync="showQuestionDialog">
@@ -226,8 +235,8 @@
 
         li {
           width: 150px;
-          height: 50px;
-          line-height: 50px;
+          height: 40px;
+          line-height: 40px;
           -webkit-transform: translate3d(-100%, 50%, 0);
           transform: translate3d(-100%, 50%, 0);
           pointer-events: auto;
@@ -253,7 +262,7 @@
 
         @media only screen and (max-device-width: 480px) {
           li {
-            height: 35px;
+            height: 25px;
           }
         }
       }

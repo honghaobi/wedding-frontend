@@ -92,6 +92,20 @@ export default new Router(
           return import('./components/Shuttle.vue');
         },
       },
+      {
+        path: '/boat',
+        name: 'boat',
+        component() {
+          return import('./components/Boat.vue');
+        },
+      },
+      {
+        path: '/schedule',
+        name: 'schedule',
+        component() {
+          return import('./components/Schedule.vue');
+        },
+      },
     ],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 };

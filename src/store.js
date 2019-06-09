@@ -79,5 +79,7 @@ export default new Vuex.Store({
     getRSVPNOCounts: state => state.guests.filter((guest) => guest.attending === false).length,
     getResortBookedCounts: state => state.guests.filter((guest) => guest.resort_booked === true).length,
     getFlightBookedCounts: state => state.guests.filter((guest) => guest.flight_booked === true).length,
+    getGuestsAttending: state => state.guests.filter((guest) => guest.attending === true),
+    getGuestsInterestedInBoatCruise: state => state.guests.filter((guest) => guest.attending === true && guest.events.includes("boatCruise")),
   },
 });

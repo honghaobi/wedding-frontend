@@ -39,6 +39,10 @@
         <md-checkbox v-model="guest.events" value="golfing">Golfing</md-checkbox>
         <md-checkbox v-model="guest.events" value="waterSport">Water Sports</md-checkbox>
       </div>
+      <h3>Boat Paid</h3>
+      <div class="md-checkbox-container">
+        <md-checkbox v-model="guest.paid">PAID</md-checkbox>
+      </div>
       <md-dialog-actions>
         <md-button class="md-primary" @click="handleClose">Close</md-button>
         <md-button class="md-accent" @click="handleSave">Save</md-button>
@@ -79,6 +83,7 @@
           resort_departure_date: this.guest.resort_departure_date,
           food_allergies: this.guest.food_allergies,
           events: JSON.stringify(this.guest.events),
+          paid: this.guest.paid,
         });
         this.showDialog = false;
       },
