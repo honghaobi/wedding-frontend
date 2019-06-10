@@ -31,7 +31,7 @@
         <md-table-cell md-label="Last Name" md-sort-by="last_name">{{ item.last_name }}</md-table-cell>
         <md-table-cell md-label="Interested">
           <div class="md-checkbox-container">
-            <md-checkbox v-model="item.events" value="boatCruise"></md-checkbox>
+            <md-checkbox v-model="item.events" value="boatCruise" v-on:change="updateInterest( item.id, item.events )"></md-checkbox>
           </div>
         </md-table-cell>
         <md-table-cell md-label="Paid"> {{ item.paid ? 'YES ' : 'NOT YET' }}</md-table-cell>
@@ -68,6 +68,12 @@
       searchOnTable() {
         this.searched = searchByName(this.guests, this.search);
       },
+      updateInterest(anId, events) {
+        store.dispatch('UPDATE_GUEST_BY_ID', {
+          id: anId,
+          events: JSON.stringify(events),
+        });
+      }
     },
     created() {
       this.searched = this.guests;
