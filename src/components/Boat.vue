@@ -85,8 +85,8 @@
   }
 
   @media screen and (max-width: 479px) {
-    table {
-      width: 300px;
+    .md-table {
+      width: 350px;
     }
     .block {
       padding: 30px 15px;
