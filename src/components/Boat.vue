@@ -3,10 +3,14 @@
     <h1>Catamaran Saturday June 22nd 2:00 - 6:00PM</h1>
     <img src="./../assets/photos/other/catamaran.jpg"/>
     <p>
-      We have booked a catamaran cruise for Saturday June 22nd! It consists of boating around the famous Cabo San Lucas Arch, and other landmarks.
-      It’s $100 per person and includes the cruise, food and beverage. The boat will also anchor so we can swim, snorkel, stand up paddle board.
+      We have booked a catamaran cruise for Saturday June 22nd! It consists of boating around the famous Cabo San Lucas Arch, Lovers Beach, and other
+      landmarks. It’s $100 per person and includes the cruise, food and beverage and transportation to and from our resort. The catamaran will also
+      anchor so we can swim, snorkel, stand up paddle board.
+    </p>
+    <p><b>
       You can venmo Henry <span class="pay">@henrybi</span> or PayPal to
       <span class="pay">henrybidesign@gmail.com</span> Please try to pay before June 17th to reserve your spot.
+    </b>
     </p>
     <md-table v-model="guests" md-sort="last_name" md-sort-order="asc" md-fixed-header>
       <md-table-row slot="md-table-row" slot-scope="{ item }">
