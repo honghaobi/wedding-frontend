@@ -66,16 +66,16 @@
       },
       guestsFlightBookedCount: () => {
         return store.getters.getFlightBookedCounts;
-      }
+      },
     },
     methods: {
       searchOnTable() {
         this.searched = searchByName(this.guests, this.search);
       },
     },
-    mounted() {
-      this.search = '';
-    },
+    created () {
+      this.searched = this.guests;
+    }
   };
 </script>
 

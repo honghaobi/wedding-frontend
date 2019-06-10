@@ -12,7 +12,20 @@
       <span class="pay">henrybidesign@gmail.com</span> Please try to pay before June 17th to reserve your spot.
     </b>
     </p>
-    <md-table v-model="guests" md-sort="last_name" md-sort-order="asc" md-fixed-header>
+    <md-table v-model="searched" md-sort="last_name" md-sort-order="asc" md-fixed-header>
+      <md-table-toolbar>
+        <div class="md-toolbar-section-start">
+          <h1 class="md-title">Boat Guests List
+            <small>*{{guestsPaidCount}} paid*</small>
+          </h1>
+        </div>
+        <md-field md-clearable class="md-toolbar-section-end">
+          <md-input placeholder="Search by name..." v-model="search" @input="searchOnTable"/>
+        </md-field>
+      </md-table-toolbar>
+      <md-table-empty-state md-label="No Guests found"
+                            :md-description="`No guests found for this '${search}' query. Try a different search term or create a new user.`">
+      </md-table-empty-state>
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="First Name" md-sort-by="first_name">{{ item.first_name }}</md-table-cell>
         <md-table-cell md-label="Last Name" md-sort-by="last_name">{{ item.last_name }}</md-table-cell>
@@ -28,16 +41,37 @@
 </template>
 
 <script>
-
   import store from '../store';
+
+  const toLower = text => text.toString()
+    .toLowerCase();
+
+  const searchByName = (items, term) => items.filter(item => toLower(item.full_name)
+    .includes(toLower(term))) || items;
+
 
   export default {
     name: 'boatCruise',
+    data: () => ({
+      search: null,
+      searched: [],
+    }),
     computed: {
       guests: () => {
         return store.getters.getGuestsAttending;
       },
+      guestsPaidCount: () => {
+        return store.getters.getGuestsBoatPaidCount;
+      }
     },
+    methods: {
+      searchOnTable() {
+        this.searched = searchByName(this.guests, this.search);
+      },
+    },
+    created() {
+      this.searched = this.guests;
+    }
   };
 </script>
 
